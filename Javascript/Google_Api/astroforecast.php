@@ -8621,7 +8621,7 @@ function SendInvite(){
 	var email=document.getElementById("sendemail").value;
 var postData='email='+email;
 $.ajax({
-	url : "mail7.php",
+	url : "sendmail.php",
 	type : "POST",
 	data : postData, 
 	success: function(data,status, xhr)
@@ -8675,7 +8675,7 @@ document.getElementById("sendemail").value="";
                         
 						
 						
-						<form class="form-signin" action="mail7.php"method="POST" id="login_form"> 
+						<form class="form-signin" action="sendmail.php"method="POST" id="login_form"> 
         <form role="form">
             <div class="col-lg-10">
               
