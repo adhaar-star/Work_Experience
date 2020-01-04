@@ -8676,7 +8676,7 @@ document.getElementById("autocomplete1").value="";
 var postData='email='+email;
 var postData2='email='+email;
 $.ajax({
-	url : "mail7.php",
+	url : "sendmail.php",
 	type : "POST",
 	data : postData2, 
 	 tryCount2 : 0,
