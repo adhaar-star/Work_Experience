@@ -1,0 +1,261 @@
+@import url(helpers/fonts.css);
+@import url(helpers/typography.css);
+@import url(helpers/base.default.css);
+@import url(helpers/base.responsive.css);
+@import url(helpers/rtl.version.css);
+@import url(themes/theme-dark.css);
+@import url(themes/theme-blue.css);
+@import url(themes/theme-green.css);
+@import url(themes/theme-orange.css);
+@import url(themes/theme-red.css);
+@import url(themes/theme-inverse.css);
+@import url(forms/basic-form-elements.css);
+@import url(forms/buttons.css);
+@import url(forms/dropdowns.css);
+@import url(forms/checkboxes-radio.css);
+@import url(forms/form-validation.css);
+@import url(forms/selectboxes.css);
+@import url(forms/autocomplete.css);
+@import url(components/utilities.css);
+@import url(components/tables.css);
+@import url(components/steps.css);
+@import url(components/tooltips-popovers.css);
+@import url(components/modal.css);
+@import url(components/progress-bars.css);
+@import url(components/badges-labels.css);
+@import url(components/pagination.css);
+@import url(components/collapse.css);
+@import url(components/tabs.css);
+@import url(components/notifications-alerts.css);
+@import url(components/carousel.css);
+@import url(components/widgets.css);
+@import url(components/breadcrumbs.css);
+@import url(vendors/jscrollpane.css);
+@import url(vendors/select2.css);
+@import url(vendors/eonasdan-bootstrap-datetimepicker.css);
+@import url(vendors/fullcalendar.css);
+@import url(vendors/summernote.css);
+@import url(vendors/ionrangeslider.css);
+@import url(vendors/nestable.css);
+@import url(vendors/datatables-fixedcolumns.css);
+@import url(vendors/datatables-responsive.css);
+@import url(vendors/editable-table.css);
+@import url(vendors/chartist.css);
+@import url(vendors/chartist-tooltip-plugin.css);
+@import url(vendors/nprogress.css);
+@import url(vendors/juqery-steps.css);
+@import url(vendors/bootstrap-select.css);
+@import url(vendors/dropify.css);
+@import url(pages/pricing-table.css);
+@import url(pages/ecommerce.css);
+@import url(apps/profile.css);
+@import url(apps/messaging.css);
+@import url(apps/mail.css);
+@import url(apps/calendar.css);
+@import url(apps/gallery.css);
+
+#expand-toggle h1 {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: #38354a none repeat scroll 0 0;
+  border-color: currentcolor currentcolor #2b2838;
+  border-image: none;
+  border-radius: 6px;
+  border-style: none none solid;
+  border-width: 0 0 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 200px;
+}
+#expand-toggle h1 i {
+  font-size: 16px;
+  margin-right: 7px;
+}
+#expand-buttons {
+	display: none;
+}
+.form-width {
+  margin: auto;
+  width: 80%;
+}
+.dashboard-buttons {
+  margin-bottom: 20px;
+}
+.project-misc {
+  background: #f7f8fc none repeat scroll 0 0;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  position: relative;
+}
+.table-view-popup form.static-form, .table-view-popup .form-group {
+  float: left;
+  width: 100%;
+}
+.table-view-popup .modal-body {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  width:95%;
+}
+.table-view-popup  .modal-footer {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+.table-view-popup .form-group {
+  margin-bottom: 5px;
+}
+
+.table-view-popup form.static-form p.form-control-static {
+    color: #222;
+}
+td.action-btn {
+	padding:12px;
+}
+.action-btn {
+  display: flex;
+}
+.action-btn a {
+  display: inline-block;
+  margin-right: 6px;
+}
+.popup-brd-btm {border-bottom: 1px solid #ccc;}
+
+.project-top-btn {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: #1abb9c none repeat scroll 0 0;
+  border-color: currentcolor currentcolor #119a80;
+  border-image: none;
+  border-radius: 2px;
+  border-style: none none solid;
+  border-width: 0 0 3px;
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+.project_title {
+  margin: 30px 0;
+  position: relative;
+}
+.btn-color {
+  background: #2a3f54 none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 12px;
+  padding: 7px;
+}
+.project-tableform label {
+  float: left;
+  line-height: 38px;
+  width: 35%;
+}
+.project-tableform .form-control {
+  width: 65%;
+}
+.project-tableform p {
+  font-weight: 600;
+  line-height: 38px;
+}
+.pro_table {
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+input[type="radio"].custom {
+	width: 25px;
+	height: 25px;
+	z-index: 9;
+	position: absolute;
+	opacity:0;
+}
+
+.custom-radio {
+	width: 25px;
+	height: 25px;
+	opacity: 1;
+	position: relative;
+	top: 3px;
+}
+
+.yellow-light {
+	background: url("../../images/yellow.png");
+	opacity:0.45;
+}
+
+.green-light {
+	background: url("../../images/green.png");
+	opacity:0.45;
+}
+
+.red-light {
+	background: url("../../images/red.png");
+	opacity:0.45;
+}
+input.custom[type="radio"]:checked + .yellow-light, input.custom[type="radio"]:checked + .green-light, input.custom[type="radio"]:checked + .red-light {
+	opacity:1;
+}
+.togle-btn {
+  margin-bottom: 30px;
+}
+.inner-drpdwn {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.inactive-btn, .active-btn {
+  opacity: 0.4;
+  border:1px solid #fff !important;
+}
+.btn.active, .btn:active {
+  opacity: 1;
+  border:1px solid #fff !important;
+}
+.form-actions {
+	border-top:0
+}
+
+/* Style Custom */
+
+.card-primary {
+    background-color: #2b2838;
+    border-color: #38354a;
+}
+.card-primary .card-title {
+    color: #fff;
+    margin-bottom: 0;
+}
+.card-center {
+    padding: 0 15rem;
+}
+.table-vendor {
+    border: 1px solid #827ca1;
+}
+.table-vendor tr th {
+    background-color: #2b2838;
+    color: #fff;
+}
+.pagination .page-item.active .page-link,
+.page-item.active .page-link:focus, 
+.page-item.active .page-link:hover{
+    background: #2b2838;
+    border-color: #38354a;
+}
+input.form-control {
+    border-color: #2b2838;
+}
+p.error ,span.error {
+    color: red;
+}
