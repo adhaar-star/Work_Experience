@@ -1,0 +1,522 @@
+/**
+ * Helper Notes
+ *
+ * Materialize Media Query for CSS (All suitable sizes)
+ * Small screens are defined as having a max-width of 600px
+ * Medium screens are defined as having a max-width of 992px
+ * Large screen are defined as having a min-width of 993px
+ * Extra Large screen are defined as having a min-width of 1200px
+ */
+
+
+/* Import links for font etc. */
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+/* General */
+body {
+    color: #333;
+}
+.error-toast {
+    background-color: #E64000;
+}
+
+
+/* Header | Logo + Menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    line-height: 70px;
+    vertical-align: middle;
+    z-index: 20;
+}
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+header nav {
+    background-color: transparent;
+    line-height: 70px;
+}
+header nav ul li a {
+    line-height: normal;
+    display: inline-block;
+    padding: 0;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+header nav ul li a:hover {
+    background-color: transparent;
+}
+header nav .btn-login {
+    border: solid 1px #fff;
+    padding: 0 20px;
+    border-radius: 30px;
+    line-height: 30px;
+}
+header nav .btn-login:hover {
+    color: #554F41;
+    background-color: #fff;
+}
+header.scrolled,
+header.register {
+    background-color: #222;
+}
+.pricing {
+    padding: 105px 0 35px;
+}
+@media only screen and (max-width: 992px) {
+    header .mobile-menu-icon i,
+    header .mobile-menu-close i {
+        line-height: normal;
+        display: inline-block;
+        padding: 7px 10px;
+        border: solid 1px #fff;
+        cursor: pointer;
+    }
+    header .nav-container {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.95);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s;
+    }
+    header .nav-container.opened {
+        right: 0%;
+    }
+    header .mobile-menu-close {
+        padding: 0 30px;
+        text-align: right;
+    }
+    header nav ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 0;
+        overflow: scroll;
+        border-top: solid 2px #fff;
+    }
+    header nav li {
+        width: 100%;
+        border-bottom: solid 1px #fff;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    header .nav-container {
+        max-width: 300px;
+        border-left: solid 1px #ccc;
+    }
+}
+
+/* Home | First Section */
+section.top-bg {
+    background-image: url('/new_images/frontweb/people-woman-coffee-meeting.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+section.top-bg .top {
+    padding-top: 70px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+section.top-bg .top-content {
+    padding: 30px 0;
+    padding-left: 5%;
+    max-width: 60%;
+}
+section.top-bg .top-content h3 {
+    font-weight: 100;
+}
+section.top-bg .top-content .btn-try,
+section.top-bg .top-content .btn-demo{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    border-radius: 50px;
+    background-color: #E64000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+section.top-bg .top-content .btn-try:hover,
+section.top-bg .top-content .btn-demo:hover{
+    background-color: #EB6633;
+}
+
+@media only screen and (max-width: 992px) {
+    section.top-bg .top-content {
+        max-width: 100% !important;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.top-bg .top-content {
+        max-width: 100% !important;
+        padding: 0%;
+    }
+    section.top-bg .top-content h3 {
+        font-size: 26px;
+    }
+    section.top-bg .top-content .btn-try {
+        padding: 0 25px;
+    }
+}
+
+/* Home | Second Section */
+section.how-it-works {
+    padding: 70px 0;
+    background-color: #e9e9e9;
+}
+section.how-it-works .demo-video {
+    border: solid 5px #554F41;
+    max-height: 325px;
+    overflow: hidden;
+    max-width: 570px;
+    margin: auto;
+    border-radius: 3px;
+}
+section.how-it-works .demo-video-title {
+    height: 325px;
+}
+section.how-it-works .demo-video-title h3 {
+    width: 100%;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+    section.how-it-works .demo-video-title {
+        height: auto;
+    }
+}
+
+/* Home | Third Section */
+section.steps {
+    padding: 70px 0;
+    padding-left: 50px;
+}
+section.steps h3 {
+    font-weight: 300;
+}
+section.steps ul {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    padding-left: 70px;
+    border-left: dashed 3px #ccc;
+}
+section.steps ul li {
+    position: relative;
+    top: -50px;
+}
+section.steps ul li .number {
+    position: relative;
+    left: -111px;
+    top: 105px;
+    display: inline-block;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 80px;
+    min-width: 80px;
+    border-radius: 10px;
+    background-color: #E64000;
+    color: #fff;
+}
+section.steps ul li .step-description {
+    margin-left: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+}
+section.steps ul li .step-description:before {
+    content: "";
+    border-style: solid;
+    border-width: 10px 26px;
+    border-color: #555;
+    position: absolute;
+    left: -31px;
+    top: 135px;
+}
+section.steps ul li .step-description h5 {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    section.steps {
+        padding-left: 25px;
+    }
+    section.steps ul {
+        padding-left: 25px;
+    }
+    section.steps ul li {
+        position: relative;
+        top: -20px;
+    }
+    section.steps ul li .number {
+        left: -51px;
+        top: 70px;
+        font-size: 26px;
+        line-height: 50px;
+        min-width: 50px;
+        border-radius: 10px;
+    }
+    section.steps ul li .step-description {
+        margin-left: 15px;
+        padding: 20px;
+        padding-top: 1px;
+    }
+    section.steps ul li .step-description:before {
+        border-width: 8px 8px;
+        left: -1px;
+        top: 87px;
+    }
+    section.steps ul li .step-description h5 {
+        font-size: 2em;
+    }
+}
+
+
+/* Home | Fourth Section */
+section.features {
+    padding: 70px 0;
+    background-color: #e9e9e9;
+}
+section.features h3 {
+    font-weight: 300;
+}
+section.features .feature {
+    margin-left: 60px;
+    margin-top: 50px;
+    padding: 0 20px;
+    position: relative;
+    color: #555;
+    text-align: justify;
+}
+section.features .feature .feature-icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+}
+section.features .feature .feature-details h6 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section.features .btn-try {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #E64000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+section.features .btn-try:hover {
+    background-color: #EB6633;
+}
+
+@media only screen and (max-width: 600px) {
+    section.features .btn-try {
+        padding: 0 25px;
+    }
+}
+
+/* Home | Fifth Section */
+section.testimonials {
+    padding: 100px 0;
+}
+section.testimonials .testimonial {
+    max-width: 700px;
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    text-align: left;
+    padding: 50px 70px;
+    padding-top: 50px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #555;
+    font-size: 24px;
+}
+section.testimonials .testimonial .testimonial-icon {
+    position: absolute;
+    top: -40px;
+    left: -70px;
+    height: 100px;
+}
+section.testimonials .testimonial p {
+    font-family: 'Courgette', cursive;
+    text-align: justify;
+}
+section.testimonials .testimonial .testimonial-client {
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    vertical-align: middle;
+    margin-right: 20px;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+section.testimonials .testimonial .testimonial-name {
+    font-weight: bold;
+}
+section.testimonials .testimonial .testimonial-name,
+section.testimonials .testimonial .testimonial-desi {
+    line-height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+section.testimonials .testimonial .testimonial-desi {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    section.testimonials .testimonial {
+        padding: 30px 50px;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    section.testimonials .testimonial .testimonial-icon {
+        top: -25px;
+        left: -40px;
+        height: 70px;
+    }
+}
+
+/* Home | Login and Register Tabs anb Popup */
+#login-register {
+    background-color: #fff;
+    max-height: 80%;
+    /*max-width: 600px;*/
+}
+#login-register .tabs {
+    max-width: 300px;
+    margin: auto;
+}
+#login-register .tabs .tab {
+    border-bottom: solid 1px #ccc;
+}
+#login-register .tabs .tab a {
+    color: #ccc;
+}
+#login-register .tabs .tab a.active {
+    color: #E64005;
+}
+#login-register .tabs .indicator {
+    background-color: #E64005;
+}
+#login-register #login,
+#login-register #register {
+    padding-top: 20px;
+}
+section.registration {
+    padding: 70px 0;
+    background-color: #fff;
+}
+.register-section {
+    float: left;
+    margin-top: 90px;
+}
+.register-section h3 {
+    font-weight: 300;
+}
+.country_code {
+    background: #e9e9e9 none repeat scroll 0 0;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.country_code p {
+    color: #999;
+    line-height: 40px;
+    margin: 0;
+    padding: 3px 20px;
+}
+.dropdown-button + .dropdown-content {
+    width: auto !important;
+}
+.dropdown-button span {
+    margin-left: 15px;
+}
+
+footer {
+    background-color: #222;
+    color: #d8dade;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-image: url('/new_images/frontweb/map.png');
+    background-position: center 70%;
+    background-repeat: no-repeat;
+}
+footer a {
+    color: #d8dade;
+}
+footer a:hover {
+    color: #b54321;
+}
+footer h6.clm-title {
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+footer h6.clm-title:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #b54321;
+    bottom: -13px;
+}
+footer .hmenu-list a {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .hmenu-list a:last-child {
+    margin-right: 0;
+}
+footer .social-media-links a {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer .social-media-links a:last-child {
+    margin-right: 0;
+}
+footer .vmenu-list a {
+    display: block;
+    margin-top: 20px;
+}
+footer .vmenu-list a:first-of-type {
+    margin-top: 0px;
+}
+footer .copyright-text p {
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 600px) {
+    footer div:not(:first-child) > h6.clm-title,
+    footer .copyright-text {
+        margin-top: 50px;
+    }
+}
