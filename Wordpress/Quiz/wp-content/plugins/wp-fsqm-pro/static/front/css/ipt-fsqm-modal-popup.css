@@ -1,0 +1,122 @@
+body .ipt-fsqm-popup-anchor {
+	display: inline-block;
+	position: fixed;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0.8em 1em 1em 1em;
+	margin: 0;
+	text-decoration: none;
+	z-index: 99999;
+	line-height: 1.2;
+	font-size: 1em;
+	cursor: pointer;
+	-webkit-transition: all 400ms;
+	-o-transition: all 400ms;
+	transition: all 400ms;
+}
+body .ipt-fsqm-popup-anchor:hover {
+	text-decoration: none;
+}
+body .ipt-fsqm-popup-anchor .fsqm-popup-inner {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+body .ipt-fsqm-popup-anchor .ipticm {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+body .ipt-fsqm-popup-anchor:hover .ipticm {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: iptPulse;
+	animation-name: iptPulse;
+}
+
+/* Right */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-r {
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: bottom right;
+	-moz-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	-o-transform-origin: bottom right;
+	transform-origin: bottom right;
+	right: -0.5em;
+	top: 50%;
+	margin-top: -6em;
+	border-radius: 4px 4px 0 0;
+}
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-r:hover {
+	right: 0;
+}
+
+/* Bottom Right */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-br {
+	bottom: -0.5em;
+	right: 2em;
+	border-radius: 4px 4px 0 0;
+}
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-br:hover {
+	bottom: 0;
+}
+
+/* Bottom Left */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-bl {
+	bottom: -0.5em;
+	left: 2em;
+	border-radius: 4px 4px 0 0;
+}
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-bl:hover {
+	bottom: 0;
+}
+
+/* Bottom Center */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-bc {
+	bottom: -0.5em;
+	left: 50%;
+	margin-left: -6em;
+	border-radius: 4px 4px 0 0;
+}
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-bc:hover {
+	bottom: 0;
+}
+
+/* Left */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-l {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	-ms-transform-origin: bottom left;
+	-o-transform-origin: bottom left;
+	transform-origin: bottom left;
+	left: -0.5em;
+	top: 50%;
+	margin-top: -6em;
+	border-radius: 4px 4px 0 0;
+}
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-l:hover {
+	left: 0;
+}
+
+/* Hidden */
+body .ipt-fsqm-popup-anchor.ipt-fsqm-popup-pos-h {
+	display: none;
+}
+
+
+/* Remodal */
+body .remodal-close,
+body .remodal-close:hover {
+	text-decoration: none;
+}

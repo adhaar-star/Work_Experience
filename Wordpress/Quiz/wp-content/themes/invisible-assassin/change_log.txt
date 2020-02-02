@@ -1,0 +1,24 @@
+ChangeLog
+=========
+
+
+Version 2.0 (Major Updated)
+
+	- Updated Bootstrap
+	- Updated _s
+	- Updated Font Awesome
+	- Switched to Nivo Slider
+	- Switched from Theme Options to Customizer
+	- Design is now More Towards Minimalistic and Flat.
+	- Added Footer Widget Area.
+	- Added Custom Widget.
+	- Other Minor Fixes.
+	- Translation File Updated.
+	
+Version 2.0.0.1 
+
+	- Corrected change_log.txt
+	
+Version 2.0.0.2
+
+	- Removed Steller References.(header.php & custom.js)	
