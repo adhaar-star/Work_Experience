@@ -1,0 +1,510 @@
+[16-Dec-2015 06:38:30 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:39:21 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:39:23 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:51:30 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:52:10 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:52:26 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 06:52:46 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 15
+[16-Dec-2015 07:13:06 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_connect() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 26
+[16-Dec-2015 07:14:21 Europe/Berlin] PHP Fatal error:  Call to a member function query() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 108
+[16-Dec-2015 07:20:05 Europe/Berlin] PHP Fatal error:  Class 'mysqli' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 27
+[16-Dec-2015 07:26:34 Europe/Berlin] PHP Fatal error:  Call to a member function query() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 108
+[16-Dec-2015 07:27:00 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_query() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 108
+[16-Dec-2015 07:28:17 Europe/Berlin] PHP Fatal error:  Class 'mysqli' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 27
+[16-Dec-2015 07:31:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 45
+[16-Dec-2015 07:31:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 45
+[16-Dec-2015 07:31:42 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_num_rows() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 105
+[16-Dec-2015 07:32:54 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_num_rows() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 116
+[16-Dec-2015 08:10:04 Europe/Berlin] PHP Warning:  mysql_insert_id() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 123
+[16-Dec-2015 10:37:33 Europe/Berlin] PHP Fatal error:  Cannot use object of type stdClass as array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 206
+[16-Dec-2015 11:50:06 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 471
+[16-Dec-2015 11:50:39 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 471
+[16-Dec-2015 12:01:56 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 471
+[16-Dec-2015 12:35:04 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 37
+[17-Dec-2015 06:46:10 Europe/Berlin] PHP Warning:  addslashes() expects parameter 1 to be string, array given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 584
+[17-Dec-2015 07:08:48 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 596
+[17-Dec-2015 07:11:47 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 596
+[17-Dec-2015 10:19:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 95
+[17-Dec-2015 10:19:57 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 42
+[17-Dec-2015 10:36:43 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 312
+[18-Dec-2015 09:56:47 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 790
+[18-Dec-2015 09:59:12 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 790
+[18-Dec-2015 10:00:24 Europe/Berlin] PHP Fatal error:  Cannot break/continue 1 level in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 788
+[18-Dec-2015 10:00:33 Europe/Berlin] PHP Fatal error:  Cannot break/continue 1 level in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 788
+[18-Dec-2015 10:04:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 270
+[19-Dec-2015 06:46:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 596
+[19-Dec-2015 07:16:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 580
+[24-Dec-2015 06:34:20 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 445
+[24-Dec-2015 06:46:11 Europe/Berlin] PHP Warning:  imagejpeg(/usr/local/apache/htdocs/HelpYa_WS/userimages/820151224064611.png): failed to open stream: No such file or directory in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 484
+[24-Dec-2015 13:16:49 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:16:49 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:16:55 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:16:55 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:17:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:17:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:17:29 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:17:29 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:17:58 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:17:58 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:18:05 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 562
+[24-Dec-2015 13:18:05 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:18:57 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 44
+[24-Dec-2015 13:19:02 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:20:42 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:20:49 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[24-Dec-2015 13:21:58 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 571
+[07-Jan-2016 08:20:14 Europe/Berlin] PHP Fatal error:  Class 'PEAR' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1077
+[07-Jan-2016 08:30:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 575
+[09-Jan-2016 06:19:17 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 622
+[09-Jan-2016 08:27:10 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 623
+[09-Jan-2016 10:00:03 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1134
+[09-Jan-2016 10:00:54 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1134
+[09-Jan-2016 10:01:23 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1134
+[09-Jan-2016 10:17:06 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1134
+[09-Jan-2016 11:42:38 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[09-Jan-2016 11:42:49 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[09-Jan-2016 12:31:49 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:29:15 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:29:21 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:29:52 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:50:11 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:52:55 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 05:58:08 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 20
+[11-Jan-2016 06:14:39 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[11-Jan-2016 06:15:00 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[11-Jan-2016 06:17:48 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[11-Jan-2016 06:23:53 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[11-Jan-2016 06:37:20 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[11-Jan-2016 13:40:09 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[12-Jan-2016 06:33:22 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[12-Jan-2016 07:00:45 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 909
+[12-Jan-2016 07:00:45 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 916
+[12-Jan-2016 07:05:18 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 909
+[12-Jan-2016 07:05:18 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 916
+[12-Jan-2016 07:12:19 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 909
+[12-Jan-2016 07:12:19 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 916
+[12-Jan-2016 07:12:33 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 909
+[12-Jan-2016 07:12:33 Europe/Berlin] PHP Warning:  implode(): Invalid arguments passed in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 916
+[12-Jan-2016 10:46:23 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 45
+[13-Jan-2016 06:29:08 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[13-Jan-2016 06:49:03 Europe/Berlin] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.sandbox.push.apple.com:2195 (Connection timed out) in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 18
+[15-Jan-2016 07:20:18 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1113
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:37 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[16-Jan-2016 13:22:48 Europe/Berlin] PHP Warning:  array_intersect(): Argument #1 is not an array in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1153
+[18-Jan-2016 06:17:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1128
+[18-Jan-2016 12:37:02 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 277
+[19-Jan-2016 05:38:08 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 926
+[19-Jan-2016 05:38:24 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 926
+[19-Jan-2016 05:39:12 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 926
+[29-Jan-2016 09:43:02 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 47
+[03-Feb-2016 07:47:18 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 744
+[03-Feb-2016 07:47:19 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 744
+[03-Feb-2016 07:47:22 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 744
+[03-Feb-2016 07:48:01 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 744
+[03-Feb-2016 12:47:45 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1274
+[03-Feb-2016 13:09:29 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 659
+[11-Feb-2016 12:39:31 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1121
+[12-Feb-2016 05:29:07 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1132
+[12-Feb-2016 12:25:11 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 986
+[12-Feb-2016 12:25:14 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 986
+[15-Feb-2016 11:27:04 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 674
+[15-Feb-2016 11:27:19 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 674
+[15-Feb-2016 11:30:56 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 674
+[15-Feb-2016 11:55:47 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1124
+[15-Feb-2016 11:57:26 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1123
+[15-Feb-2016 11:58:38 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1123
+[15-Feb-2016 11:58:54 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1123
+[15-Feb-2016 12:09:51 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 674
+[16-Feb-2016 06:16:03 Europe/Berlin] PHP Warning:  Missing argument 3 for validateObject(), called in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 669 and defined in /home/helpyaapp/public_html/HelpYa_WS/HelperFunctions.php on line 29
+[16-Feb-2016 06:17:30 Europe/Berlin] PHP Warning:  Missing argument 3 for validateObject(), called in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 669 and defined in /home/helpyaapp/public_html/HelpYa_WS/HelperFunctions.php on line 29
+[16-Feb-2016 06:38:50 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 674
+[17-Feb-2016 05:45:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 933
+[17-Feb-2016 05:57:54 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1538
+[17-Feb-2016 05:58:13 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1538
+[17-Feb-2016 05:58:15 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1538
+[18-Feb-2016 05:44:34 Europe/Berlin] PHP Fatal error:  Call to undefined function sendPush() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1204
+[18-Feb-2016 05:46:32 Europe/Berlin] PHP Fatal error:  Call to undefined function sendPush() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1204
+[18-Feb-2016 08:32:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 94
+[18-Feb-2016 08:32:56 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[18-Feb-2016 13:45:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 172
+[18-Feb-2016 13:45:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 172
+[18-Feb-2016 13:45:40 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 172
+[18-Feb-2016 13:45:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 172
+[19-Feb-2016 12:36:45 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1564
+[19-Feb-2016 12:38:02 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1564
+[19-Feb-2016 12:41:48 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1564
+[27-Feb-2016 06:10:16 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[27-Feb-2016 06:13:45 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[08-Mar-2016 07:08:04 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1585
+[08-Mar-2016 07:09:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1180
+[08-Mar-2016 07:09:16 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1400
+[08-Mar-2016 07:10:43 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1585
+[08-Mar-2016 10:29:53 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[10-Mar-2016 06:48:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1534
+[10-Mar-2016 06:48:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1534
+[10-Mar-2016 07:52:15 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1564
+[10-Mar-2016 12:33:43 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[10-Mar-2016 12:33:59 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 688
+[10-Mar-2016 12:34:03 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1606
+[11-Mar-2016 07:08:50 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 788
+[23-Mar-2016 07:33:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 92
+[23-Mar-2016 07:49:37 Europe/Berlin] PHP Strict Standards:  gmmktime(): You should be using the time() function instead in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 108
+[23-Mar-2016 07:50:23 Europe/Berlin] PHP Strict Standards:  gmmktime(): You should be using the time() function instead in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 108
+[23-Mar-2016 11:00:36 Europe/Berlin] PHP Fatal error:  Call to undefined function markAllPassedJobsAsRejected() in /home/helpyaapp/public_html/HelpYa_WS/test.php on line 13
+[14-Apr-2016 13:07:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 287
+[14-Apr-2016 13:52:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 13:52:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 13:53:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 13:53:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 14:15:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 14:16:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[14-Apr-2016 14:17:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected '}' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1230
+[19-Jul-2016 13:20:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1632
+[20-Jul-2016 13:46:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1253
+[20-Jul-2016 13:46:15 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1253
+[22-Jul-2016 14:38:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$type' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1890
+[23-Jul-2016 05:49:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$type' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1895
+[23-Jul-2016 06:55:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1942
+[23-Jul-2016 06:59:10 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 61
+[23-Jul-2016 06:59:28 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting ';' or '{' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1449
+[23-Jul-2016 07:01:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1697
+[23-Jul-2016 07:17:00 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1965
+[23-Jul-2016 07:17:00 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1965
+[25-Jul-2016 08:58:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 476
+[25-Jul-2016 09:04:24 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:04:24 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:04:24 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:22 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:22 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:22 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:23 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:23 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:23 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:45 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:45 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:05:45 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1963
+[25-Jul-2016 09:06:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1117
+[25-Jul-2016 09:09:13 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 90
+[25-Jul-2016 09:12:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 139
+[25-Jul-2016 09:19:35 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 139
+[26-Jul-2016 08:42:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 915
+[26-Jul-2016 08:42:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1996
+[26-Jul-2016 08:45:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 873
+[26-Jul-2016 08:57:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1903
+[27-Jul-2016 07:42:44 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1933
+[27-Jul-2016 07:43:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1933
+[27-Jul-2016 08:09:55 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 373
+[27-Jul-2016 08:31:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'Bank' (T_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 367
+[27-Jul-2016 08:58:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:00:28 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:02:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:07:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:12:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:13:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 90
+[27-Jul-2016 09:13:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:13:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:13:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:13:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:13:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:13:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:10 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1944
+[27-Jul-2016 09:14:28 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1945
+[27-Jul-2016 09:14:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1945
+[27-Jul-2016 09:14:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1945
+[27-Jul-2016 09:15:45 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1946
+[27-Jul-2016 09:17:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 862
+[27-Jul-2016 09:18:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected '*' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1962
+[27-Jul-2016 09:18:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected '*' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1962
+[27-Jul-2016 09:18:45 Europe/Berlin] PHP Parse error:  syntax error, unexpected '*' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1962
+[27-Jul-2016 09:19:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1943
+[27-Jul-2016 09:20:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 90
+[28-Jul-2016 08:47:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 567
+[28-Jul-2016 10:49:03 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2098
+[28-Jul-2016 10:50:07 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2098
+[28-Jul-2016 10:53:21 Europe/Berlin] PHP Fatal error:  Unsupported operand types in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2088
+[28-Jul-2016 11:08:25 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 825
+[28-Jul-2016 11:08:33 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 825
+[28-Jul-2016 11:10:59 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 825
+[28-Jul-2016 12:18:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) or '$' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2109
+[28-Jul-2016 12:18:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) or '$' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2109
+[28-Jul-2016 12:41:02 Europe/Berlin] PHP Parse error:  syntax error, unexpected ''skill_ids' (T_ENCAPSED_AND_WHITESPACE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1583
+[04-Aug-2016 08:04:25 Europe/Berlin] PHP Warning:  require_once(classes/PayfortIntegration.php): failed to open stream: No such file or directory in /home/helpyaapp/public_html/HelpYa_WS/returnPageSample.php on line 10
+[04-Aug-2016 08:04:25 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'classes/PayfortIntegration.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/helpyaapp/public_html/HelpYa_WS/returnPageSample.php on line 10
+[04-Aug-2016 08:09:08 Europe/Berlin] PHP Warning:  require_once(classes/PayfortIntegration.php): failed to open stream: No such file or directory in /home/helpyaapp/public_html/HelpYa_WS/returnPageSample.php on line 10
+[04-Aug-2016 08:09:08 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'classes/PayfortIntegration.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/helpyaapp/public_html/HelpYa_WS/returnPageSample.php on line 10
+[08-Aug-2016 07:44:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected ':' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 494
+[08-Aug-2016 08:37:06 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 881
+[08-Aug-2016 08:40:23 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 881
+[08-Aug-2016 08:40:33 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 881
+[08-Aug-2016 13:15:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2308
+[08-Aug-2016 13:15:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2308
+[08-Aug-2016 13:15:33 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:15:33 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:15:35 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:15:35 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:10 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:10 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:11 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:11 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:13 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:13 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:58 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:58 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:59 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:16:59 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:00 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:00 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:01 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:01 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:01 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:01 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:03 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:17:03 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:23:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2295
+[08-Aug-2016 13:23:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2295
+[08-Aug-2016 13:24:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2295
+[08-Aug-2016 13:24:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1517
+[08-Aug-2016 13:24:15 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:24:15 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:24:16 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:24:16 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 139
+[08-Aug-2016 13:26:44 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1059
+[08-Aug-2016 13:26:45 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1637
+[08-Aug-2016 13:26:50 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:50 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:51 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:51 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:52 Europe/Berlin] PHP Warning:  mysql_query() expects parameter 2 to be resource, string given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:26:52 Europe/Berlin] PHP Warning:  mysql_error() expects parameter 1 to be resource, null given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2296
+[08-Aug-2016 13:27:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1150
+[08-Aug-2016 13:43:33 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1368
+[08-Aug-2016 13:54:47 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_fetch_assoc() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2300
+[08-Aug-2016 13:54:49 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_fetch_assoc() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2300
+[08-Aug-2016 13:54:50 Europe/Berlin] PHP Fatal error:  Call to undefined function mysqli_fetch_assoc() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2300
+[08-Aug-2016 14:04:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 976
+[08-Aug-2016 14:33:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[08-Aug-2016 15:16:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 683
+[08-Aug-2016 15:16:32 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 854
+[08-Aug-2016 15:26:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1971
+[08-Aug-2016 15:26:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2216
+[08-Aug-2016 15:28:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 237
+[08-Aug-2016 15:28:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 423
+[08-Aug-2016 15:28:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 760
+[08-Aug-2016 15:28:28 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 976
+[08-Aug-2016 15:28:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1370
+[08-Aug-2016 15:28:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1803
+[08-Aug-2016 15:28:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2148
+[08-Aug-2016 15:28:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2148
+[08-Aug-2016 15:32:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 423
+[08-Aug-2016 15:35:20 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[08-Aug-2016 15:37:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1059
+[08-Aug-2016 15:38:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 386
+[09-Aug-2016 06:10:34 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1889
+[09-Aug-2016 06:12:17 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:18 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:19 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:19 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:20 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:21 Europe/Berlin] PHP Fatal error:  Class 'HelpYaFunctions' not found in /home/helpyaapp/public_html/HelpYa_WS/HelpYaServices.php on line 65
+[09-Aug-2016 06:12:21 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 67
+[09-Aug-2016 06:12:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 760
+[09-Aug-2016 06:12:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1399
+[09-Aug-2016 06:12:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:12:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:12:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:12:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:12:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:13:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 539
+[09-Aug-2016 06:13:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 539
+[09-Aug-2016 06:15:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 386
+[09-Aug-2016 06:15:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 386
+[09-Aug-2016 06:15:44 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 386
+[09-Aug-2016 06:15:45 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 386
+[09-Aug-2016 06:15:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 503
+[09-Aug-2016 06:15:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 503
+[09-Aug-2016 06:15:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 503
+[09-Aug-2016 06:15:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 503
+[09-Aug-2016 06:15:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 780
+[09-Aug-2016 06:15:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 780
+[09-Aug-2016 06:15:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1342
+[09-Aug-2016 06:15:53 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1803
+[09-Aug-2016 06:15:54 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2020
+[09-Aug-2016 06:15:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:15:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:15:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:15:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:15:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:15:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:00 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:15 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:16 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:16:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2079
+[09-Aug-2016 06:20:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:44 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:20:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '=' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2330
+[09-Aug-2016 06:21:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 854
+[09-Aug-2016 06:21:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1017
+[09-Aug-2016 11:24:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1456
+[10-Aug-2016 08:39:24 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[10-Aug-2016 08:40:17 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[10-Aug-2016 08:40:26 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[10-Aug-2016 08:41:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2216
+[10-Aug-2016 08:41:09 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2397
+[10-Aug-2016 09:05:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2418
+[10-Aug-2016 09:05:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2418
+[10-Aug-2016 09:05:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2418
+[23-Aug-2016 08:11:44 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1120
+[23-Aug-2016 08:11:44 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1131
+[23-Aug-2016 08:11:49 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1120
+[23-Aug-2016 08:11:49 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1131
+[23-Aug-2016 08:12:03 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1120
+[23-Aug-2016 08:12:03 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1131
+[24-Aug-2016 07:30:39 Europe/Berlin] PHP Fatal error:  Call to undefined function prepare() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2395
+[24-Aug-2016 07:30:45 Europe/Berlin] PHP Fatal error:  Call to undefined function prepare() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2395
+[24-Aug-2016 07:30:46 Europe/Berlin] PHP Fatal error:  Call to undefined function prepare() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2395
+[24-Aug-2016 07:42:43 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:42:44 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:42:45 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:42:45 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:42:46 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:00 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:00 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:01 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:02 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:03 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:43:04 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:44:42 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:44:43 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:44:44 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:44:45 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:44:45 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:15 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:16 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:17 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:17 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:18 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:45:18 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:46:36 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:02 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:03 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:03 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:04 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:04 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:06 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:06 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:06 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:06 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:07 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:51:07 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:13 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:13 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:15 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:16 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:16 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:17 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:55:19 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:57:27 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:57:28 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:57:29 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:57:29 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:58:15 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:15 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:15 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:58:17 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:17 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:17 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:58:18 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:18 Europe/Berlin] PHP Warning:  mysql_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2391
+[24-Aug-2016 07:58:18 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:32 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:33 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:34 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:34 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:35 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 07:59:36 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:02:48 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:02:49 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:02 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:06 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:07 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:07 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:08 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:12 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:38 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:39 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:40 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:10:40 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:01 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:02 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:03 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:04 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:16:36 Europe/Berlin] PHP Warning:  mysql_set_charset() expects parameter 2 to be resource, object given in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 18
+[24-Aug-2016 08:16:36 Europe/Berlin] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, object given in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 24
+[24-Aug-2016 08:16:36 Europe/Berlin] PHP Fatal error:  Call to a member function close() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2407
+[24-Aug-2016 08:18:30 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:18:50 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): Connection timed out in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 34
+[24-Aug-2016 08:18:50 Europe/Berlin] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/helpyaapp/public_html/HelpYa_WS/config.php on line 38
+[24-Aug-2016 08:20:07 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:23:35 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2396
+[24-Aug-2016 08:24:32 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2397
+[24-Aug-2016 08:32:19 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2398
+[24-Aug-2016 08:32:23 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2398
+[24-Aug-2016 08:33:05 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2398
+[24-Aug-2016 08:34:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 823
+[24-Aug-2016 08:34:19 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2398
+[24-Aug-2016 08:34:20 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2398
+[25-Aug-2016 07:26:19 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1120
+[25-Aug-2016 07:26:19 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1131
+[27-Aug-2016 08:57:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 823
+[27-Aug-2016 09:03:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1096
+[31-Aug-2016 08:57:00 Europe/Berlin] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 399
+[01-Sep-2016 07:09:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 2027
+[01-Sep-2016 09:15:19 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:15:19 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:15:33 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:15:33 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:16:34 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:16:34 Europe/Berlin] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1916
+[01-Sep-2016 09:17:59 Europe/Berlin] PHP Fatal error:  Call to undefined function UTC_TIMESTAMP() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1922
+[01-Sep-2016 09:17:59 Europe/Berlin] PHP Fatal error:  Call to undefined function UTC_TIMESTAMP() in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1922
+[01-Sep-2016 09:25:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting variable (T_VARIABLE) or '$' in /home/helpyaapp/public_html/HelpYa_WS/HelpYaFunctions.php on line 1921
