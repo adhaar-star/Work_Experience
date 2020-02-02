@@ -1,0 +1,91 @@
+/*start issues bar*/
+ 
+	.nav-tabs { border-bottom: 0px; }
+	/*.nav-tabs { border-bottom: 2px solid #DDD; }*/
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover {  color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+/*.tab-content{padding:20px}*/
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); border: 0px solid #000!important }
+.top_right_sub_down_btn li{display:inline; list-style:none;}
+.tabs_main li span { background-color: #eeeeee; border-radius: 50%; color: #4a4a4a; display: inline-block; font-size: 10px; height: 20px; padding: 2px; text-align: center; width: 20px; margin-left:5px;}
+.green_bg{background-color:#f3fff2;}
+.t_b_border{border-bottom:1px solid #ddd; border-top:1px solid #ddd; margin-top:20px;}
+.b_border{border-bottom:1px solid #ddd;}
+.row_content h5 span{margin-right:5px;}
+.row_content p{padding-left:20px;}
+.top_margin{margin-top:20px;}
+.serach_filter_top_main li{display:inline; float:left; list-style:none;}
+.serach_filter_top_main ul{padding:0px;}
+/*end issues bar*/
+.searchbarset{height: 40px!important}  
+
+/*---start--button---screen----comments--section----*/
+.closed_btn_top_bar_main{border-bottom:1px solid #ddd;padding:0 0 15px 0;}
+.closed_btn_top_bar_main li{display:inline; list-style:none; float:left; padding-right:15px;}
+.closed_btn_top_bar_main li img{float:left; width:20px; margin-right:5px;}
+.btn-outline {background-color: transparent; color: inherit; transition: all 0.5s ease 0s; color:#5cb85c;}
+.all_side_border{border:1px solid #ddd; height:200px; padding:15px;}
+.text_editor_icons li{display:inline; list-style:none;}
+/*---end--button---screen----comments--section----*/
+
+/*----start---new_issue_form_design----*/
+.title{border-bottom:1px solid #ddd; padding-bottom:10px; margin-bottom:30px;}
+.b_b_border:first-child{border-top:1px solid #ddd;}
+.b_b_border{border-bottom: 1px solid #ddd;}
+
+
+
+.tabs_main .nav-tabs{border-bottom: 0px;}
+
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav > li {
+  display: block;
+  position: relative;
+}
+
+
+
+
+.nav-tabs > li > a {
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  line-height: 1.42857;
+  margin-right: 2px;
+}
+.nav > li > a {
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+ 
+.dropdown-menu > li > a {
+  clear: both;
+  color: #333;
+  display: block;
+  font-weight: 400;
+  line-height: 1.42857;
+  padding: 3px 20px;
+  white-space: nowrap;
+} 
+.IssuesEt .form-group {
+  margin-bottom: 3.5rem!important;
+}
+.setcommentImg{
+    width: 50px;
+    
+}
+
+  h5.checkboxSetup {
+  position: relative;
+  top: 11px;
+} 

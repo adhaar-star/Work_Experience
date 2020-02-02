@@ -1,0 +1,89 @@
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,th,var { font-style:normal; font-weight:normal; }
+caption,th { text-align:left; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+
+/* optional Container STYLES */
+.chart { height: 550px; margin: 5px; width: 900px;  }
+
+.Treant > p {  font-family: "Lato", sans; font-weight: bold; font-size: 12px; }
+.Treant { position: relative; overflow: auto !important; padding: 0 !important;}
+
+.node-name {font-size: 15px; font-weight: bold; text-align: center;margin-bottom: 12px;margin-bottom: 8px;}
+.node-desc {margin-bottom: 4px;}
+
+.orange .node-name {margin-bottom: 0;}
+.yellow .node-name {}
+.green .node-desc {margin-bottom: 0}
+
+.yellow .node-desc strong,
+.green .node-desc strong {font-size: 13px;margin-left: 0;}
+
+.nodeExample1 {
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    width: 200px;
+    font-family: "Lato", sans;
+    font-size: 13px;
+}
+.label-chart {width: 70px;height: 25px;border-radius: 0;margin-top: 2rem;}
+
+.nodeExample1 img {
+    margin-right:  10px;
+}
+.fw-400 {font-weight: 400;}
+.fw-600 {font-weight: 600;}
+.blue{
+    background-color: #000080;
+    color: #fff;
+}
+.orange {
+    background-color: #2748a5;
+    color: #fff;
+}
+.yellow {
+    background-color: #f97a04;
+    color: #fff;
+}
+.green {
+    background-color: #3b9526;
+    color: #fff;
+}
+.sky-blue {
+    background-color: #98d2f2;
+    color: #000;
+}
+.light-yellow {
+    background-color: #ffd321;
+    color: #000;
+}
+.orange-graph {
+    background-color: #F38A34;
+    color: #fff;
+}
+.yellow-light-graph{
+  background-color: #FFC34B;
+  color: #000;
+}
+.blue-light{
+  background-color:  #007BB6;
+  color: #ffffff;
+}
+.dark-red {
+    background-color: #ff7878;
+    color: #000;
+}
+.light-green {
+    background-color: #00cc00;
+    color: #000;
+}
+.dark-purple {
+    background-color: #b391b5;
+    color: #000;
+}

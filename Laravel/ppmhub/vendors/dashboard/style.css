@@ -1,0 +1,210 @@
+.cart_outer {
+    border: 2px solid #000;
+    margin: auto;
+    width: 99%;
+	margin:10px;
+}
+.clear{clear:both;}
+a.canvasjs-chart-credit {
+    display: none;
+}
+.cart_title {
+    margin: 0;
+    padding: 0;
+}
+.cart_title ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.cart_title li{ float:left;}
+button {
+    display: none;
+}
+.projectname {
+    background: rgb(131, 167, 208) none repeat scroll 0 0;
+    border: 2px solid #000;
+    padding: 2px 110px;
+}
+.cart_inner {
+    border: 4px solid #000;
+    margin: 3px;
+}
+.projectx{
+    border: 2px solid #000;
+    padding: 2px 130px;
+}
+.statusdate{
+    background: rgb(131, 167, 208) none repeat scroll 0 0;
+    border: 2px solid #000;
+    padding: 2px 130px;
+}
+.jul{
+    border: 2px solid #000;
+    padding: 2px 130px;
+}
+.over{
+    background: rgb(131, 167, 208) none repeat scroll 0 0;
+    border: 2px solid #000;
+    padding: 2px 130px;
+}
+.red{
+    background: #FF0000;
+    border: 2px solid #000;
+    padding: 2px 75px;
+}
+.commnity p {
+    margin: 0;
+    padding: 0 5px;
+}
+.commnity {
+    margin-bottom: 25px;
+}
+.top_shudlue h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.top_shudlue {
+    background: rgb(140, 177, 203) none repeat scroll 0 0;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    padding: 5px 0;
+}
+.top_shudlue h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.bottom_sec > ul {
+    list-style: outside none none;
+    margin: 0;
+	background: rgb(140, 177, 203) none repeat scroll 0 0;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    padding: 5px 0
+}
+.bottom_sec li {
+    float: left;
+    text-align: center;
+    width: 25%;
+	font-weight:bold;
+	font-family:arial;
+}
+.first_sec {
+    border-top: 2px solid #000;
+}
+.dasboard-sec {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.first_sec h3 {
+    margin: 5px 0 0 0;
+    padding: 0;
+    float: left;
+}
+.first_sec h4 {
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-style: normal;
+}
+.dasboard-sec {
+    width: 98%;
+    margin: 15px 18px;
+    padding: 0;
+}
+.second_sec {
+    margin: 0;
+    padding: 0;
+    border: 2px solid #ccc;
+}
+.second_sec h1 {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: arial;
+    color: blue;
+    font-size: 25px;
+}
+.third_sec {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+.third_first {
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 25%;
+}
+.third_first h4 {
+    margin: 10px 0 7px 0px;
+    padding: 5px 0;
+    background: #6495ED;
+    text-align: center;
+    font-family: arial;
+}
+p.number {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+p.number_right {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.third_first h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: arial;
+    color: #333;
+    font-style: normal !important;
+}
+table {
+    width: 100%;
+}
+tr.fullwidgth td:last-child {
+    text-align: right;
+}
+td {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.third_section {
+    float: right;
+    width: 74%;
+}
+.chartContainer11 table {
+    border: 1px solid #ccc;
+}
+.chartContainer11 {
+    margin-top: 8px;
+}
+
+.chartContainer11 p {
+    margin: 0;
+    text-align: center;
+	background: #6495ED;
+}
+.chartContainer12 p {
+    font-size: 12px;
+    font-family: arial;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+.chartContainer12 table {
+    border: 1px solid #ccc;
+}
+.chartContainer12 th {
+    border-left: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+div#chartContainer {
+    border-right: 4px solid #ccc;
+}
