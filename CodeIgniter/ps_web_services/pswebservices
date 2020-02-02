@@ -1,0 +1,194 @@
+1.url for: GetAllSkills
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllSkills
+
+2.url for: GetUserDetails
+method: post
+parameters: user_id,isFromHireFlow
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetUserDetails
+
+3.url for: GetAllJobsForFreelancer
+method: post
+parameters: freelancer_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllJobsForFreelancer
+
+4.url for: GetAllReviews
+method: post
+parameters: user_id,max_review_id,min_review_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllReviews
+
+5.url for: GetEligibleFreelancers
+method: post
+parameters: user_id,skill_ids
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetEligibleFreelancers
+
+
+6.url for: GetEmployerRequests
+method: post
+parameters: employer_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetEmployerRequests
+
+7.url for: GetAllJobsForFreelancerDashboard
+method: post
+parameter: freelancer_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllJobsForFreelancerDashboard
+
+8.url for: GetAllJobsForEmployerDashboard
+method: post
+parameters: employer_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllJobsForEmployerDashboard
+
+9.url for: GetAllBanks
+method: post
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetAllBanks
+
+10.url for: GetFinanceList
+method: post
+parameters: user_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetFinanceList
+
+11.url for: GetNotification
+method: post
+parameters: reciever_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetNotification
+
+12.url for: GetCustomAds
+method: post
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetCustomAds
+
+13.url for: GetUserImage
+method: post
+parameters: user_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=GetUserImage
+
+14.url for: RegisterUser
+method: post
+parameters: user_name,email,password,user-type,device-type,device_token
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=RegisterUser
+
+15.url for: LoginUser
+method: post
+parameters: user_name,email,password,device_type,device_token
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=LoginUser
+
+16.url for: LoginViaFb
+method: post
+parameters: user_name,email,device_type,device_token,facebook_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=LoginViaFb
+
+17.url for: LoginViaTwitter
+method: post
+parameters: user_name,email,device_type,device_token,twitter_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=LoginViaTwitter
+
+18.url for: UpdateUserProfile
+method: post
+parameters: user_id,user_name,first_name,last_name,dob,phone,location,latitude,longitude,gender,profile_pic,cover_pic,college_name,degree,major,experience,education_level,school_name,hourly_rate,user_type,password,year_attained,class
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdateUserProfile
+
+19.url for: ChangePassword
+method: post
+parameters: password,user_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=ChangePassword
+
+20.url for: AddReview
+method: post
+parameters: job_id,reviewee_id,reviewer_id,ratings,description,date_added
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddReview
+
+21.url for: AddUserSkills
+method: post
+parameters: skill_ids,user_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddUserSkills
+
+22.url for: AddJobDetails
+method: post
+parameters: freelancer_id,employer_id,start_date,end_date,start_time,end_time,skill_id,days_option,num_of_days
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddJobDetails
+
+23.url for: AcceptJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AcceptJob
+
+24.url for: RejectJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=RejectJob
+
+25.url for: UpdateCompletedJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdateCompletedJob
+
+26.url for: UpdatePaidJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdatePaidJob
+
+27.url for: ForgotPassword
+method: post
+parameters: email
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=ForgotPassword
+
+28.url for: Logout
+method: post
+parameters: device_token
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=Logout
+
+29.url for: UpdateDeviceToken
+method: post
+parameters: user_id,device_type,device_token
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdateDeviceToken
+
+30.url for: MakePayment
+method: post
+parameters: job_id,employer_id,freelancer_id,payfort_id,amount,currency
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=MakePayment
+
+31.url for: UpdateRequestForJob
+method: post
+parameters: user_id,job_id,call_for
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdateRequestForJob
+
+32.url for: UpdatePaymentRequestForJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdatePaymentRequestForJob
+
+33.url for: UpdateReleaseRequestForJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=UpdateReleaseRequestForJob
+
+34.url for: AddBankInfo
+method: post
+parameters: user_id,type,Bank*,Branch*,City,Country*,Bank/IFSC Code,Swift Code,IBAN No.*,Name*,NickName,Address,Phone Number,Description,Currency*
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddBankInfo
+
+35.url for: AddComplaints
+method: post
+parameters: user_id,description,action
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddComplaints
+
+36.url for: CancelJob
+method: post
+parameters: job_id
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=CancelJob
+
+37.url for: DeleteSeenNotification
+method: post
+parameters: reciever_id,reciever_type
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=DeleteSeenNotification
+
+38.url for: AddUserImage
+method: post
+parameters: user_id,user_image,image_name
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=AddUserImage
+
+39.url for: DeleteUserImage
+method: post
+parameters: user_id,user_image
+url: http://ns372321.ip-46-105-111.eu/~helpyaapp/HelpYa_WS/HelpYaServices.php?Service=DeleteUserImage
+
+
+
