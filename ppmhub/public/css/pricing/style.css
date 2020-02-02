@@ -1,0 +1,84 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ body{font-size:14px;font-family: 'Open Sans', sans-serif;}
+.define_float{float:left; width:100%;}
+.price_outer{float:left; width:100%; text-align:center; padding:5px;}
+.price_main {
+    display: inline-block;
+    width: 24%;
+    margin: 0 1% 0 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.price_main:hover {
+    position: relative;
+    box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
+    -moz-box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
+    -webkit-transform: translate(-5px,-15px);
+    -moz-transform: translate(-5px,-15px);
+    -o-transform: translate(-5px,-15px);
+    -ms-transform: translate(-5px,-15px);
+    transform: translate(-5px,-15px);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.price_outer .price_main:last-child{margin:0;}
+.price_heading{position:relative;}
+.price_heading h2{
+    float:left; 
+    width:100%;
+    font-size: 1.1rem;
+    padding: 30px 0 70px 0; 
+    letter-spacing:normal;
+    background-color: #07BECC;
+    color:#fff;
+    margin:0 0 30px 0; 
+    position:relative;
+    font-weight:normal;
+    transition:.5s ease all;
+}
+.price_outer .price_main:nth-child(even) h2,
+.price_outer .price_main:nth-child(even) .price_cart_button a{background-color: #FCB941}
+.price_outer .price_main:nth-child(even) h2:after {border-top-color: #FCB941;}
+.price_outer .price_main .price_heading h2::before{transition:.5s ease all;}
+.price_outer .price_main:first-child .price_heading h2::before{
+	background-image: url('/images/bicycle.png');
+	position: absolute;
+	content: '';
+	height: 50px;
+	width: 55px;
+	left: 50%;
+	transform:translateX(-50%);
+	bottom: 10px;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	background-size: 50px;
+}
+.price_outer .price_main:nth-child(2) .price_heading h2::before{background-image: url('/images/small.png');position: absolute;content: '';height: 40px;width: 40px;left: 50%;transform: translateX(-50%);bottom: 10px;background-repeat: no-repeat;opacity: 0.6;background-size: 40px auto;}
+.price_outer .price_main:nth-child(3) .price_heading h2::before{background-image: url('/images/medium.png');position: absolute;content: '';height: 40px;width: 40px;left: 50%;transform: translateX(-50%);bottom: 10px;background-repeat: no-repeat;opacity: 0.6;background-size: 40px auto;}
+.price_outer .price_main:last-child .price_heading h2::before{background-image: url('/images/bar-chart.png');position: absolute;content: '';height: 40px;	width: 40px;left: 50%;transform: translateX(-50%);bottom: 10px;background-repeat: no-repeat;opacity: 0.6;background-size: 40px auto;}	
+.price_heading h2::after {position: absolute;content: '';border-top: 24px solid #07BECC;border-left: 55px solid transparent;border-right: 55px solid transparent;left: 50%;transition:.5s ease all;transform: translateX(-50%);bottom: -20px;}
+.price_monthly{padding: 0 0 20px 0;}
+.price_currency{font-size: 1.2rem;font-weight: 300;margin: 20px 0 0 0;color: #853B3D;position: relative;bottom: -4px;left: 3px;}
+.price_number{font-size: 2.5em; font-weight: 300; color: #173d50;}
+.price_duration {font-size: 1rem;color:rgba(23,61,80,0.4);}
+.price_features ul{float:left; width:100%;margin:0; padding:0;}
+.price_features ul li{padding: 2em 1em;float: left;width: 100%;color:#667;list-style-type:none;}
+.price_features ul li:nth-child(odd){background-color: rgba(133,59,61,0.08);}
+.price_cart_button a{
+	text-decoration:none; color:#fff;float:left;width: 100%;letter-spacing: normal;background: #07BECC;text-transform:uppercase;font-weight: 700;border-radius:0; padding: 1.3em .45em;}
+.price_main:hover .price_heading h2::after{border-left: 35px solid transparent;border-right: 35px solid transparent;}
+.price_main:hover .price_heading h2::before{opacity:1 !important;}

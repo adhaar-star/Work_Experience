@@ -1,0 +1,50 @@
+<?php
+/* special language file for articles */
+$lang['ar_id'] = 'article id';
+$lang['ar_title'] = 'How to';
+$lang['is_unique'] = "This article title has already been registered.";
+$lang['ar_user_id'] = 'published by';
+$lang['bridge_comments_id'] = 'comments id';
+$lang['ar_views_counter'] = 'views';
+$lang['ar_likes_counter'] = 'likes';
+$lang['ar_main_thumb'] = 'main thumbnail ';
+$lang['ar_main_photo'] = 'main photo';
+$lang['ar_introduction'] = 'Introduction';
+$lang['bridge_steps_id'] = 'steps id';
+$lang['bridge_tips_id'] = 'tips id';
+$lang['bridge_warnings_id'] = 'warnings id';
+$lang['bridge_sources_id'] = 'sources id';
+$lang['ar_video'] = 'article video';
+$lang['ar_tags'] = 'tags';
+$lang['ar_last_update'] = '';
+$lang['ar_created_date'] = 'published on';
+$lang['ar_state'] = 'article - active or in active';
+$lang['ar_ord'] = 'order number';
+$lang['bridge_category_id'] = 'category name';
+
+// default elements
+$lang['no-perm'] = "You don't have permission to access this page";
+$lang['no-login'] = "You have to login to access this page";
+$lang ['Data_saved'] = 'data has been updated successfully';
+$lang ['Data_inserted'] = 'the process of adding data has successfully';
+$lang ['Data_updated'] = 'data has been updated successfully';
+$lang ['Data_active'] = 'record now enabled';
+$lang ['Data_rearranged'] = 'has been successfully rearrange the records';
+$lang ['Data_inactive'] = 'record is not enabled now';
+$lang ['Data_deleted'] = 'has been deleted data';
+$lang ['Nothing_changed'] = 'not choose anything';
+$lang ['active_or_not'] = 'enabled | not enabled';
+$lang ['upload'] = 's lift';
+$lang ['file_uploaded'] = 's been raised successfully';
+$lang ['download'] = 'Download';
+$lang ['delete'] = 'Delete';
+$lang ['excute'] = 'OK';
+$lang ['Options'] = 'Options';
+$lang ['save'] = 'Save';
+$lang ['Add'] = 'add';
+$lang ['Edit'] = 'edit';
+$lang ['sort'] = 'arrangement';
+$lang ['delete_confirmation'] = 'Are you sure you want to delete';
+$lang ['Change_file'] = 'file, change';
+$lang ['Lists'] = 'List records';
+$lang ['confirm_msg'] = 'Confirmation: the continuation of the deletion process';
