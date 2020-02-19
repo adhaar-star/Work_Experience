@@ -59,6 +59,7 @@ include('dbconnection.php');
 $query = "SELECT email, pass,role FROM `login` WHERE email='$email' 
 AND pass='$pass'";
 
+
 $result = mysql_query($query)or die(mysql_error());
 $num_row = mysql_num_rows($result);
 $row=mysql_fetch_array($result);
