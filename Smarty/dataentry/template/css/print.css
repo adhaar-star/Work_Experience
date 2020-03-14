@@ -1,0 +1,76 @@
+#div_header{display:none}
+.sectionHeading1{display:none}
+.section{display:none}
+#machinesTable .dataTable{display:none}
+#machineEntry{display:none}
+.footer{display:none}
+#menuArea, #reportOptions {
+	display:none;
+}
+
+.page-sidebar{display:none}
+.page-content {
+    margin-left:0!important;
+}
+.sectionHeading {
+   font-size: 22px;
+    margin-top: 40px;
+ margin-bottom: 20px;
+    padding: 5px;
+}
+table tr td {
+    font-size: 18px; padding: 2px 30px 2px 10px;
+}
+
+table.dataTable4{
+	width:100%;
+}
+table.dataTable4 tr td:first-child{
+	width:30%;
+}
+.print_btn{
+    display: none;
+}
+
+#printmachinedetails{
+display:none;
+}
+#mainPage {
+	padding:0px;
+	margin:0px;
+	width: 100%;
+}
+
+.dataTable {
+	padding: 0px;
+	
+}
+
+.machineEntry2 {
+	display:block;
+}
+
+
+#dataprint {
+
+	display:none;
+} 
+
+
+.dataTable tr td {
+	padding: 4px;
+	vertical-align: middle;
+}
+
+.dataTable tr th {
+	padding: 4px;
+	vertical-align: middle;
+}
+.print_hide {
+    display: none;
+}
+.clickable{display:none}
+h1{display:none}
+
+
+
