@@ -1,0 +1,45 @@
+<?php
+use \App\Models\Helper;
+?>
+@section('content')
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Pages <a href="{{Helper::adminUrl('page/create')}}" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			{!!Helper::alert()!!}
+			<div class="table-responsive">
+
+			@if (!empty($pages->all()))
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Title</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						@foreach ($pages as $page)
+						<tr>
+							<th scope="row">{{$page->id}}</th>
+							<td class="has-options">
+							{{$page->title}}
+							<span><a href="{{ Helper::adminUrl('page/edit', [$page->id]) }}">Edit</a> | <a href="{{ Helper::adminUrl('page/delete', [$page->id]) }}">Delete</a></span>
+							</td>
+							
+						</tr>
+						@endforeach
+
+					</tbody>
+				</table>
+
+				{!!$pages->render()!!}
+
+			@else
+			<p>No records to display!</p>
+			@endif
+			</div>
+		</div>
+	</div>
+</div>
+@stop

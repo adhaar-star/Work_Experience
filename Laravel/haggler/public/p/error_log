@@ -1,0 +1,22 @@
+[18-Feb-2016 17:05:57 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:05:57 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:05:57 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[18-Feb-2016 17:07:07 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:07:07 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:07:07 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[18-Feb-2016 17:09:45 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:09:45 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:09:45 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[18-Feb-2016 17:11:23 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:11:23 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:11:23 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[18-Feb-2016 17:12:36 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:12:36 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:12:36 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[18-Feb-2016 17:14:03 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Connection timed out) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[18-Feb-2016 17:14:03 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[18-Feb-2016 17:14:03 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
+[17-Mar-2016 16:36:03 Etc/GMT] PHP Warning:  stream_socket_client(): Failed to enable crypto in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[17-Mar-2016 16:36:03 Etc/GMT] PHP Warning:  stream_socket_client(): unable to connect to ssl://gateway.push.apple.com:2195 (Unknown error) in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 12
+[17-Mar-2016 16:36:03 Etc/GMT] PHP Warning:  stream_set_blocking() expects parameter 1 to be resource, boolean given in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 13
+[17-Mar-2016 16:36:03 Etc/GMT] PHP Notice:  Undefined variable: errstrn in /home/hagglcrc/public_html/haggler.in/dev/public/p/index.php on line 17
