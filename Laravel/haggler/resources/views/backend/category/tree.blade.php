@@ -1,0 +1,104 @@
+<?php
+use \App\Models\Helper;
+
+function drawChildrens($categories, $id = 0) {
+	?>
+	@if (is_object($categories) && !empty($categories->all()))
+						
+		<ul class="cat-tree-parent" id="cat-tree-{{$id}}" style="display:none">
+		@foreach ($categories as $category)
+			<li>
+				<div>
+				
+				<p class="pull-left content">
+					<span><strong>ID: {{$category->categoryId}}</strong></span>
+					<span>Name: {{$category->categoryName}}</span>
+					<span>Commission: {{$category->categoryPercentage}}%</span>
+				</p>
+				<p class="pull-right options">
+					<span><a href="{{ Helper::adminUrl('category/edit', [$category->categoryId]) }}">Edit</a> | <a href="{{ Helper::adminUrl('category/delete', [$category->categoryId]) }}">Delete</a>  | <a href="javascript:void;" class="toggle-tree" data-expended="true" data-child="#cat-tree-{{$category->categoryId}}"><i class='glyphicon glyphicon-minus'></i></a></span>
+					
+				</p>
+				</div>
+
+				<?php drawChildrens($category->children, $category->categoryId) ?>
+
+			</li>
+		@endforeach
+		</ul>
+	@endif	
+	<?php
+}
+
+?>
+@section('content')
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 category_heading">
+			<h3>Categories <a href="{{Helper::adminUrl('category/create')}}" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			{!!Helper::alert()!!}
+			<div class="table-responsive">
+
+			@if (!empty($categories->all()))
+						
+				<ul class="cat-tree-parent">
+				@foreach ($categories as $category)
+					<li>
+						<div>
+						<p class="pull-left media">
+							<img src="{{$category->categoryImage}}" height="64"  alt="{{$category->categoryName}}">			
+						</p>
+						<p class="pull-left content">
+							<span><strong>ID: {{$category->categoryId}}</strong></span>
+							<span>Name: {{$category->categoryName}}</span>
+							<span>Commission: {{$category->categoryPercentage}}%</span>
+						</p>
+						<p class="pull-right options">
+							<span><a href="{{ Helper::adminUrl('category/edit', [$category->categoryId]) }}">Edit</a> | <a href="{{ Helper::adminUrl('category/delete', [$category->categoryId]) }}">Delete</a> | <a href="javascript:void;" class="toggle-tree" data-expended="false" data-child="#cat-tree-{{$category->categoryId}}"><i class='glyphicon glyphicon-plus'></i></a></span>
+							
+						</p>
+						</div>
+
+						<?php drawChildrens($category->children, $category->categoryId) ?>
+
+					</li>
+				@endforeach
+				</ul>
+					
+			@else
+			<p>No records to display!</p>
+			@endif
+			</div>
+		</div>
+	</div>
+</div>
+@stop
+
+@section('after_footer')
+
+<script>
+
+$(function () {
+
+	$(".toggle-tree").on('click', function () {
+
+		var child = $(this).data('child');
+		var expended = $(this).data('expended');
+
+		if (expended == true) {
+			$(this).html("<i class='glyphicon glyphicon-plus'></i>");
+			$(this).data('expended', false);
+		} else {
+			$(this).html("<i class='glyphicon glyphicon-minus'></i>");
+			$(this).data('expended', true);
+		}
+
+		$(child).slideToggle();
+
+	});
+
+});
+
+</script>
+
+@stop

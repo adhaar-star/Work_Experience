@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>Api</title>
+	<style>
+	label { float:left; width:100%; margin-bottom:10px; font-weight:bold;}
+	p{float:left; width:100%; margin-bottom:20px;}
+	hr {border:none; border-top:1px solid #ccc; width:100%; float:left;}
+	ul {list-style:none; margin:0; padding:0;}
+	ul li {float:left; padding:10px;}
+	</style>
+</head>
+<body>
+
+<p><b>Endpoint: http://haggler/user/WebServices/</b></p>
+
+<ul>
+	<li><a href="#301115">Date: 30-11-15</a></li>
+</ul>
+
+<div id="301115">
+
+
+
+<label>OLD</label>
+
+<p>1. Add Address <br>
+
+URL: SaveBillingAddressByUserId<br>
+
+Params: name, address, city, state, country, zipcode, userId, billUseAsShipping</p> 
+
+<label>New</label>
+
+<p>1. Add Address <br>
+
+URL: SaveAddress<br>
+
+Params: name, address, city, state, country, zipcode, type (billing,shipping), api_token (You will get this api token on login)<br>
+I had replaced billUseAsShipping with type.<br>
+Example: http://haggler/user/WebServices/SaveAddress?api_token=pNWvSNYsUdUCTgdIx0viRVY0A5s5xKlvN8fw2dd7crkoGM&name=Harcharan SIngh&address=415 near fortis&city=sas&state=punjab&type=billing&country=india&zipcode=160063
+</p> 
+
+<hr>
+
+<label>OLD</label>
+
+<p>2. Get Address<br>	
+
+URL: GetBillingAddressByAddressId<br>
+
+Params: userId</p>
+
+<label>NEW</label>
+
+<p>2. Get Address<br>
+
+URL: GetAddress<br>
+
+Params: api_token (You will get this api token on login)<br>
+
+Example: http://haggler/user/WebServices/GetAddressByAddressId?api_token=pNWvSNYsUdUCTgdIx0viRVY0A5s5xKlvN8fw2dd7crkoGM</p>
+
+<hr>
+
+<label>OLD</label>
+<p>3. Get All Deals<br>
+URL: GetAllDeals</p>
+
+<label>New</label>
+<p>3. Get All Deals<br>
+URL: GetAllDeals</p>
+
+<hr>
+
+<label>OLD</label>
+<p>4. Get All Deals Categories<br>
+URL: GetAllDealsCategories
+</p>
+
+<label>NEW</label>
+<p>4. Get All Deals Categories<br>
+URL: GetAllDealsCategories <br>
+Example: http://haggler/user/WebServices/GetAllDealsCategories
+Optional Params: orderBy (categoryId, categoryName) , order (asc,desc)
+</p>
+
+
+<hr>
+<label>OLD</label>
+<p>5. Deal Detail<br>
+URL: GetProductDetailsByDealId<br>
+Params: offerId (deal Id)</p>
+
+<label>NEW</label>
+
+<p>5. Deal Detail<br>
+URL: GetProductDetailsByDealId<br>
+Params: offerId (deal Id)<br>
+Example: http://haggler/user/WebServices/GetProductDetailsByDealId?offerId=1
+</p>
+
+<hr>
+
+<p><b>Pending:6. Save Item into Cart, 7. Event Detail, 8. All Events,  </b></p>
+
+<hr>
+
+<label>OLD</label>
+<p>9. Home Page Products<br>
+URL: GetHomePageProducts<br><br>
+Params: </p>
+
+<label>NEW</label>
+<p>9. Home Page Products<br>
+URL: GetHomePageProducts<br><br>
+Deal images you will get in array<br>
+Params: </p>
+
+<hr>
+
+<p><b>Pending:10. Store Detail, 11. Near by deals  </b></p>
+
+<hr>
+
+<label>OLD</label>
+
+<p>12. Product Details<br>
+URL: GetProductDetailsByProductId<br>
+Params: productId</p>
+
+<label>NEW</label>
+
+<p>12. Product Details<br>
+URL: GetProductDetailsByProductId<br>
+Params: productId<br>
+Note: product attribute attributes added</p>
+
+
+<hr>
+
+
+<p><b>Pending: 13. Search API</b></p>
+
+
+<hr>
+
+<label>OLD</label>
+<p>14. Get All Products<br>
+URL: GetAllProducts<br>
+Params:</p>
+<label>NEW</label>
+<p>14. Get All Products<br>
+URL: GetAllProducts<br>
+Params:<br>
+In this call product categories has differ structure then old api call and also you have to manage pagination</p>
+
+<hr>
+
+<label>OLD</label>
+<p>15. Products By Category<br>
+URL: getAllProductsByCategoryId<br>
+Params: catId</p>
+
+<label>NEW</label>
+<p>15. Products By Category<br>
+URL: getAllProductsByCategoryId<br>
+Params: catId</p>
+
+
+<hr>
+
+<label>OLD</label>
+<p>16. All Product Categories<br>
+URL: GetAllProductCategories<br>
+Params: </p>
+<label>NEW</label>
+<p>16. All Product Categories<br>
+URL: GetAllProductCategories<br>
+Params: <br>
+Pagination added please manage it</p>
+<hr>
+
+<p><b>Pending:  Cart Items,  Remove Cart Item</b></p>
+
+<hr>
+
+
+<p><b>All user related call will be serverd with api token, please implement new registration and login system. Parameters are same for both login and registration</b></p>
+
+<hr>
+
+</div>
+</body>
+</html>
