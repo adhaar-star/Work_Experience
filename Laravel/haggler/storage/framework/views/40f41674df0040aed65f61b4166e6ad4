@@ -1,0 +1,61 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+<h3>Settings ( <?php echo e($vendor->username); ?> ) </h3>
+  <div class="row">
+   <div class="col-md-12">
+   	 <?php if(!empty($settings)): ?>
+   	 <div class="table-responsive">
+      <table class="table">
+         <thead>
+         	<tr class="headings">
+         		<th>#</th>
+            <th>Setting</th>
+         		<th>Action</th>
+         	</tr>
+         </thead>
+         <tbody>
+         	<?php foreach($settings as $key => $setting): ?>
+         	  <tr>
+         	  	<td><?php echo e($key+1); ?></td>
+         	  	<td><?php echo e($setting); ?></td>
+              <?php
+                switch($setting){
+
+                  case 'pincode' : 
+                        $url = Helper::adminUrl('setting/pincode/view/'.$vendor->id);
+                        break;
+
+                  case 'change_password' :
+                        $url = Helper::adminUrl('setting/change-password/'.$vendor->id);
+                        break;
+
+                  case 'products_of_the_day' :
+                        $url = Helper::adminUrl('setting/products-of-the-day');
+                        break; 
+
+                  case 'deals_of_the_day' :
+                        $url = Helper::adminUrl('setting/deals-of-the-day');
+                        break;             
+ 
+                }
+
+              ?>
+         	  	<td><a href="<?php echo e($url); ?>">View</a></td>
+         	  	
+         	  </tr>
+         	<?php endforeach; ?>
+         </tbody>
+      </table>
+    </div>  
+     <?php endif; ?>
+    
+
+   </div>
+  </div>
+
+</div>  
+
+<?php $__env->stopSection(); ?>

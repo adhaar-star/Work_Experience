@@ -1,0 +1,55 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>events <a href="<?php echo e(Helper::adminUrl('event/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			<?php echo Helper::alert(); ?>
+
+			<div class="table-responsive">
+
+			<?php if(!empty($events->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Title</th>
+							<th>Venue</th>
+							<th>Thumbnail</th>
+							<th>Timing</th>
+							<th>Created</th>
+							<th>Updated</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($events as $event): ?>
+						<tr>
+							<th scope="row"><?php echo e($event->eventId); ?></th>
+							<td class="has-options">
+							<?php echo e($event->eventTitle); ?>
+
+							<span><a href="<?php echo e(Helper::adminUrl('event/edit', [$event->eventId])); ?>">Edit</a> | <a href="<?php echo e(Helper::adminUrl('event/delete', [$event->eventId])); ?>">Delete</a></span>
+							</td>
+							<td><?php echo e(@$event->eventAddress); ?></td>
+							<td><img src="<?php echo e($event->eventImage); ?>" width="100" alt="<?php echo e($event->eventImage); ?>"></td>
+							<td><?php echo e($event->eventStartDate); ?> <abbr>--</abbr> <?php echo e($event->eventEndDate); ?></td>
+							<td><?php echo e($event->created_at); ?></td>
+							<td><?php echo e($event->updated_at); ?></td>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+
+				<?php echo $events->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

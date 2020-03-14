@@ -1,0 +1,110 @@
+<?php
+use \App\Models\Helper;
+$role = Auth::user()->role;
+?>
+ <?php $__env->startSection('navbar'); ?>
+ <div id="navbar" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+  <?php if($role === 'admin'): ?>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('category/create')); ?>">Add Product Category</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('category/tree-view')); ?>">Manage Product Categories</a></li>
+         <li class="divider" role="separator"></li>
+        <li><a href="<?php echo e(Helper::adminUrl('deal/category/create')); ?>">Add Deal Category</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('deal/category')); ?>">Manage Deal Categories</a></li>
+      </ul>
+    </li>
+  <?php endif; ?>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('product/create')); ?>">Add Product</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('product')); ?>">Manage All</a></li>
+      </ul>
+    </li>
+
+     <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Deal <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('deal/create')); ?>">Add Deal</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('deal')); ?>">Manage Deals</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('sale/deals')); ?>">Validate Deals</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('event/create')); ?>">Add Event</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('event')); ?>">Manage Events</a></li>
+      </ul>
+    </li>
+
+  <?php if($role === 'admin'): ?>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('user/vendor/create')); ?>">Create Vendor</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('user/vendors')); ?>">Manage Vendors</a></li>
+        <!--<li class="divider" role="separator"></li>
+        <li><a href="<?php echo e(Helper::adminUrl('user/customer/add')); ?>">Add Customer</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('user/customers')); ?>">List Customers</a></li>-->
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Slider <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('slider/create')); ?>">Create Slider</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('slider/manage')); ?>">Manage Sliders</a></li>
+      </ul>
+    </li>
+	
+	 <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Page <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="<?php echo e(Helper::adminUrl('page/create')); ?>">Create Page</a></li>
+        <li><a href="<?php echo e(Helper::adminUrl('page/manage')); ?>">Manage Pages</a></li>
+      </ul>
+    </li>
+  <?php endif; ?>
+
+  <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sales <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+       <?php if($role === 'admin'): ?>
+        <li><a href="<?php echo e(Helper::adminUrl('sale/orders')); ?>">Orders</a></li>
+        <?php endif; ?>
+        <li><a href="<?php echo e(Helper::adminUrl('sale/deals')); ?>">Deals</a></li>
+        
+      </ul>
+    </li>
+
+ 
+
+  
+
+  </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="javascript:;"><?php echo e(ucfirst(Auth::user()->username)); ?> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <?php if(Auth::user()->store && !empty(Auth::user()->store)): ?>
+            <li><a href="<?php echo e(Helper::adminUrl('store/edit')); ?>/<?php echo e(Auth::user()->store->storeId); ?>">Manage Store</a></li>
+            
+            <li><a href="<?php echo e(Helper::adminUrl('message')); ?>">Messages <!-- <span class="badge">0</span> --></a></li>
+          <?php endif; ?>
+
+           <?php if($role === 'admin'): ?>
+          <li><a href="<?php echo e(Helper::adminUrl('marketing/notifications')); ?>">Send Notification</a></li>
+          <?php endif; ?>
+          
+          <li><a href="<?php echo e(Helper::adminUrl('logout')); ?>">Logout!</a></li>
+
+        </ul>
+      </li>
+    </ul>
+</div><!--/.nav-collapse -->
+<?php $__env->stopSection(); ?>

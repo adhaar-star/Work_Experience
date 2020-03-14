@@ -1,0 +1,340 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><?= $page_title ?> <span class="pull-right hidden-xs"><a href="javascript:;" class="btn btn-default save-btn" data-form="#deal-form"><i class="fa fa-plus"></i> Save</a> <a href="<?= Helper::adminUrl('deal') ?>" class="btn btn-warning"><i class="fa fa-arrow-left"></i> Back to listing</a></span></h3>
+      </div>
+      <div class="panel-body">
+          <form id="deal-form" action="<?= Helper::adminUrl('deal/save') ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+              <?php echo e(csrf_field()); ?>
+
+              <?php if(!empty($deal->offerId)): ?> 
+                <input type="hidden" name="offerId" value="<?php echo e($deal->offerId); ?>">
+              <?php endif; ?>
+              <div class="col-sm-12">
+                <p class="error">All fields marked in asterisk (*) are mandatory to be filled.</p>
+
+                <?= Helper::alert() ?>
+          
+                   <div class="form-group  <?php echo e($errors->has('offerName') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Name <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerName" value="<?php echo e(Input::old('offerName', $deal->offerName)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('offerName')); ?></div>
+                      </div>
+                  </div>
+                  <?php if(\Auth::user()->role === 'admin'): ?> 
+                   <div class="form-group  <?php echo e($errors->has('offerVendorId') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Choose Vendor <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <select name="offerVendorId"  class="form-control">
+                       <option> - Choose vendor - </option>
+                       <?php if(!empty($adminVendor->all())): ?>
+                          <?php foreach($adminVendor as $item): ?>
+                            <?php if($item->store): ?>
+                              <option value="<?php echo e($item->id); ?>" <?php echo e((Input::old('offerVendorId', $deal->offerVendorId) == $item->id) ? 'selected' : ''); ?>><?php echo e($item->store->storeName); ?> (Admin's Store)</option>
+                            <?php endif; ?>
+                          <?php endforeach; ?> 
+                        <?php endif; ?>
+                        <?php if(!empty($vendors->all())): ?>
+                          <?php foreach($vendors as $item): ?>
+                            <?php if($item->store): ?>
+                              <option value="<?php echo e($item->id); ?>" <?php echo e((Input::old('offerVendorId', $deal->offerVendorId) == $item->id) ? 'selected' : ''); ?>><?php echo e($item->store->storeName); ?></option>
+                            <?php endif; ?>
+                          <?php endforeach; ?> 
+                        <?php endif; ?>
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('offerVendorId')); ?></div>
+                      </div>
+                  </div>
+                  <?php else: ?>
+                  <input type="hidden" name="offerVendorId" value="<?php echo e(Auth::id()); ?>">
+                  <?php endif; ?>
+
+                   <div class="form-group  <?php echo e($errors->has('offerCategoryId') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Category <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <select name="offerCategoryId"  class="form-control">
+                       <option > - Choose offer category - </option>
+                        <?php if(!empty($categories)): ?>
+                          <?php foreach($categories as $item): ?>
+                          <option value="<?php echo e($item->categoryId); ?>" <?php echo e((Input::old('offerCategoryId', $deal->offerCategoryId) == $item->categoryId) ? 'selected' : ''); ?>><?php echo e($item->categoryName); ?></option>
+                         
+                          <?php endforeach; ?> 
+                        <?php endif; ?>
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('offerCategoryId')); ?></div>
+                      </div>
+                  </div>
+
+                  <div id="offer-images">
+                    <h4>Offer Images</h4>
+
+                     <div class="col-sm-12 nopadding">
+
+                    <div class="col-sm-3 nopadding-left">
+                     <div class="form-group  <?php echo e($errors->has('image_1') ? 'has-error' : ''); ?>">
+                         <label class="col-sm-12">Image 1<i class="error">*</i></label>
+                         <div class="col-sm-12">
+                         <input type="file" name="image_1" class="form-control" <?php echo e(!empty($deal->offerId) ? '' : 'required'); ?>>
+                          <div class="help-block"><?php echo e($errors->first('image_1')); ?></div>
+                        </div>
+                        <div class="col-sm-12">
+                        <?php if(!empty($deal->images->image_1)): ?>
+                          <img src="<?php echo e($deal->images->getImageSrc($deal->images->image_1)); ?>" width="100" alt="<?php echo e($deal->offerName); ?>">
+                        <?php endif; ?>
+                        </div>
+                    </div>
+                    </div>
+
+                     <div class="col-sm-3">
+                     <div class="form-group  <?php echo e($errors->has('image_2') ? 'has-error' : ''); ?>">
+                         <label class="col-sm-12">Image 2<i class="error">*</i></label>
+                         <div class="col-sm-12">
+                         <input type="file" name="image_2" class="form-control">
+                          <div class="help-block"><?php echo e($errors->first('image_2')); ?></div>
+                        </div>
+                        <div class="col-sm-12">
+                        <?php if(!empty($deal->images->image_2)): ?>
+                          <img src="<?php echo e($deal->images->getImageSrc($deal->images->image_2)); ?>" width="100" alt="<?php echo e($deal->offerName); ?>">
+                        <?php endif; ?>
+                        </div>
+                    </div>
+                    </div>
+
+                     <div class="col-sm-3">
+                     <div class="form-group  <?php echo e($errors->has('image_3') ? 'has-error' : ''); ?>">
+                         <label class="col-sm-12">Image 3<i class="error">*</i></label>
+                         <div class="col-sm-12">
+                         <input type="file" name="image_3" class="form-control">
+                          <div class="help-block"><?php echo e($errors->first('image_3')); ?></div>
+                        </div>
+                        <div class="col-sm-12">
+                         <?php if(!empty($deal->images->image_3)): ?>
+                          <img src="<?php echo e($deal->images->getImageSrc($deal->images->image_3)); ?>" width="100" alt="<?php echo e($deal->offerName); ?>">
+                        <?php endif; ?>
+                        </div>
+                    </div>
+                    </div>
+
+                     <div class="col-sm-3 nopadding-right">
+                     <div class="form-group  <?php echo e($errors->has('image_4') ? 'has-error' : ''); ?>">
+                         <label class="col-sm-12">Image 4<i class="error">*</i></label>
+                         <div class="col-sm-12">
+                         <input type="file" name="image_4" class="form-control">
+                          <div class="help-block"><?php echo e($errors->first('image_4')); ?></div>
+                        </div>
+                        <div class="col-sm-12">
+                         <?php if(!empty($deal->images->image_4)): ?>
+                          <img src="<?php echo e($deal->images->getImageSrc($deal->images->image_4)); ?>" width="100" alt="<?php echo e($deal->offerName); ?>">
+                        <?php endif; ?>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="help-block field-info">Image resolution should be 1:1 (Minimum resolution: 1000x1000)</div>
+                      
+
+                  </div>
+
+                  <div class="form-group  <?php echo e($errors->has('originalPrice') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Original Product/Deal Price </label>
+                       <div class="col-sm-12">
+                       <input type="text" name="originalPrice" value="<?php echo e(Input::old('originalPrice', $deal->originalPrice)); ?>" class="form-control">
+                        <div class="help-block"><?php echo e($errors->first('originalPrice')); ?></div>
+                      </div>
+                  </div>
+
+                  <div class="form-group  <?php echo e($errors->has('productOfferPrice') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Discounted Product/Deal Price </label>
+                       <div class="col-sm-12">
+                       <input type="text" name="productOfferPrice" value="<?php echo e(Input::old('productOfferPrice', $deal->productOfferPrice)); ?>" class="form-control" >
+                        <div class="help-block"><?php echo e($errors->first('productOfferPrice')); ?></div>
+                      </div>
+                  </div>
+
+                  <div class="form-group  <?php echo e($errors->has('offerType') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Type <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <select name="offerType"  class="form-control" id="offer_type">
+                          <?php foreach(['free' => 'Free', 'exclusive' => 'Exclusive'] as $key => $name): ?>
+                          <option value="<?php echo e($key); ?>" <?php echo e((Input::old('offerType', $deal->offerType) == $key) ? 'selected' : ''); ?>><?php echo e($name); ?></option>
+                          <?php endforeach; ?> 
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('offerType')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('offerPrice') ? 'has-error' : ''); ?>" id="offer_price_form_group">
+                       <label class="col-sm-12">Deal Buy Price </label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerPrice" id="offer_price" value="<?php echo e(Input::old('offerPrice', $deal->offerPrice)); ?>" class="form-control">
+                        <div class="help-block"><?php echo e($errors->first('offerPrice')); ?></div>
+                      </div>
+                  </div>
+
+                  <div class="form-group  <?php echo e($errors->has('offerHighlightedText') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Highlighted Text <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerHighlightedText" value="<?php echo e(Input::old('offerHighlightedText', $deal->offerHighlightedText)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('offerHighlightedText')); ?></div>
+                      </div>
+                  </div>
+
+                   <!-- <div class="form-group  <?php echo e($errors->has('offerDiscount') ? 'has-error' : ''); ?>" style="display:none;">
+                       <label class="col-sm-12">Offer Discount <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerDiscount" value="<?php echo e(Input::old('offerDiscount', $deal->offerDiscount)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('offerDiscount')); ?></div>
+                      </div>
+                  </div> -->
+
+
+
+                   <div class="form-group  <?php echo e($errors->has('offerDiscountType') ? 'has-error' : ''); ?>" style="display:none">
+                       <label class="col-sm-12">Offer Type <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <select name="offerDiscountType"  class="form-control">
+                          <?php foreach(['fixed' => 'Fixed', 'flexiable' => 'Flexiable'] as $key => $name): ?>
+                          <option value="<?php echo e($key); ?>" <?php echo e((Input::old('offerDiscountType', $deal->offerDiscountType) == $key) ? 'selected' : ''); ?>><?php echo e($name); ?></option>
+                          <?php endforeach; ?> 
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('offerDiscountType')); ?></div>
+                      </div>
+                  </div>
+
+
+                  
+                    <div class="form-group  <?php echo e($errors->has('description') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Description</label>
+                       <div class="col-sm-12">
+                       <textarea name="description" class="form-control" style="min-height: 200px"><?php echo e(Input::old('description', $deal->description)); ?></textarea>
+                        <div class="help-block"><?php echo e($errors->first('description')); ?></div>
+                      </div>
+                  </div>
+
+
+                   <div class="form-group  <?php echo e($errors->has('offerTags') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer tags</label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerTags" value="<?php echo e(Input::old('offerTags', $deal->offerTags)); ?>" class="form-control">
+                        <div class="help-block"><?php echo e($errors->first('offerTags')); ?></div>
+                      </div>
+                  </div>
+              
+               <div class="form-group  <?php echo e($errors->has('offerStartDate') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Start Date <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerStartDate" value="<?php echo e(Input::old('offerStartDate', $deal->offerStartDate)); ?>" class="form-control datepicker" required>
+                        <div class="help-block"><?php echo e($errors->first('offerStartDate')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('offerEndDate') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer End Date <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="offerEndDate" value="<?php echo e(Input::old('offerEndDate', $deal->offerEndDate)); ?>" class="form-control datepicker" required>
+                        <div class="help-block"><?php echo e($errors->first('offerEndDate')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('offerTerms') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Offer Terms <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <textarea  name="offerTerms" class="form-control"><?php echo e(Input::old('offerTerms', $deal->offerTerms)); ?></textarea>
+                        <div class="help-block"><?php echo e($errors->first('offerTerms')); ?></div>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="slider_on" name="slider_on" <?php echo e((!empty($sliderImage->slider_image) ? 'checked' : '')); ?> /> Display on home slider
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" id="slider-group" style="display:none">
+                <label class="col-sm-2" for='slider_image'>Slider Image</label>
+                <div class="col-sm-10">
+                   <input type="file" name="slider_image" class="form-control">
+                   <?php if(!empty($sliderImage)): ?>
+                     <img src="<?php echo e($sliderImage->slider_image); ?>" width="180" height="180">
+                     <a href="<?php echo e(Helper::adminUrl('slider-image/delete/'.$sliderImage->id)); ?>">Remove</a>
+                   <?php endif; ?>
+
+                </div>
+                 
+                </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button class="btn btn-default"><i class="fa fa-plus"></i> Save</button>
+          </div>
+      </div>
+
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+<script>
+  jQuery(document).ready(function()
+  {
+     jQuery("#offer_type").on("change",function()
+     {
+
+        //alert($(this).val());
+       
+        if($(this).val() == 'free')
+        {
+           jQuery("#offer_price_form_group").slideUp();
+           jQuery("#offer_price").val(0);
+        }else{
+
+          jQuery("#offer_price_form_group").slideDown();
+        }
+
+     });
+
+     if(jQuery("#offer_type").val() == "free")
+     {
+           jQuery("#offer_price_form_group").hide();
+           jQuery("#offer_price").val(0);
+     }else
+     {
+
+         jQuery("#offer_price_form_group").show();
+
+     }
+
+
+     if(jQuery("input[name='slider_on']:checked").length > 0){
+          jQuery("#slider-group").slideDown();
+      }else{
+         jQuery("#slider-group").slideUp();
+      }
+
+
+   jQuery('#slider_on').click(function(){
+      if(jQuery("input[name='slider_on']:checked").length > 0){
+          jQuery("#slider-group").slideDown();
+      }else{
+         jQuery("#slider-group").slideUp();
+      }
+   });
+     
+  });
+</script>
+<?php $__env->stopSection(); ?>

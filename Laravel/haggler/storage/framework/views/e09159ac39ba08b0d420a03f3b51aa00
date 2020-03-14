@@ -1,0 +1,184 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="col-md-12">
+		<?php echo Helper::alert(); ?>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Filter Deals</h3>
+			</div>
+			<div class="panel-body">
+				<!-- <div class="row"> -->
+				<div class="col-sm-12">
+					<div class="back_filter">
+						<form>
+						    <div class="col-sm-2">
+								<div class="form-gorup">
+									<label>Search</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" placeholder="deal code" value="<?php echo e(Input::get('code')); ?>" name="code" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>From</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('from')); ?>" name="from" class="form-control datepicker ">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>To</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('to')); ?>" name="to"  class="form-control datepicker ">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>type</label>
+									<div class="col-sm-12 nopadding">
+										<select class="form-control" name="type">
+										<option value="all" <?php echo e(Input::get('type') == 'all' ? 'selected' : ''); ?>>All</option>
+											<option value="free" <?php echo e(Input::get('type') == 'free' ? 'selected' : ''); ?>>Free</option>
+											<option value="exclusive" <?php echo e(Input::get('type') == 'exclusive' ? 'selected' : ''); ?>>Exclusive</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>Status</label>
+									<div class="col-sm-12 nopadding">
+										<select class="form-control" name="status">
+											<option value="all">All</option>
+											<option value="used" <?php echo e(Input::get('status')=='used' ? 'selected' : ''); ?>>Consumed</option>
+											<option value="un-used" <?php echo e(Input::get('status')=='un-used' ? 'selected' : ''); ?>>Bought</option>
+											<option value="expired" <?php echo e(Input::get('status')=='expired' ? 'selected' : ''); ?>>Expired</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>&nbsp;</label>
+									<div class="col-sm-12">
+									<button class="btn btn-primary">Filter</button>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-sm-4"><h3 class="panel-title">Consumed Deals: <?php echo e($usedDeals); ?></h3></div>
+					<div class="col-sm-4"><h3 class="panel-title">Bought Deals: <?php echo e($unusedDeals); ?></h3></div>
+					<div class="col-sm-4"><h3 class="panel-title">Expired Deals: <?php echo e($expiredDeals); ?></h3></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Deals data</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="table-responsive">
+							<?php if(!empty($deals->all())): ?>
+							<table class="table table-hover">
+								<thead>
+									<tr class="headings">
+										<th>#</th>
+										<th>Name</th>
+										<th>Buyer</th>
+										<th>Offer Name</th>
+										<th>Code</th>
+										<th>Type</th>
+										<th>Price</th>
+										<th>Status</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach($deals as $deal): ?>
+									<tr>
+										<?php //echo "<pre>"; var_dump($deal);exit; ?>
+										<th scope="row"><?php echo e(@$deal->id); ?></th>
+										<td class="has-options"><?php echo e(@$deal->deal->offerName); ?></td>
+										<td><?php echo e(@$deal->buyer->username); ?></td>
+										<td><?php echo e(@$deal->deal->offerName); ?></td>
+										<td><?php echo e(@$deal->code); ?></td>
+										<td><?php echo e(@$deal->deal->offerType); ?></td>
+										<td>
+											<?php if(@$deal->deal->offerType == 'exclusive'): ?>
+												<?php echo e(@$deal->deal->offerPrice); ?>
+
+											<?php else: ?>
+												<?php echo e(@$deal->deal->productOfferPrice); ?>
+
+											<?php endif; ?>
+										</td>
+										<td>
+											<?php
+											switch ($deal->status) {
+												case 'used':
+													$stat_class = 'success';
+													$deal->status = 'consumed';
+												break;
+
+												case 'not-used':
+													$stat_class = 'default';
+													$deal->status = 'bought';
+												break;
+											}
+
+											if(isset($deal->deal->offerEndDate)){
+												if ($deal->status != 'used' && $deal->deal->offerEndDate < date('Y-m-d')) {
+													$stat_class = 'danger';
+													$deal->status = 'expired';
+												}
+                                            }
+											?>
+											<label class="label label-<?php echo e($stat_class); ?>"><?php echo e(ucwords($deal->status)); ?></label>
+										</td>
+										<td>
+											<?php if($deal->status !== 'consumed' && $deal->status !== 'expired'): ?>
+												<a href="<?php echo e(Helper::adminUrl('sale/approve-deal')); ?>?deal=<?php echo e($deal->id); ?>">Validate</a>
+											<?php endif; ?>
+										</td>
+									</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>
+							<?php echo $deals->appends(Input::only('code','status','from','to','type'))->render(); ?>
+
+							<?php else: ?>
+								<p>No records to display!</p>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('after_footer'); ?>
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+<?php $__env->stopSection(); ?>

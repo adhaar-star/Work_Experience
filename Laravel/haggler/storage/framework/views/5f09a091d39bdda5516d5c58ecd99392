@@ -1,0 +1,165 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+
+	<div class="col-md-12">
+		<?php echo Helper::alert(); ?>
+
+
+		<?php if(\Auth::user()->role != 'admin'): ?>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Wallet</h3>
+			</div>
+			<div class="panel-body">
+
+			<div class="row dashboard_summary">
+				<div class="col-sm-4">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Total Amount Available</p>
+								<p><?php echo e((@$wallet->amount) ? @$wallet->amount : 0); ?></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-12">
+								<p>Total Amount Redeemed</p>
+								<p><?php echo e((@$wallet->redeemed) ? @$wallet->redeemed : 0); ?></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<?php if(@$wallet->amount > 0): ?>
+					<div class="col-sm-4">
+						<div class="widget">
+							<div class="row">
+								<div class="col-sm-12">
+									<form method="post" action="<?php echo e(Helper::adminUrl('wallet/redeem-request')); ?>">
+										<?php echo e(csrf_field()); ?>
+
+										<lable><h5>Enter Amount To Redeem  (Max Amount: <?php echo e(@$wallet->v_amount); ?>)</h5></lable>
+										<div class="form-group">
+											<input type="text" class="form-control" name="redeem_amount">
+										</div>
+										<div class="help-block"><?php echo e($errors->first('redeem_amount')); ?></div>
+										<div class="form-group text-center">
+											<input type="submit" class="btn btn-primary" name="redeem_button" value="Redeem">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php endif; ?>
+			</div>
+
+		    </div>
+		</div>
+
+
+
+		<?php endif; ?>
+
+
+	</div>
+	<!--  -->
+
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Payment Requests </h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="table-responsive">
+							<?php if(!empty($walletRequests->all())): ?>
+								<table class="table table-hover wallet_table">
+									<thead>
+									<tr class="headings">
+										<th>#</th>
+										<th>Name</th>
+										<th>Email</th>
+										<th>Request Amount</th>
+										<th>Status</th>
+										<?php if(\Auth::user()->role == 'admin'): ?>
+											<th colspan="2">Action</th>
+									    <?php endif; ?>
+									</tr>
+									</thead>
+									<tbody>
+									<?php foreach($walletRequests as $key => $w): ?>
+										<tr>
+											<td><?php echo e($key + 1); ?></td>
+											<td><?php echo e(@$w->user->username); ?></td>
+											<td><?php echo e(@$w->user->email); ?></td>
+											<td><?php echo e($w->request_amount); ?></td>
+											<td><?php echo e($w->status); ?></td>
+											<?php if(\Auth::user()->role == 'admin'): ?>
+
+												 <?php if($w->status == "pending"): ?>
+												<td>
+													<form id="form-<?php echo e($w->id); ?>" method="post" action="<?php echo e(Helper::adminUrl('wallet/request-status')); ?>">
+														<?php echo e(csrf_field()); ?>
+
+														<input type="hidden" name="request_id" value="<?php echo e($w->id); ?>" />
+														<input type="hidden" name="user_id" value="<?php echo e($w->user_id); ?>" />
+
+														<input type="hidden" name="request_amount" value="<?php echo e($w->request_amount); ?>" />
+														<select class="form-control" id="select-<?php echo e($w->id); ?>" name="status">
+															<option value="pending" <?php echo e(($w->status == "pending") ? "selected" : ''); ?>>pending</option>
+															<option value="approved" <?php echo e(($w->status == "approved") ? "selected" : ''); ?>>approved</option>
+															<option value="disapproved" <?php echo e(($w->status == "disapproved") ? "selected" : ''); ?> >disapproved</option>
+														</select>
+														<a href="javascript:void(0)" class="update_status" target="_blank"><img src="<?php echo e(url('assets/images/submit.png')); ?>" width="30" height="30" /></a>
+													</form>
+												</td>
+
+													 <?php else: ?>
+													 <td>No action available.</td>
+													 <?php endif; ?>
+
+
+
+
+
+											<?php endif; ?>
+
+										</tr>
+									<?php endforeach; ?>
+									</tbody>
+								</table>
+
+							<?php else: ?>
+								<p>No records to display!</p>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('after_footer'); ?>
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+<script>
+	jQuery(function(){
+	    jQuery(".update_status").on("click",function(){
+//	        var rid = jQuery(this).data("id");
+//	        jQuery("#status-"+rid).val(jQuery("#select-"+rid).val());
+//	        jQuery("#form-"+rid).submit();
+
+            jQuery(this).closest('form').submit();
+		});
+	});
+</script>
+<?php $__env->stopSection(); ?>

@@ -1,0 +1,50 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Categories <a href="<?php echo e(Helper::adminUrl('deal/category/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			<?php echo Helper::alert(); ?>
+
+			<div class="table-responsive">
+
+			<?php if(!empty($categories->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Category Name</th>
+							<th>Thumbnail</th>
+							<th>Created</th>
+							<th>Updated</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($categories as $category): ?>
+						<tr>
+							<th scope="row"><?php echo e($category->categoryId); ?></th>
+							<td class="has-options">
+							<?php echo e($category->categoryName); ?>
+
+							<span><a href="<?php echo e(Helper::adminUrl('deal/category/edit', [$category->categoryId])); ?>">Edit</a> | <a href="<?php echo e(Helper::adminUrl('deal/category/delete', [$category->categoryId])); ?>">Delete</a></span>
+							</td>
+							
+							<td><img src="<?php echo e($category->categoryImage); ?>" width="100" alt="<?php echo e($category->categoryName); ?>"></td>
+							
+							<td><?php echo e($category->created_at); ?></td>
+							<td><?php echo e($category->updated_at); ?></td>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

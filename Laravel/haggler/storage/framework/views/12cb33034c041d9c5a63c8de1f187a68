@@ -1,0 +1,50 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Vendors <a href="<?php echo e(Helper::adminUrl('user/vendor/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			<?php echo Helper::alert(); ?>
+
+			<div class="table-responsive">
+
+			<?php if(!empty($vendors->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Username</th>
+							<th>Email</th>
+							<th>Status</th>
+							<th>Created</th>
+							<th>Updated</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($vendors as $vendor): ?>
+						<tr>
+							<th scope="row"><?php echo e($vendor->id); ?></th>
+							<td class="has-options">
+							<?php echo e($vendor->username); ?>
+
+							<span><a href="<?php echo e(Helper::adminUrl('user/vendor/edit', [$vendor->id])); ?>">Edit</a> | <a href="">Delete</a></span>
+							</td>
+							<td><?php echo e($vendor->email); ?></td>
+							<td><?php echo e($vendor->status); ?></td>
+							<td><?php echo e($vendor->created_at); ?></td>
+							<td><?php echo e($vendor->updated_at); ?></td>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

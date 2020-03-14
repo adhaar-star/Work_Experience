@@ -1,0 +1,55 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+<?= Helper::alert() ?>
+<h3>Set Products Of The Day </h3>
+  <div class="row">
+   <div class="col-md-12">
+   	  <?php if(!empty($products->all())): ?>
+      <form action="<?php echo e(Helper::adminUrl('setting/products-of-the-day')); ?>" method="post">
+         <?php echo e(csrf_field()); ?>
+
+   	  <div class="table-responsive">
+		  <table class="table">
+		    <thead>
+		    	<tr class="headings">
+		    		<th>Product Name</th>
+		    		<th>Make Product of the Day</th>
+		    	</tr>
+		    </thead>
+		     <?php foreach($products->all() as $product): ?>
+                <tr>
+                	<td><?php echo e($product->productName); ?></td>
+                	<td><input type="checkbox" <?php echo e($product->product_of_the_day == "yes" ? "checked" : ''); ?> class="pod" name="pod[]" value="<?php echo e($product->productId); ?>"></td>
+                </tr>
+   	      
+   	         <?php endforeach; ?>
+		  </table>
+		</div>
+		<input type="submit" value="Submit" class="btn btn-primary">
+   	   </form>
+   	  <?php endif; ?>
+    </div>  
+   </div>
+  </div>
+
+ 
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+ <script>
+ 	jQuery(function(){
+      jQuery('.pod').click(function(e){
+      	  
+      	  if(jQuery('input[name="pod[]"]:checked').length > 10){
+      	    alert("You can choose only 10 products.");
+      	  	e.preventDefault();
+      	  	return false;
+      	  }
+      });
+ 	});
+ </script>
+<?php $__env->stopSection(); ?>

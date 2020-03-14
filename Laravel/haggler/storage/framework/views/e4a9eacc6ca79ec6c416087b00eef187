@@ -1,0 +1,175 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<style>
+	.row.product-item {
+  padding: 5px;
+  margin-bottom: 28px;
+  border-radius: 11px;
+}
+
+.panel.panel-info.item-info {
+  margin-top: 40px;
+}
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			 <h4>VIEW ORDER</h4>
+			<div class="table-responsive">
+				<table class="table table-hover">
+					<thead>
+
+					  <tr>
+						  <th>ORDER ID</th>
+						  <th>PAYMENT STATUS</th>
+						  <th>CUSTOMER</th>
+						  <th>ORDER DATE</th>
+					  </tr>
+
+					</thead>
+					<tbody>
+					   <tr>
+						   <td><?php echo e($order->id); ?></td>
+						   <td><?php echo e($order->order_status); ?></td>
+						   <td><?php echo e($order->name); ?></td>
+						   <td><?php echo e($order->created_at); ?></td>
+					   </tr>
+					</tbody>
+
+				</table>
+			</div>
+
+			<h4>ORDER DETAILS</h4>
+			<div class="table-responsive">
+				<table class="table table-hover">
+					<thead>
+
+					<tr>
+						<th>#</th>
+						<th>PRODUCT NAME</th>
+						<th>PRICE</th>
+						<th>QUANTITY</th>
+						<th>COMMISSION</th>
+						<th>TOTAL</th>
+					</tr>
+
+					</thead>
+					<tbody>
+					<?php if(!empty($order->items->all())): ?>
+						<?php foreach($order->items->all() as  $key => $oi): ?>
+                            <?php
+                            $productCategories = App\Models\ProductCategory::where('productId',$oi->product_id)->get();
+
+                            $size = sizeof($productCategories->toArray());
+
+
+                            if($size > 0 ){
+                                $commisionCategory =$productCategories->toArray()[$size-1]['categoryId'];
+
+                                $category = App\Models\Category::where('categoryId',$commisionCategory)->first();
+
+                            }
+                            $itemVendor = $oi->product->vendor;
+
+							if(isset($category)){
+							  $cp = ($oi->total *$category->categoryPercentage)/100;
+
+							}else{
+								$cp = 0;
+							}
+
+							?>
+							<tr>
+								<td><?php echo e($key + 1); ?></td>
+								<td><?php echo e($oi->name); ?></td>
+								<td><?php echo e(number_format($oi->price,2)); ?></td>
+								<td><?php echo e($oi->quantity); ?></td>
+								<td><?php echo e(isset($category) ? "{$category->categoryPercentage} %   ({$cp})"  :  0); ?> </td>
+								<td><?php echo e($oi->total); ?></td>
+							</tr>
+						<?php endforeach; ?>
+						<tr>
+							<td><td></td></td><td></td><td></td><td><b>ORDER TOTAL</b></td><td><b><?php echo e(number_format($order->total,2)); ?></b></td>
+						</tr>
+					<?php endif; ?>
+					</tbody>
+
+				</table>
+			</div>
+
+
+			<h4>CUSTOMER DETAILS</h4>
+			<div class="table-responsive">
+				<table class="table table-hover">
+					<thead>
+
+					<tr>
+
+						<th>NAME</th>
+						<th>EMAIL</th>
+						<th>PHONE NUMBER</th>
+					</tr>
+
+					</thead>
+					<tbody>
+
+					<tr>
+
+						<td><?php echo e($order->name); ?></td>
+						<td><?php echo e(@$order->user->email); ?></td>
+						<td><?php echo e(@$order->user->phone_number); ?></td>
+
+					</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+
+
+			<h4>CUSTOMER ADDRESS DETAILS</h4>
+			<div class="table-responsive">
+				<table class="table table-hover">
+					<thead>
+
+					<tr>
+
+						<th>ADDRESS</th>
+					</tr>
+
+					</thead>
+					<tbody>
+
+					<tr>
+
+						<td>
+							<b><?php echo e($order->shipping_name); ?>,</b><br/>
+							<?php echo e($order->shipping_address); ?>,<br/>
+							<?php echo e($order->shipping_city); ?>, <?php echo e($order->shipping_state); ?> , <?php echo e($order->shipping_zipcode); ?><br/>
+							<?php echo e($order->shipping_country); ?>
+
+
+
+						</td>
+
+
+					</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+
+<?php $__env->stopSection(); ?>

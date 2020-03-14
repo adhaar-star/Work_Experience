@@ -1,0 +1,150 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+
+	<div class="col-sm-12">
+
+	<h3>Deals</h3>
+
+		<form>
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>From</label>
+					<div class="col-sm-12">
+						<input type="text" value="<?php echo e(Input::get('from')); ?>" name="from" class="form-control datepicker ">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>To</label>
+					<div class="col-sm-12">
+						<input type="text" value="<?php echo e(Input::get('to')); ?>" name="to"  class="form-control datepicker ">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>Status</label>
+					<div class="col-sm-12">
+						<select class="form-control" name="status">
+
+						<option value="all">All</option>
+						<option value="used" <?php echo e(Input::get('status')=='used' ? 'selected' : ''); ?>>Used</option>
+						<option value="un-used" <?php echo e(Input::get('status')=='un-used' ? 'selected' : ''); ?>>Un-used</option>
+						<option value="expired" <?php echo e(Input::get('status')=='expired' ? 'selected' : ''); ?>>Expired</option>
+
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>&nbsp;</label>
+					<div class="col-sm-12">
+					<button class="btn btn-primary">Filter</button>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="col-sm-12">
+
+		<div class="col-sm-4">Used Deals: <?php echo e($usedDeals); ?></div>
+		<div class="col-sm-4">Un-used Deals: <?php echo e($unusedDeals); ?></div>
+		<div class="col-sm-4">Expired Deals: <?php echo e($expiredDeals); ?></div>
+
+
+	</div>
+
+		<div class="col-sm-12">
+			
+
+			<?php echo Helper::alert(); ?>
+
+
+			<div class="table-responsive">
+
+			<?php if(!empty($deals->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Name</th>
+							<th>Buyer</th>
+							<th>Offer Name</th>
+							<th>Code</th>
+							<th>Type</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($deals as $deal): ?>
+						<tr>
+							<th scope="row"><?php echo e($deal->id); ?></th>
+							<td class="has-options">
+							<?php echo e($deal->deal->offerName); ?>
+
+							</td>
+							<td><?php echo e($deal->buyer->username); ?></td>
+							<td><?php echo e($deal->deal->offerName); ?></td>
+							<td><?php echo e($deal->code); ?></td>
+							<td><?php echo e($deal->deal->offerType); ?></td>
+
+							<td>
+								<?php
+								
+								switch ($deal->status) {
+									case 'used':
+										$stat_class = 'success';
+									break;
+
+									case 'not-used':
+										$stat_class = 'default';
+									break;
+								}
+
+								if ($deal->status != 'used' && $deal->deal->offerEndDate < date('Y-m-d'))
+									$stat_class = 'danger';
+									$deal->status = 'expired';
+								?>
+								<label class="label label-<?php echo e($stat_class); ?>"><?php echo e(ucwords($deal->status)); ?></label>
+							</td>
+
+							<td>
+							<?php if($deal->status !== 'used' && $deal->status !== 'expired'): ?>
+								<a href="<?php echo e(Helper::adminUrl('sale/approve-deal')); ?>?deal=<?php echo e($deal->id); ?>">Approve</a>
+								<?php endif; ?>
+							</td>
+
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+
+				<?php echo $deals->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+
+<?php $__env->stopSection(); ?>

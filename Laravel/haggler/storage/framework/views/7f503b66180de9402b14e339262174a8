@@ -1,0 +1,238 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<style>
+.row.message-item {
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	padding: 18px;
+}
+.w{
+	background: #FCF9F6;
+}
+
+.s{
+	background: #EEE9E4;
+}
+
+</style>
+<div class="container-fluid">
+
+	<?php if(Input::has('thread_id')): ?>
+	<?php else: ?>
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Filter Messages</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-sm-12">
+						<div class="back_filter">
+							<form>
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>Keyword</label>
+										<div class="col-sm-12 nopadding">
+											<input type="text" value="<?php echo e(Input::get('q')); ?>" name="q" class="form-control ">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>From</label>
+										<div class="col-sm-12 nopadding">
+											<input type="text" value="<?php echo e(Input::get('from')); ?>" name="from" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>To</label>
+										<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('to')); ?>" name="to"  class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>From Date</label>
+										<div class="col-sm-12 nopadding">
+											<input type="text" value="<?php echo e(Input::get('from_date')); ?>" name="from_date" class="form-control datepicker ">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>To Date</label>
+										<div class="col-sm-12 nopadding">
+											<input type="text" value="<?php echo e(Input::get('to_date')); ?>" name="to_date"  class="form-control datepicker ">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-gorup">
+										<label>&nbsp;</label>
+										<div class="col-sm-12">
+											<button class="btn btn-primary">Filter</button>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</form>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Manage Messages</h3>
+			</div>
+			<div class="panel-body"> 
+				<div class="row message-container">
+					<div class="col-md-12"> 
+						<div class="message-list">
+								<table class="table table-hover">
+									<thead>
+										<th>S. No.</th>
+										<th>From</th>
+										<th>To</th>
+										<th>Subject</th>
+										<th>Last Message</th>
+										<th>Date and Time</th>
+										<th>Action</th>
+									</thead>
+									<tbody>
+										<?php  $index = 0; $count = 1; ?>
+										<?php if(!empty($threads->all())): ?>
+											<?php foreach($threads as $thread): ?>
+												<?php //var_dump($thread);exit; ?>
+												<tr <?php echo e(in_array($thread->id,$thread_ids) ? "class = msg_back" : ""); ?>>
+													<td><?php echo e($count++); ?></td>
+													<td><?php echo e(@$thread->sender->username); ?></td>
+													<td><?php echo e(@$thread->receiver->username); ?></td>
+													<td><?php echo e(@$thread->subject); ?></td>
+													<td><?php 
+														$str = $thread->last_message;
+														if (strlen($str) > 70)
+	   														$str = substr($str, 0, 70)."...";
+	   														echo $str; ?>
+   													</td>
+													<td><?php echo e(date('d M, y H:i:s', strtotime($thread->last_update))); ?></td>
+													<td><a href="javascript:void(0)" onclick="window.location='<?php echo Helper::adminUrl('message'); ?>?thread_id=<?php echo e($thread->id); ?>'" class="btn btn-lg action_eye"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+												</tr>
+												<?php $index++;  ?>
+											<?php endforeach; ?>
+										<?php else: ?>
+											<div class="alert alert-warning">No message found.</div>
+										<?php endif; ?>
+									</tbody>
+								</table>
+						</div>
+					</div>
+				</div><!-- end message container -->
+				<?php if(Input::has('thread_id')): ?>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="opened-conversation">
+								<ul id="opened-conversation-list" style="padding:25px">
+								</ul>
+							</div>
+						</div>
+					</div>
+				<?php endif; ?>
+				<div class="row message-form" style="display:none">
+					<div class="col-md-12">
+						<div id="message-write-panel">
+							<form action="<?php echo Helper::adminUrl('message/send'); ?>" method="post">
+								<?php echo e(csrf_field()); ?>
+
+								<input type="hidden" name="thread_id" id="thread_id" value="<?php echo e(Input::get('thread_id')); ?>">
+								<input type="hidden" name="receiver_id" id="receiver_id" value="">
+								<div class="col-sm-10">
+									<textarea name="message" class="form-control"></textarea>
+								</div>
+								<div class="col-sm-2">
+									<button class="btn btn-block btn-default">Send</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>		
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<?php if(Input::has('thread_id')): ?>
+<script>
+function getTimeStamp() {
+	var myDate = new Date();
+	return myDate.getFullYear() + '-' + (myDate.getMonth()+1) + '-'
+	+ myDate.getDate() + ' ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' 
+	+ myDate.getSeconds();
+}
+
+var last_message_timestamp = getTimeStamp();
+
+$(function () {
+
+	$.ajax({
+		url: "<?php echo Helper::adminUrl('message/open-conversation'); ?>",
+		data: {thread_id: <?php echo e(Input::get('thread_id')); ?> },
+		method: 'get',
+		success: function (o) {
+
+			
+
+			if (o.success && o.count > 0) {
+				console.log(o);
+				$('.message-container').hide();
+				$('.message-form').show();
+				$("#opened-conversation-list").html(o.body);
+				$("#thread_id").val(o.thread_id);
+				$("#receiver_id").val(o.receiver_id);
+				last_message_timestamp = o.last_message_timestamp;
+				setTimeout(function () {
+					$("#opened-conversation").scrollTop($('#opened-conversation').height());
+				}, 200);
+				
+			}
+
+		}	
+	});
+
+	setInterval(function () {
+
+		/*var timeString = */
+
+		$.ajax({
+			url: "<?php echo Helper::adminUrl('message/open-conversation'); ?>",
+			data: {thread_id: <?php echo e(Input::get('thread_id')); ?>, timestamp: last_message_timestamp },
+			method: 'get',
+			success: function (o) {
+
+				if (o.success && o.count > 0) {
+					$("#opened-conversation-list").append(o.body);
+					$("#thread_id").val(o.thread_id);
+					$("#receiver_id").val(o.receiver_id);
+					last_message_timestamp = o.last_message_timestamp;
+					setTimeout(function () {
+						$("#opened-conversation").scrollTop($('#opened-conversation').height());
+					}, 200);
+				}
+			}
+		});	
+	}, 3000);
+});
+
+</script>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>

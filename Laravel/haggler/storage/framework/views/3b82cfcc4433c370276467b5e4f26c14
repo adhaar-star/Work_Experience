@@ -1,0 +1,79 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Orders</h3>
+
+
+<div class="col-sm-12">
+			<?php echo Helper::alert(); ?>
+
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-sm-12">
+			<div class="row">
+
+			<form class="form-horizontal">
+				<div class="col-sm-3"><input name="q" value="<?php echo e(old('q')); ?>"></div>
+				<div class="col-sm-3"><input name="from" value="<?php echo e(old('from')); ?>"></div>
+				<div class="col-sm-3"><input name="from" value="<?php echo e(old('from')); ?>"></div>
+				<div class="com-sm-3"><button class="btn btn-primary">Filter</button></div>
+			</form>
+
+			</div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div class="table-responsive">
+
+			<?php if(!empty($orders->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Customer</th>
+							<th>Amount</th>
+							<th>Commission</th>
+							<th>Status</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($orders as $order): ?>
+						<tr>
+							<th scope="row"><?php echo e($order->id); ?></th>
+							<td class="has-options">
+							<?php echo e($order->name); ?>
+
+							</td>
+							<td><?php echo e($order->total); ?></td>
+							<td><?php echo e($order->commision); ?></td>
+							<td><?php echo e($order->order_status); ?></td>
+							<td><?php echo e($order->created_at); ?></td>
+							
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+
+				<?php echo $orders->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+
+<?php $__env->stopSection(); ?>

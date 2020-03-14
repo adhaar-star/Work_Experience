@@ -1,0 +1,10 @@
+
+<p>
+	Hi,<br/>
+	<?php echo e(@$user->username); ?> <br/>
+	Welcome to haggler <br/>
+	Your login information is give below: <br/>
+	
+	Username: <b><?php echo e(@$user->username); ?></b><br/>
+	Password: <b><?php echo e(@$password); ?></b>
+</p>

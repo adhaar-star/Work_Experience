@@ -1,0 +1,69 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-12" style="padding-bottom:37px">
+			<?php echo Helper::alert(); ?>
+
+
+
+			
+		
+	</div>
+		<div class="col-sm-12">
+			<div class="table-responsive">
+
+			<?php if(!empty($customers->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Username</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>Address</th>
+							<th>Reward Points</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($customers as $customer): ?>
+						
+						<tr> 
+							<th scope="row"><?php echo e($customer->id); ?></th>
+							<td class="has-options"><?php echo e($customer->username); ?></td>
+							<td><?php echo e($customer->email); ?></td>
+							<td><?php echo e($customer->phone_number); ?></td>
+							<td><?php if(!empty($customer->address->all())): ?>
+                                  <?php foreach($customer->address->all() as $address): ?>
+                                  <p><?php echo e($address->address); ?> 
+                                   <?php if(!empty($address->type)): ?>
+                                      (<i><?php echo e($address->type); ?></i>)
+                                   <?php endif; ?>
+                                  </p>
+                                  <?php endforeach; ?>
+							  <?php endif; ?></td>
+							 <td><?php echo e((@$customer->reward->reward_point) ? $customer->reward->reward_point : 0); ?></td> 
+							<td><?php echo e($customer->status); ?></td>
+							<td>
+								<a href="<?php echo e(Helper::adminUrl('user/customer/edit', [$customer->id])); ?>"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+								<a href="<?php echo e(Helper::adminUrl('user/customer/delete', [$customer->id])); ?>"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a>
+							</td>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+				<?php echo $customers->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

@@ -1,0 +1,8 @@
+HI <?php echo e($user->username); ?>, <br/><br/>
+
+Your code for reset password for Haggler is : <b><?php echo e($code); ?></b><br/>
+
+
+<br/><br/>
+Regards,<br/>
+<b>HAGGLER TEAM</b>

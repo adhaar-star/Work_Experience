@@ -1,0 +1,130 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><?= $page_title ?> <span class="pull-right hidden-xs"><a href="javascript:;" class="btn btn-default"><i class="fa fa-plus"></i> Save</a> <a href="<?= Helper::adminUrl('category') ?>" class="btn btn-warning"><i class="fa fa-arrow-left"></i> Back to listing</a></span></h3>
+
+      </div>
+      <div class="panel-body">
+
+          <form action="<?= Helper::adminUrl('category/save') ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+              <?php echo e(csrf_field()); ?>
+
+
+              <?php if(!empty($category->categoryId)): ?> 
+                <input type="hidden" name="categoryId" value="<?php echo e($category->categoryId); ?>">
+              <?php endif; ?>
+              <div class="col-sm-12">
+                <p class="error">All fields marked in asterisk (*) are mandatory to be filled.</p>
+
+                <?= Helper::alert() ?>
+                                      
+                   <div class="form-group  <?php echo e($errors->has('categoryName') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Category Name <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="categoryName" value="<?php echo e(Input::old('categoryName', $category->categoryName)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('categoryName')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('categoryParentId') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Parent Category</label>
+                       <div class="col-sm-12">
+                       <select id="categoryParentId" name="categoryParentId"  class="form-control">
+                       <option value="0"> - Choose parent category - </option>
+                        <?php if(!empty($categories)): ?>
+                          <?php foreach($categories as $item): ?>
+                          <option value="<?php echo e($item->categoryId); ?>" <?php echo e((Input::old('categoryParentId', $category->categoryParentId) == $item->categoryId) ? 'selected' : ''); ?>><?php echo e($item->categoryName); ?></option>
+                          <?php $children = \App\Models\Category::getChildren($item, Input::old('categoryParentId', $category->categoryParentId)); ?>
+                          
+                            <?php if(!empty($children)): ?>
+                              <optgroup label="<?php echo e($item->categoryName); ?>">
+                              
+                                <?php echo $children; ?>
+
+                              
+                              </optgroup>
+                                                    
+                            <?php endif; ?>
+                          <?php endforeach; ?> 
+                        <?php endif; ?>
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('categoryParentId')); ?></div>
+                      </div>
+                  </div>
+
+                   <div id="categoryImageContainer" class="form-group  <?php echo e($errors->has('categoryImage') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Category Image <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="file" name="categoryImage" id="categoryImage" class="form-control">
+                      <div class="help-block field-info">Image resolution should be 1:1 (Minimum resolution: 1000x1000)</div>
+                      <div class="help-block"><?php echo e($errors->first('categoryImage')); ?></div>
+                      </div>
+                      <div class="col-sm-12">
+                      <?php if(!empty($category->categoryImage)): ?>
+                      <img src="<?php echo e($category->categoryImage); ?>" width="100" alt="<?php echo e($category->categoryName); ?>">
+                      <?php endif; ?>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('categoryPercentage') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Category Percentage <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="categoryPercentage" value="<?php echo e(Input::old('categoryPercentage', $category->categoryPercentage)); ?>" class="form-control">
+                        <div class="help-block"><?php echo e($errors->first('categoryName')); ?></div>
+                      </div>
+                  </div>
+
+            
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button class="btn btn-default"><i class="fa fa-plus"></i> Save</button>
+          </div>
+      </div>
+
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script>
+
+function isParentCatSelected() {
+  return $("#categoryParentId").val() > 0;
+}
+
+function toggleImageOption() {
+
+  if (isParentCatSelected()) {
+    $("#categoryImageContainer").hide();
+  } else {
+    $("#categoryImageContainer").show();
+  }
+
+}
+
+$(function () {
+  toggleImageOption();
+
+  $("#categoryParentId").on('change', function () {
+    toggleImageOption();
+
+  });
+
+});
+
+</script>
+
+<?php $__env->stopSection(); ?>

@@ -1,0 +1,12 @@
+<?php if(!empty($messages)): ?>
+	<?php foreach($messages as $message): ?>
+		<li>
+		
+		<p class="pull-left" style="width:100%"><?php echo e($message->message); ?></p>
+		<p class="pull-left" style="width:100%">
+		<small class="pull-left">Date: <?php echo e(date('d M, y | H:i:s', strtotime($message->created_at))); ?></small>
+		<small class="pull-right">By: <?php echo e($message->sender->username); ?></small>
+		</p>
+		</li>
+	<?php endforeach; ?>
+<?php endif; ?>

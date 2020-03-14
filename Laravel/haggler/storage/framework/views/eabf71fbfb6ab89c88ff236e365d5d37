@@ -1,0 +1,469 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+
+
+<div class="container-fluid">
+	<!-- <div class="row"> -->	
+	<?php if(Auth::user()->role == 'admin'): ?>
+	<div class="col-sm-12">
+		<div class="row dashboard_summary">
+			<?php 
+				if(session('scroll') === NULL){ ?>
+					<?php echo Helper::alert(); ?>
+
+				<?php } ?>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('product')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-shopping-cart fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Products</h3>
+								<p>Total: <?php echo e(\App\Models\Product::count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Product::where('visible', 'yes')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Product::where('visible', 'no')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('deal')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-thumbs-up fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Deals</h3>
+								<p>Total: <?php echo e(\App\Models\Deal::count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Deal::where('visible', 'yes')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Deal::where('visible', 'no')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('event')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-calendar fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Events</h3>
+								<p>Total: <?php echo e(\App\Models\Event::count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Event::where('eventStatus', 'active')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Event::where('eventStatus', 'inactive')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('user/vendors')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-group fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Vendors</h3>
+								<p>Total: <?php echo e(\App\Models\User::where('role', 'vendor')->count()); ?></p>
+								<p>Stores: <?php echo e(\App\Models\Store::count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Validate Coupon -->
+		<div class="row validate_deal_section" id="valid_code">
+			<?php 
+				if(session('scroll') !== NULL){ ?>
+					<?php echo Helper::alert(); ?>
+
+				<?php } ?>
+			<div class="col-sm-12">
+				<h3 class="back_grey">Validate Deal Code</h3>
+				<?= Helper::inlineError() ?>
+				<form action="<?= Helper::adminUrl('sale/validate-deal') ?>" method="get" class="form-horizontal">
+					<div class="form-group <?php echo e($errors->has('deal_code') ? 'has-error' : ''); ?>">
+						<label class="col-sm-12">Enter Code</label>
+						<div class="col-sm-12">
+							<input type="text" name="deal_code" class="form-control">
+							<div class="help-block"><?php echo e($errors->first('deal_code')); ?></div>
+						</div>
+					</div>
+					<div class="form-group">
+
+						<div class="col-sm-12">
+							<input type="submit" value="Validate" class="btn btn-primary">
+						</div>
+					</div>
+				</form>
+				<div class="clearfix"></div>
+				<?php if(!empty(session('current_deal'))): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>Name</th>
+							<th>Vendor</th>
+							<th>Buyer</th>
+							<th>Offer Name</th>
+							<th>Code</th>
+							<th>Type</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+						$cdeal = session('current_deal');
+						switch ($cdeal->status) {
+							case 'used':
+							$stat_class = 'success';
+							$cdeal->status = 'consumed';
+							break;
+
+							case 'not-used':
+							$stat_class = 'default';
+							$cdeal->status = 'bought';
+							break;
+						}
+						if ($cdeal->status != 'used' && $cdeal->deal->offerEndDate < date('Y-m-d')){
+							$stat_class = 'danger';
+							$cdeal->status = 'expired';
+						}
+						?>
+						<tr>
+							<td class="has-options">
+								<?php echo e($cdeal->deal->offerName); ?>
+
+								<span>
+									<a href="<?php echo e(Helper::adminUrl('deal/edit', [$cdeal->id])); ?>">View</a> <?php if($cdeal->status !== 'used' && $cdeal->status !== 'expired'): ?> | <a href="<?php echo e(Helper::adminUrl('sale/approve-deal')); ?>?deal=<?php echo e($cdeal->id); ?>">Approve</a> <?php endif; ?>
+								</span>
+							</td>
+							<td><?php echo e(@$cdeal->store->storename); ?></td>
+							<td><?php echo e(@$cdeal->buyer->username); ?></td>
+							<td><?php echo e(@$cdeal->deal->offerName); ?></td>
+							<td><?php echo e(@$cdeal->code); ?></td>
+							<td><?php echo e(@$cdeal->deal->offerType); ?></td>
+							<td><label class="label label-<?php echo e($stat_class); ?>"><?php echo e(ucwords($cdeal->status)); ?></label></td>
+						</tr>
+					</tbody>
+				</table>
+				<?php endif; ?>
+			</div>
+		</div>
+		<!-- Latest Products -->
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 class="back_grey">Latest 5 Products</h3>
+				<table class="table table-striped table-hover latest_product">
+					<thead>
+						<th><b>#</b></th>
+						<th><b>Name</b></th>
+						<th><b>Store</b></th>
+						<th><b>Price</b></th>
+						<th><b>Offer</b></th>
+						<th><b>Action</b></th>
+					</thead>
+					<tbody>
+						<?php $products = \App\Models\Product::select('*')->orderBy('productId', 'desc')->take(5)->get(); ?>
+						<?php if(!empty($products->all())): ?>
+
+							<?php foreach($products as $key=>$product): ?>
+								<tr>
+									<td><?php echo e(@$key+1); ?></td>
+									<td><?php echo e(@$product->productName); ?></td>
+									<td><?php echo e(@$product->store->storeName); ?></td>
+									<td><?php echo e(@$product->productPrice); ?></td>
+									<td><?php echo e((@$product->hasOffer == 'yes' ? 'yes' : 'na' )); ?></td>
+									<td>
+										<?php if($product->visible == 'no'): ?>
+											<a href="<?php echo e(Helper::adminUrl('product/visibility/visible', [$product->productId])); ?>?home=1" title="Approve"><i class="btn btn-default btn-sm fa fa-check-circle fa-lg" aria-hidden="true"></i></a> 
+										<?php else: ?>
+											<a href="<?php echo e(Helper::adminUrl('product/visibility/hidden', [$product->productId])); ?>?home=1" title="Disapprove"><i class="btn btn-default btn-sm fa fa-ban fa-lg" aria-hidden="true"></i></a> 
+										<?php endif; ?>
+										<a href="<?php echo e(Helper::adminUrl('product/edit', [$product->productId])); ?>" title="Edit"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+										<a class="delete" href="<?php echo e(Helper::adminUrl('product/delete', [$product->productId])); ?>?home=1" title="Delete"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a></span>
+									</td>
+								</tr>
+							<?php endforeach; ?>
+						<?php else: ?>
+							No products found
+						<?php endif; ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- Latest Deals -->
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 class="back_grey">Latest 5 Deals</h3>
+				<table class="table table-striped table-hover latest_deals">
+					<thead>
+						<th><b>#</b></th>
+						<th><b>Name</b></th>
+						<th><b>Vendor</b></th>
+						<th><b>Store Name</b></th>
+						<th><b>Status</b></th>
+						<th><b>Action</b></th>
+					</thead>
+					<tbody>
+						<?php $deals = \App\Models\Deal::select('*')->orderBy('offerId', 'desc')->take(5)->get(); ?>
+						<?php if(!empty($deals->all())): ?>
+							<?php foreach($deals as $key=>$deal): ?>
+							<tr>
+								<td><?php echo e(@$key+1); ?></td>
+								<td><?php echo e(@$deal->offerName); ?></td>
+								<td><?php echo e(@$deal->vendor->username); ?></td>
+								<td><?php echo e(@$deal->store->storeName); ?></td>
+								<td><?php echo strtotime($deal->offerEndDate) < strtotime('now') ? '<span class="label label-danger">Expired</span>' : '<span class="label label-success">Available</span>'; ?></td>
+								<td>
+									<?php if($deal->visible == 'no'): ?>
+										<a href="<?php echo e(Helper::adminUrl('deal/visibility/visible', [$deal->offerId])); ?>?home=1" title="Approve"><i class="btn btn-default btn-sm fa fa-check-circle fa-lg" aria-hidden="true"></i></a>
+									<?php else: ?>
+										<a href="<?php echo e(Helper::adminUrl('deal/visibility/hidden', [$deal->offerId])); ?>?home=1" title="Disapprove"><i class="btn btn-default btn-sm fa fa-ban fa-lg" aria-hidden="true"></i></a>
+									<?php endif; ?>
+									<a href="<?php echo e(Helper::adminUrl('deal/edit', [$deal->offerId])); ?>" title="Edit"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+									<a href="<?php echo e(Helper::adminUrl('deal/delete', [$deal->offerId])); ?>?home=1" title="Delete"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a>
+								</td>
+							</tr>
+							<?php endforeach; ?>
+						</table>
+						<?php else: ?>
+						No deals to approve
+						<?php endif; ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3 class="back_grey">Unapproved Poducts</h3>
+				<?php $products = \App\Models\Product::select('productId', 'productVendorId', 'productName')->with('vendor')->where('visible', 'no')->take(10)->get(); ?>
+				<?php if(!empty($products->all())): ?>
+				<table class="table table-striped unapproved_products table-hover">
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Vendor</th>
+						<th>Action</th>
+					</tr>
+					<?php foreach($products as $product): ?>
+					<tr>
+						<td><?php echo e(@$product->productId); ?></td>
+						<td><?php echo e(@$product->productName); ?></td>
+						<td><?php echo e(@$product->store->storeName); ?></td>
+						<td>
+							<?php if($product->visible == 'no'): ?>
+								<a href="<?php echo e(Helper::adminUrl('product/visibility/visible', [$product->productId])); ?>?home=1" title="Approve"><i class="btn btn-default btn-sm fa fa-check-circle fa-lg" aria-hidden="true"></i></a> 
+							<?php else: ?>
+								<a href="<?php echo e(Helper::adminUrl('product/visibility/hidden', [$product->productId])); ?>?home=1" title="Disapprove"><i class="btn btn-default btn-sm fa fa-ban fa-lg" aria-hidden="true"></i></a> 
+							<?php endif; ?>
+							<a href="<?php echo e(Helper::adminUrl('product/edit', [$product->productId])); ?>" title="Edit"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+							<a class="delete" href="<?php echo e(Helper::adminUrl('product/delete', [$product->productId])); ?>?home=1" title="Delete"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a>
+						</td>
+					</tr>
+					<?php endforeach; ?>
+
+				</table>
+				<?php else: ?>
+				No products to approve
+				<?php endif; ?>
+			</div>
+			<div class="col-sm-6">
+				<h3 class="back_grey">Unapproved Deals</h3>
+				<?php $deals = \App\Models\Deal::select('offerId', 'offerVendorId', 'offerName')->with('vendor')->where('visible', 'no')->take(10)->get(); ?>
+				<?php if(!empty($deals->all())): ?>
+				<table class="table table-striped unapproved_deals table-hover">
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Vendor</th>
+						<th>Action</th>
+					</tr>
+
+					<?php foreach($deals as $deal): ?>
+					<tr>
+						<td><?php echo e(@$deal->offerId); ?></td>
+						<td><?php echo e(@$deal->offerName); ?></td>
+						<td><?php echo e(@$deal->vendor->username); ?></td>
+						<td>
+							<?php if($deal->visible == 'no'): ?>
+								<a href="<?php echo e(Helper::adminUrl('deal/visibility/visible', [$deal->offerId])); ?>?home=1" title="Approve"><i class="btn btn-default btn-sm fa fa-check-circle fa-lg" aria-hidden="true"></i></a>
+							<?php else: ?>
+								<a href="<?php echo e(Helper::adminUrl('deal/visibility/hidden', [$deal->offerId])); ?>?home=1" title="Disapprove"><i class="btn btn-default btn-sm fa fa-ban fa-lg" aria-hidden="true"></i></a>
+							<?php endif; ?>
+							<a href="<?php echo e(Helper::adminUrl('deal/edit', [$deal->offerId])); ?>" title="Edit"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+							<a href="<?php echo e(Helper::adminUrl('deal/delete', [$deal->offerId])); ?>?home=1" title="Delete"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a>
+						</td>
+					</tr>
+					<?php endforeach; ?>
+
+				</table>
+				<?php else: ?>
+				No deals to approve
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+	<?php else: ?>
+	<div class="col-sm-12">
+		<div class="row dashboard_summary">
+			<?php echo Helper::alert(); ?> 
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('product')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-thumbs-up fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Products</h3>
+								<p>Total: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->where('visible', 'yes')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->where('visible', 'no')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('deal')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-thumbs-up fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Deals</h3>
+								<p>Total: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->where('visible', 'yes')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->where('visible', 'no')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3 widget-1">
+				<a href="<?php echo e(Helper::adminUrl('event')); ?>">
+					<div class="widget">
+						<div class="row">
+							<div class="col-sm-4">
+								<h3><i class="fa fa-thumbs-up fa-3x"></i></h3>
+							</div>
+							<div class="col-sm-8">
+								<h3>Events</h3>
+								<p>Total: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->count()); ?></p>
+								<p>Approved: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->where('eventStatus', 'active')->count()); ?></p>
+								<p>Unapproved: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->where('eventStatus', 'inactive')->count()); ?></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Validate Coupon -->
+		<div class="row validate_deal_section">
+			<div class="col-sm-12">
+				<h3 class="back_grey">Validate Deal Code</h3>
+				<?= Helper::inlineError() ?>
+				<form action="<?= Helper::adminUrl('sale/validate-deal') ?>" method="get" class="form-horizontal">
+					<div class="form-group <?php echo e($errors->has('deal_code') ? 'has-error' : ''); ?>">
+						<label class="col-sm-12">Enter Code</label>
+						<div class="col-sm-12">
+							<input type="text" name="deal_code" class="form-control">
+							<div class="help-block"><?php echo e($errors->first('deal_code')); ?></div>
+						</div>
+					</div>
+					<div class="form-group">
+
+						<div class="col-sm-12">
+							<input type="submit" value="Validate" class="btn btn-primary">
+						</div>
+					</div>
+				</form>
+				<div class="clearfix"></div>
+				<?php if(!empty(session('current_deal'))): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>Name</th>
+							<th>Vendor</th>
+							<th>Buyer</th>
+							<th>Offer Name</th>
+							<th>Code</th>
+							<th>Type</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+						$cdeal = session('current_deal');
+						switch ($cdeal->status) {
+							case 'used':
+							$stat_class = 'success';
+							$cdeal->status = 'consumed';
+							break;
+
+							case 'not-used':
+							$stat_class = 'default';
+							$cdeal->status = 'bought';
+							break;
+						}
+						if ($cdeal->status != 'used' && $cdeal->deal->offerEndDate < date('Y-m-d')){
+							$stat_class = 'danger';
+							$cdeal->status = 'expired';
+						}
+						?>
+						<tr>
+							<td class="has-options">
+								<?php echo e($cdeal->deal->offerName); ?>
+
+								<span>
+									<a href="<?php echo e(Helper::adminUrl('deal/edit', [$cdeal->id])); ?>">View</a> <?php if($cdeal->status !== 'used' && $cdeal->status !== 'expired'): ?> | <a href="<?php echo e(Helper::adminUrl('sale/approve-deal')); ?>?deal=<?php echo e($cdeal->id); ?>">Approve</a> <?php endif; ?>
+								</span>
+							</td>
+							<td><?php echo e(@$cdeal->store->storename); ?></td>
+							<td><?php echo e(@$cdeal->buyer->username); ?></td>
+							<td><?php echo e(@$cdeal->deal->offerName); ?></td>
+							<td><?php echo e(@$cdeal->code); ?></td>
+							<td><?php echo e(@$cdeal->deal->offerType); ?></td>
+							<td><label class="label label-<?php echo e($stat_class); ?>"><?php echo e(ucwords($cdeal->status)); ?></label></td>
+						</tr>
+					</tbody>
+				</table>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+	<?php endif; ?>
+</div>
+<?php $__env->stopSection(); ?>
+<?php 
+	if(session('scroll') !== NULL){ ?>
+		<?php $__env->startSection('after_footer'); ?>
+		<script>
+			jQuery(function($){
+				var width = jQuery(document).width();
+				if(width > 786){
+					$('html, body').animate({
+				        scrollTop: $("#valid_code").offset().top-40
+				    }, 1000);
+				}else{
+					$('html, body').animate({
+				        scrollTop: $("#valid_code").offset().top
+				    }, 1000);
+				}
+			});
+		</script>
+		<?php $__env->stopSection(); ?>
+	<?php }
+?>

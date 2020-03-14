@@ -1,0 +1,175 @@
+<?php
+use \App\Models\Helper;
+
+$orderStatus = App\Models\Order::orderStatus();
+
+?>
+<?php $__env->startSection('content'); ?>
+
+<div class="container-fluid">
+
+	<div class="col-md-12">
+		<?php echo Helper::alert(); ?>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Filter Orders </h3>
+			</div>
+			<div class="panel-body">
+				<!-- <div class="row"> -->
+				<div class="col-sm-12">
+					<div class="back_filter">
+
+					<!-- filters -->
+						<form>
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>Search</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('q')); ?>" name="q" class="form-control ">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="form-gorup">
+									<label>From</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('from')); ?>" name="from" class="form-control datepicker ">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="form-gorup">
+									<label>To</label>
+									<div class="col-sm-12 nopadding">
+										<input type="text" value="<?php echo e(Input::get('to')); ?>" name="to"  class="form-control datepicker ">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>Status</label>
+									<div class="col-sm-12 nopadding">
+										<select class="form-control" name="o_s">
+											<option value="">All</option>
+											<?php if(!empty($orderStatus)): ?>
+													<?php foreach($orderStatus as $key=>$status): ?>
+														<option value="<?php echo e($key); ?>" <?php echo e(Input::get('o_s') == $key ? 'selected' : ''); ?>><?php echo e($status); ?></option>
+													<?php endforeach; ?>
+											<?php endif; ?>
+
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-2">
+								<div class="form-gorup">
+									<label>&nbsp;</label>
+									<div class="col-sm-12">
+										<button class="btn btn-primary">Filter</button>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Manage Orders</h3>
+				</div>
+				<div class="panel-body">
+
+			<div class="table-responsive">
+
+			<?php if(!empty($orders->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Customer</th>
+							<th>Amount</th>
+							<th>Status</th>
+							<th>Date</th>
+							<?php if(\Auth::user()->role == "admin"): ?>
+							<th>Action</th>
+							<?php endif; ?>
+						</tr>
+					</thead>
+					<tbody>
+
+						<?php foreach($orders as $order): ?>
+						<tr>
+							<th scope="row"><?php echo e($order->id); ?></th>
+							<td class="has-options"><?php echo e($order->name); ?></td>
+							<td><?php echo e($order->total); ?></td>
+							<td>
+								<?php if(\Auth::user()->role == "admin"): ?>
+								<select class="form-control" style="width:125px;" id="select-<?php echo e($order->id); ?>">
+									<?php
+									$orderStatus = App\Models\Order::orderStatus();
+									?>
+									<?php foreach($orderStatus as $key=>$status): ?>
+										<option value="<?php echo e($key); ?>" <?php echo e($order->order_status == $key ? 'selected' : ''); ?>><?php echo e($status); ?></option>
+									<?php endforeach; ?>
+								</select>
+
+									<?php else: ?>
+									     <?php echo e($order->order_status); ?>
+
+									<?php endif; ?>
+
+							</td>
+							<td><?php echo e($order->created_at); ?></td>
+							<?php if(\Auth::user()->role == "admin"): ?>
+								<td>
+									<form id="form-<?php echo e($order->id); ?>" method="post" action="<?php echo e(Helper::adminUrl('sale/order')); ?>" style="display: inline;">
+										<?php echo e(csrf_field()); ?>
+
+										<input type="hidden" name="order_id" value="<?php echo e($order->id); ?>">
+										<input type="hidden" name="status" id="status-<?php echo e($order->id); ?>" >
+										<a href="javascript:void(0)" data-id="<?php echo e($order->id); ?>" class="update_status"><i class="btn btn-default btn-sm fa fa-upload fa-lg" aria-hidden="true"></i></a>
+									</form>
+									<a href="<?php echo e(Helper::adminUrl('sale/order/view/'.$order->id)); ?>" target="_blank"><i class="btn btn-default btn-sm fa fa-eye fa-lg" aria-hidden="true"></i></a>
+								</td>
+								<?php endif; ?>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+
+				<?php echo $orders->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+			</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+<script>
+	jQuery(function($){
+       $('.update_status').on("click",function(){
+       	   
+       	   var o = $(this).data('id');
+       	   $('#status-'+o).val($("#select-"+o).val());
+       	   $('#form-'+o).submit();
+       });
+	});
+</script>
+
+<?php $__env->stopSection(); ?>

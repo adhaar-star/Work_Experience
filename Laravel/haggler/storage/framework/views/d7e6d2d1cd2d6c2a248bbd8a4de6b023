@@ -1,0 +1,55 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+<?= Helper::alert() ?>
+<h3>Set Deals Of The Day </h3>
+  <div class="row">
+   <div class="col-md-12">
+   	  <?php if(!empty($deals->all())): ?>
+      <form action="<?php echo e(Helper::adminUrl('setting/deals-of-the-day')); ?>" method="post">
+         <?php echo e(csrf_field()); ?>
+
+   	  <div class="table-responsive">
+		  <table class="table">
+		    <thead>
+		    	<tr class="headings">
+		    		<th>Deal Name</th>
+		    		<th>Make Deal of the Day</th>
+		    	</tr>
+		    </thead>
+		     <?php foreach($deals->all() as $deal): ?>
+                <tr>
+                	<td><?php echo e($deal->offerName); ?></td>
+                	<td><input type="checkbox" <?php echo e($deal->deal_of_the_day == "yes" ? "checked" : ''); ?> class="dod" name="dod[]" value="<?php echo e($deal->offerId); ?>"></td>
+                </tr>
+   	      
+   	     <?php endforeach; ?>
+		  </table>
+		</div>
+		<input type="submit" value="Submit" class="btn btn-primary">
+   	   </form>
+   	  <?php endif; ?>
+    </div>  
+   </div>
+  </div>
+
+ 
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+ <script>
+ 	jQuery(function(){
+      jQuery('.dod').click(function(e){
+      	  
+      	  if(jQuery('input[name="dod[]"]:checked').length > 10){
+      	    alert("You can choose only 10 deals.");
+      	  	e.preventDefault();
+      	  	return false;
+      	  }
+      });
+ 	});
+ </script>
+<?php $__env->stopSection(); ?>

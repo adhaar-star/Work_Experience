@@ -1,0 +1,8 @@
+<p>
+	Hi,<br/>
+	<?php echo e($user->username); ?> <br/>
+	Welcome to haggler <br/>
+	Your reset password link is given below: <br/>
+	
+	<a href="<?php echo e($resetLink); ?>">Reset Password</a>
+</p>
