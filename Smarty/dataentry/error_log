@@ -1,0 +1,337 @@
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Notice:  Unable to connect to database in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 24
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Notice:  Unable to select DB in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php:24) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 89
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Warning:  mysql_query(): Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Warning:  mysql_query(): A link to the server could not be established in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:43:32 Etc/GMT] PHP Notice:  MySQL Query Error: Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Notice:  Unable to connect to database in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 24
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Notice:  Unable to select DB in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php:24) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 89
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Warning:  mysql_query(): Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Warning:  mysql_query(): A link to the server could not be established in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Notice:  MySQL Query Error: Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:12 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php:24) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Notice:  Unable to connect to database in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 24
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Notice:  Unable to select DB in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php on line 25
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php:24) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 89
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Warning:  mysql_query(): Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Warning:  mysql_query(): A link to the server could not be established in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Notice:  MySQL Query Error: Access denied for user 'netmeioi'@'localhost' (using password: NO) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[16-Dec-2014 10:44:13 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Database.php:24) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:53:24 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:53:25 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:54:03 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:54:04 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:55:18 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:55:19 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:58:02 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:58:02 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:59:53 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 10:59:54 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Menu.php:41) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 11:01:38 Etc/GMT] PHP Warning:  require(base/Initialize.php): failed to open stream: No such file or directory in /home/netmeioi/public_html/demo.netmente.com/dataentry/index.php on line 19
+[16-Dec-2014 11:01:38 Etc/GMT] PHP Warning:  require(base/Initialize.php): failed to open stream: No such file or directory in /home/netmeioi/public_html/demo.netmente.com/dataentry/index.php on line 19
+[16-Dec-2014 11:01:38 Etc/GMT] PHP Fatal error:  require(): Failed opening required 'base/Initialize.php' (include_path='.:/usr/local/altphp54/lib/php') in /home/netmeioi/public_html/demo.netmente.com/dataentry/index.php on line 19
+[16-Dec-2014 11:03:06 Etc/GMT] PHP Warning:  require(smarty/Smarty.class.php): failed to open stream: No such file or directory in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 20
+[16-Dec-2014 11:03:06 Etc/GMT] PHP Warning:  require(smarty/Smarty.class.php): failed to open stream: No such file or directory in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 20
+[16-Dec-2014 11:03:06 Etc/GMT] PHP Fatal error:  require(): Failed opening required 'smarty/Smarty.class.php' (include_path='.:/usr/local/altphp54/lib/php') in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 20
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 11:07:00 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:03:47 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:14:41 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[16-Dec-2014 12:15:16 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 07:12:48 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:30:17 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 09:38:54 Etc/GMT] PHP Fatal error:  Smarty error: [in menu.tpl line 2]: syntax error: unclosed tag \{foreach} (opened line 1). (Smarty_Compiler.class.php, line 320) in /home/netmeioi/public_html/demo.netmente.com/dataentry/smarty/Smarty.class.php on line 1095
+[17-Dec-2014 09:39:06 Etc/GMT] PHP Fatal error:  Smarty error: [in menu.tpl line 2]: syntax error: unclosed tag \{foreach} (opened line 1). (Smarty_Compiler.class.php, line 320) in /home/netmeioi/public_html/demo.netmente.com/dataentry/smarty/Smarty.class.php on line 1095
+[17-Dec-2014 09:39:07 Etc/GMT] PHP Fatal error:  Smarty error: [in menu.tpl line 2]: syntax error: unclosed tag \{foreach} (opened line 1). (Smarty_Compiler.class.php, line 320) in /home/netmeioi/public_html/demo.netmente.com/dataentry/smarty/Smarty.class.php on line 1095
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 09:40:19 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 09:41:04 Etc/GMT] PHP Fatal error:  Smarty error: [in main.tpl line 66]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2293) in /home/netmeioi/public_html/demo.netmente.com/dataentry/smarty/Smarty.class.php on line 1095
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 10:56:46 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:25:17 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:44 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 11:36:55 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:34:02 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[17-Dec-2014 12:50:22 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:30:05 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:48 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 05:31:56 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:44 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:05:54 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:09 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[18-Dec-2014 11:06:15 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[19-Dec-2014 10:05:44 Etc/GMT] PHP Fatal error:  Call to undefined method Reports::Report() in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Reports.php on line 56
+[19-Dec-2014 10:14:16 Etc/GMT] PHP Fatal error:  Call to undefined method Reports::Report() in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Reports.php on line 56
+[19-Dec-2014 10:14:17 Etc/GMT] PHP Fatal error:  Call to undefined method Reports::Report() in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Reports.php on line 56
+[19-Dec-2014 10:40:45 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/AJAXFunctions.php on line 151
+[19-Dec-2014 10:42:29 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 39
+[19-Dec-2014 10:42:32 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Initialize.php on line 39
+[19-Dec-2014 10:50:09 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/RequestManager.php on line 61
+[19-Dec-2014 11:10:33 Etc/GMT] PHP Fatal error:  Call to a member function Assign() on a non-object in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/RequestManager.php on line 70
+[19-Dec-2014 11:24:34 Etc/GMT] PHP Fatal error:  Class 'RequestManager' not found in /home/netmeioi/public_html/demo.netmente.com/dataentry/index.php on line 26
+[19-Dec-2014 12:45:48 Etc/GMT] PHP Notice:  MySQL Query Error: Unknown column '0type' in 'where clause' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[19-Dec-2014 12:45:48 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php:27) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[19-Dec-2014 12:48:51 Etc/GMT] PHP Notice:  MySQL Query Error: Unknown column '0type' in 'where clause' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[19-Dec-2014 12:48:51 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php:27) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[19-Dec-2014 12:49:08 Etc/GMT] PHP Notice:  MySQL Query Error: Unknown column '0type' in 'where clause' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[19-Dec-2014 12:49:08 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php:27) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[22-Dec-2014 04:51:35 Etc/GMT] PHP Notice:  MySQL Query Error: Unknown column '0type' in 'where clause' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[22-Dec-2014 04:51:35 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php:27) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[22-Dec-2014 04:51:41 Etc/GMT] PHP Notice:  MySQL Query Error: Unknown column '0type' in 'where clause' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php on line 27
+[22-Dec-2014 04:51:41 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/DatabaseQuery.php:27) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[22-Dec-2014 05:51:27 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Reports.php:202) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
+[22-Dec-2014 07:03:07 Etc/GMT] PHP Fatal error:  Smarty error: [in main.tpl line 16]: syntax error: unrecognized tag: .header{display:none (Smarty_Compiler.class.php, line 439) in /home/netmeioi/public_html/demo.netmente.com/dataentry/smarty/Smarty.class.php on line 1095
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 15
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'action' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php on line 17
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'page' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 74
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Illegal string offset 'sort' in /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Table.php on line 86
+[22-Dec-2014 09:33:01 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/netmeioi/public_html/demo.netmente.com/dataentry/base/Administration.php:15) in /home/netmeioi/public_html/demo.netmente.com/dataentry/xajax/xajax.inc.php on line 678
