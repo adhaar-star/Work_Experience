@@ -1,0 +1,132 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+			<h3>Messages</h3>
+
+			<?php echo Helper::alert(); ?>
+
+
+			<div id="opened-conversation">
+				<ul id="opened-conversation-list">
+				</ul>
+			</div>
+
+			<div id="message-write-panel">
+			<form action="<?php echo Helper::adminUrl('message/send'); ?>" method="post">
+			<?php echo e(csrf_field()); ?>
+
+				<input type="hidden" name="thread_id" id="thread_id" value="<?php echo e(Input::get('thread_id')); ?>">
+				<input type="hidden" name="receiver_id" id="receiver_id" value="">
+				<div class="col-sm-10">
+				<textarea name="message" class="form-control"></textarea>
+				</div>
+				<div class="col-sm-2">
+				<button class="btn btn-block btn-default">Send</button>
+				</div>
+			</form>
+			</div>
+
+			
+
+		</div>
+
+		<aside class="col-sm-3" id="conversation-panel">
+			<h3>Inbox</h3>
+			<?php if(!empty($threads->all())): ?>
+			<div id="conversation-list-container">
+			<ul class="conversation-list">
+			<?php foreach($threads as $thread): ?>
+				<li onclick="window.location='<?php echo Helper::adminUrl('message'); ?>?thread_id=<?php echo e($thread->id); ?>'">
+					<div class="media">
+					<p>User: <?php echo e($thread->sender->username); ?> | Subject: <?php echo e($thread->subject); ?><br>
+					<small><?php echo e($thread->last_message); ?></small><br>
+					<small>Date: <?php echo e(date('d M, y H:i:s', strtotime($thread->last_update))); ?></small></p>
+					</div>
+				</li>
+			<?php endforeach; ?>	
+			</ul>
+			</div>
+			<?php else: ?>
+			No conversation
+			<?php endif; ?>
+		</aside>
+	</div>
+</div>		
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<?php if(Input::has('thread_id')): ?>
+<script>
+
+function getTimeStamp() {
+	var myDate = new Date();
+	return myDate.getFullYear() + '-' + (myDate.getMonth()+1) + '-'
++ myDate.getDate() + ' ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' 
++ myDate.getSeconds();
+}
+
+var last_message_timestamp = getTimeStamp();
+
+$(function () {
+
+	$.ajax({
+		url: "<?php echo Helper::adminUrl('message/open-conversation'); ?>",
+		data: {thread_id: <?php echo e(Input::get('thread_id')); ?> },
+		method: 'get',
+		success: function (o) {
+
+			
+
+			if (o.success && o.count > 0) {
+				console.log(o);
+				$("#opened-conversation-list").html(o.body);
+				$("#thread_id").val(o.thread_id);
+				$("#receiver_id").val(o.receiver_id);
+				last_message_timestamp = o.last_message_timestamp;
+				setTimeout(function () {
+					$("#opened-conversation").scrollTop($('#opened-conversation').height());
+				}, 200);
+				
+			}
+
+		}	
+	});
+
+	setInterval(function () {
+
+		/*var timeString = */
+
+		$.ajax({
+		url: "<?php echo Helper::adminUrl('message/open-conversation'); ?>",
+		data: {thread_id: <?php echo e(Input::get('thread_id')); ?>, timestamp: last_message_timestamp },
+		method: 'get',
+		success: function (o) {
+
+			if (o.success && o.count > 0) {
+					$("#opened-conversation-list").append(o.body);
+					$("#thread_id").val(o.thread_id);
+					$("#receiver_id").val(o.receiver_id);
+					last_message_timestamp = o.last_message_timestamp;
+					setTimeout(function () {
+						$("#opened-conversation").scrollTop($('#opened-conversation').height());
+					}, 200);
+					
+			}
+
+			}
+		});	
+
+	}, 3000);
+
+});
+
+
+</script>
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>

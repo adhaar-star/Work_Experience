@@ -1,0 +1,105 @@
+<?php
+use \App\Models\Helper;
+
+function drawChildrens($categories, $id = 0) {
+	?>
+	<?php if(is_object($categories) && !empty($categories->all())): ?>
+						
+		<ul class="cat-tree-parent" id="cat-tree-<?php echo e($id); ?>" style="display:none">
+		<?php foreach($categories as $category): ?>
+			<li>
+				<div>
+				
+				<p class="pull-left content">
+					<span><strong>ID: <?php echo e($category->categoryId); ?></strong></span>
+					<span>Name: <?php echo e($category->categoryName); ?></span>
+					<span>Commission: <?php echo e($category->categoryPercentage); ?></span>
+				</p>
+				<p class="pull-right options">
+					<span><a href="<?php echo e(Helper::adminUrl('category/edit', [$category->categoryId])); ?>">Edit</a> | <a href="">Delete</a>  | <a href="javascript:void;" class="toggle-tree" data-expended="true" data-child="#cat-tree-<?php echo e($category->categoryId); ?>"><i class='glyphicon glyphicon-minus'></i></a></span>
+					
+				</p>
+				</div>
+
+				<?php drawChildrens($category->children, $category->categoryId) ?>
+
+			</li>
+		<?php endforeach; ?>
+		</ul>
+	<?php endif; ?>	
+	<?php
+}
+
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Categories <a href="<?php echo e(Helper::adminUrl('category/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+			<?php echo Helper::alert(); ?>
+
+			<div class="table-responsive">
+
+			<?php if(!empty($categories->all())): ?>
+						
+				<ul class="cat-tree-parent">
+				<?php foreach($categories as $category): ?>
+					<li>
+						<div>
+						<p class="pull-left media">
+							<img src="<?php echo e($category->categoryImage); ?>" height="64"  alt="<?php echo e($category->categoryName); ?>">			
+						</p>
+						<p class="pull-left content">
+							<span><strong>ID: <?php echo e($category->categoryId); ?></strong></span>
+							<span>Name: <?php echo e($category->categoryName); ?></span>
+							<span>Commission: <?php echo e($category->categoryPercentage); ?></span>
+						</p>
+						<p class="pull-right options">
+							<span><a href="<?php echo e(Helper::adminUrl('category/edit', [$category->categoryId])); ?>">Edit</a> | <a href="">Delete</a> | <a href="javascript:void;" class="toggle-tree" data-expended="false" data-child="#cat-tree-<?php echo e($category->categoryId); ?>"><i class='glyphicon glyphicon-plus'></i></a></span>
+							
+						</p>
+						</div>
+
+						<?php drawChildrens($category->children, $category->categoryId) ?>
+
+					</li>
+				<?php endforeach; ?>
+				</ul>
+					
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script>
+
+$(function () {
+
+	$(".toggle-tree").on('click', function () {
+
+		var child = $(this).data('child');
+		var expended = $(this).data('expended');
+
+		if (expended == true) {
+			$(this).html("<i class='glyphicon glyphicon-plus'></i>");
+			$(this).data('expended', false);
+		} else {
+			$(this).html("<i class='glyphicon glyphicon-minus'></i>");
+			$(this).data('expended', true);
+		}
+
+		$(child).slideToggle();
+
+	});
+
+});
+
+</script>
+
+<?php $__env->stopSection(); ?>

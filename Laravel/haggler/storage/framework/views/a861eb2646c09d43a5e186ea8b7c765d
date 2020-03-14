@@ -1,0 +1,56 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<?php echo Helper::alert(); ?>
+
+			<div class="panel-heading">
+				<h3 class="panel-title">Categories <a href="<?php echo e(Helper::adminUrl('deal/category/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Category</a></h3>
+			</div>
+			<div class="panel-body">
+				<div class="col-sm-12 category_heading">
+					<div class="table-responsive">
+						<?php if(!empty($categories->all())): ?>
+							<table class="table table-hover">
+								<thead>
+									<tr class="headings">
+										<th>#</th>
+										<th>Category Name</th>
+										<th>Thumbnail</th>
+										<th>Created</th>
+										<th>Updated</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach($categories as $category): ?>
+									<tr>
+										<th scope="row"><?php echo e($category->categoryId); ?></th>
+										<td class="">
+										<?php echo e($category->categoryName); ?>
+
+										</td>
+										<td><img src="<?php echo e($category->categoryImage); ?>" width="100" alt="<?php echo e($category->categoryName); ?>"></td>
+										<td><?php echo e($category->created_at); ?></td>
+										<td><?php echo e($category->updated_at); ?></td>
+										<td>
+											<a href="<?php echo e(Helper::adminUrl('deal/category/edit', [$category->categoryId])); ?>"><i class="btn btn-default btn-sm fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
+											<a href="<?php echo e(Helper::adminUrl('deal/category/delete', [$category->categoryId])); ?>"><i class="btn btn-default btn-sm fa fa-trash fa-lg" aria-hidden="true"></i></a>
+										</td>
+									</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>
+						<?php else: ?>
+						<p>No records to display!</p>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

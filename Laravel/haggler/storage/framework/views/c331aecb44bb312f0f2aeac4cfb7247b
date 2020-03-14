@@ -1,0 +1,89 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><?= $page_title ?> 
+          <span class="pull-right hidden-xs">
+          <a href="javascript:;" class="btn btn-default"><i class="fa fa-plus"></i> Save</a>
+          <?php if($vendor->store): ?>
+          <a href="<?= Helper::adminUrl('store/edit/' . $vendor->store->storeId) ?>" class="btn btn-default"><i class="fa fa-plus"></i> Store</a>
+          <?php endif; ?>
+          <a href="<?= Helper::adminUrl('user/vendors') ?>" class="btn btn-warning"><i class="fa fa-arrow-left"></i> Back to listing</a>
+           </span></h3>
+
+      </div>
+      <div class="panel-body">
+
+     
+          <form action="<?= Helper::adminUrl('user/save-vendor') ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
+              <?php echo e(csrf_field()); ?>
+
+
+              <?php if(!empty($vendor->id)): ?> 
+                <input type="hidden" name="id" value="<?php echo e($vendor->id); ?>">
+              <?php endif; ?>
+              <div class="col-sm-12">
+                <p class="error">All fields marked in asterisk (*) are mandatory to be filled.</p>
+
+                <?= Helper::alert() ?>
+                                      
+                   <div class="form-group  <?php echo e($errors->has('username') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Username <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="username" value="<?php echo e(Input::old('username', $vendor->username)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('username')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('password') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Password <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="password" value="<?php echo e(Input::old('password')); ?>" class="form-control" <?php echo e(!empty($vendor->id) ? '' : 'required'); ?>>
+                        <div class="help-block"><?php echo e($errors->first('password')); ?></div>
+                      </div>
+                  </div>
+
+                  <div class="form-group  <?php echo e($errors->has('email') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Email <i class="error">*</i></label>
+                       <div class="col-sm-12">
+                       <input type="text" name="email" value="<?php echo e(Input::old('email', $vendor->email)); ?>" class="form-control" required>
+                        <div class="help-block"><?php echo e($errors->first('email')); ?></div>
+                      </div>
+                  </div>
+
+                   <div class="form-group  <?php echo e($errors->has('status') ? 'has-error' : ''); ?>">
+                       <label class="col-sm-12">Status</label>
+                       <div class="col-sm-12">
+                       <select name="status"  class="form-control">
+
+                          <?php foreach(\App\Models\User::statusList() as $key => $status): ?>
+                          <option value="<?php echo e($key); ?>" <?php echo e((Input::old('status', $vendor->status) == $key ) ? 'selected' : ''); ?>><?php echo e($status); ?></option>
+                                                                                            
+                          <?php endforeach; ?> 
+
+                        </select>
+                        <div class="help-block"><?php echo e($errors->first('status')); ?></div>
+                      </div>
+                  </div>
+
+                            
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button class="btn btn-default"><i class="fa fa-plus"></i> Save</button>
+          </div>
+      </div>
+
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<?php $__env->stopSection(); ?>

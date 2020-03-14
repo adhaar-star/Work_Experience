@@ -1,0 +1,153 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+
+<div class="container-fluid">
+	<div class="row">
+		
+<?php if(Auth::user()->role == 'admin'): ?>
+		
+		<div class="col-sm-12">
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Products</h3>
+			<p>Total: <?php echo e(\App\Models\Product::count()); ?></p>
+			<p>Approved: <?php echo e(\App\Models\Product::where('visible', 'yes')->count()); ?></p>
+			<p>Unapproved: <?php echo e(\App\Models\Product::where('visible', 'no')->count()); ?></p>
+		</div>
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Deals</h3>
+			<p>Total: <?php echo e(\App\Models\Deal::count()); ?></p>
+			<p>Approved: <?php echo e(\App\Models\Deal::where('visible', 'yes')->count()); ?></p>
+			<p>Unapproved: <?php echo e(\App\Models\Deal::where('visible', 'no')->count()); ?></p>
+		</div>
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Events</h3>
+			<p>Total: <?php echo e(\App\Models\Event::count()); ?></p>
+			<p>Approved: <?php echo e(\App\Models\Event::where('eventStatus', 'active')->count()); ?></p>
+			<p>Unapproved: <?php echo e(\App\Models\Event::where('eventStatus', 'inactive')->count()); ?></p>
+		</div>
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Vendos</h3>
+			<p>Total: <?php echo e(\App\Models\User::where('role', 'vendor')->count()); ?></p>
+			<p>Stores: <?php echo e(\App\Models\Store::count()); ?></p>
+		</div>
+
+		</div>
+
+		<div class="col-sm-12">
+
+			<div class="col-sm-4">
+			<h3>Validate Deal Code</h3>
+			<?= Helper::inlineError() ?>
+				<form action="{<?= Helper::adminUrl('dashboard/validate-deal') ?>" method="get" class="form-horizontal">
+					<div class="form-group <?php echo e($errors->has('deal_code') ? 'has-error' : ''); ?>">
+						<label class="col-sm-12">Enter Code</label>
+						<div class="col-sm-12">
+							<input type="text" name="deal_code" class="form-control">
+							<div class="help-block"><?php echo e($errors->first('deal_code')); ?></div>
+						</div>
+					</div>
+					<div class="form-group">
+
+						<div class="col-sm-12">
+							<input type="submit" value="Validate" class="btn btn-primary">
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-4">
+			<h3>Unapproved Poducts</h3>
+			<?php $products = \App\Models\Product::select('productId', 'productVendorId', 'productName')->with('vendor')->where('visible', 'no')->take(10)->get(); ?>
+			<?php if(!empty($products->all())): ?>
+			<table class="table table-stripped">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Vendor</th>
+				<th>Action</th>
+			</tr>
+
+				<?php foreach($products as $product): ?>
+					<tr>
+						<td><?php echo e($product->productId); ?></td>
+						<td><?php echo e($product->productName); ?></td>
+						<td><?php echo e($product->vendor->username); ?></td>
+						<td><a href="<?php echo e(Helper::adminUrl('product/visibility/visible', [$product->productId])); ?>">Approve</a> | <a href="<?php echo e(Helper::adminUrl('product/edit', [$product->productId])); ?>">View</a> </td>
+					</tr>
+				<?php endforeach; ?>
+				
+			</table>
+			<?php else: ?>
+				No products to approve
+			<?php endif; ?>
+			</div>
+
+			<div class="col-sm-4">
+			<h3>Unapproved Deals</h3>
+			<?php $deals = \App\Models\Deal::select('offerId', 'offerVendorId', 'offerName')->with('vendor')->where('visible', 'no')->take(10)->get(); ?>
+			<?php if(!empty($deals->all())): ?>
+			<table class="table table-stripped">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Vendor</th>
+				<th>Action</th>
+			</tr>
+
+				<?php foreach($deals as $deal): ?>
+					<tr>
+						<td><?php echo e($deal->offerId); ?></td>
+						<td><?php echo e($deal->offerName); ?></td>
+						<td><?php echo e($deal->vendor->username); ?></td>
+						<td><a href="<?php echo e(Helper::adminUrl('deal/visibility/visible', [$deal->offerId])); ?>">Approve</a> | <a href="<?php echo e(Helper::adminUrl('deal/edit', [$deal->offerId])); ?>">View</a> </td>
+					</tr>
+				<?php endforeach; ?>
+				
+			</table>
+			<?php else: ?>
+			No deals to approve
+			<?php endif; ?>
+			</div>
+			
+
+		</div>
+<?php else: ?>
+		
+		<div class="col-sm-12">
+
+		<div class="col-sm-3 widget widget-1">
+		<h3>Products</h3>
+		<p>Total: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->count()); ?></p>
+		<p>Approved: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->where('visible', 'yes')->count()); ?></p>
+		<p>Unapproved: <?php echo e(\App\Models\Product::where('productVendorId', Auth::id())->where('visible', 'no')->count()); ?></p>
+		</div>
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Deals</h3>
+			<p>Total: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->count()); ?></p>
+			<p>Approved: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->where('visible', 'yes')->count()); ?></p>
+			<p>Unapproved: <?php echo e(\App\Models\Deal::where('offerVendorId', Auth::id())->where('visible', 'no')->count()); ?></p>
+		</div>
+
+		<div class="col-sm-3 widget widget-1">
+			<h3>Events</h3>
+			<p>Total: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->count()); ?></p>
+			<p>Approved: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->where('eventStatus', 'active')->count()); ?></p>
+			<p>Unapproved: <?php echo e(\App\Models\Event::where('eventVendorId', Auth::id())->where('eventStatus', 'inactive')->count()); ?></p>
+		</div>
+
+		</div>
+
+
+<?php endif; ?>
+
+		
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

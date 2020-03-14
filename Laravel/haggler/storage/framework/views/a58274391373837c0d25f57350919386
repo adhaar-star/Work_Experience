@@ -1,0 +1,81 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+	   <div class="col-md-12">
+	   		<?php echo Helper::alert(); ?>
+
+		   	<div class="panel panel-default">
+		   		<div class="panel-heading">
+		   			<h3 class="panel-title">Set Vendor Permissions</h3>
+		   		</div>
+		   		<div class="panel-body">
+		   			<div class="col-sm-12">
+		   				<div class="back_filter">
+		   					<form method="post" action="<?= Helper::adminUrl('user/permissions') ?>">
+		   						<?php echo e(csrf_field()); ?>
+
+		   						<div class="row">
+			   						<div class="col-sm-2">
+			   							<label>Products Access</label>
+			   						</div>
+			   						<div class="col-sm-10">
+										<div class="checkbox">
+											<label><input type="checkbox"  name="product_add" <?php echo e($productPr['add']==1?'checked':''); ?>>Add</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox"  name="product_edit" <?php echo e($productPr['edit']==1?'checked':''); ?>>Edit</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox"  name="product_delete" <?php echo e($productPr['delete']==1?'checked':''); ?>>Delete</label>
+										</div>
+			   						</div>
+			   					</div>
+			   					<div class="row">
+			   						<div class="col-sm-2">
+			   							<label>Deals Access</label>
+			   						</div>
+			   						<div class="col-sm-10">
+										<div class="checkbox">
+											<label><input type="checkbox" name="deal_add" <?php echo e($dealPr['add']==1?'checked':''); ?>>Add</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox" name="deal_edit" <?php echo e($dealPr['edit']==1?'checked':''); ?>>Edit</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox" name="deal_delete" <?php echo e($dealPr['delete']==1?'checked':''); ?>>Delete</label>
+										</div>
+			   						</div>
+			   					</div>
+			   					<div class="row">
+			   						<div class="col-sm-2">
+			   							<label>Events Access</label>
+			   						</div>
+			   						<div class="col-sm-10">
+										<div class="checkbox">
+											<label><input type="checkbox"  name="event_add" <?php echo e($eventPr['add']==1?'checked':''); ?>>Add</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox"  name="event_edit" <?php echo e($eventPr['edit']==1?'checked':''); ?>>Edit</label>
+										</div>
+										<div class="checkbox">
+											<label><input type="checkbox"  name="event_delete" <?php echo e($eventPr['delete']==1?'checked':''); ?>>Delete</label>
+										</div>
+			   						</div>
+			   					</div>
+			   					<div class="row">
+			   						<div class="col-sm-12">
+			   							<button type="submit" class="btn btn-theme" name="submit">Update</button>
+			   						</div>
+			   					</div>
+		   					</form>
+		   				</div> 
+		   			</div>
+		   		</div>
+		   	</div>
+	   </div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>

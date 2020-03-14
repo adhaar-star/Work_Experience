@@ -1,0 +1,145 @@
+<?php
+use \App\Models\Helper;
+?>
+<?php $__env->startSection('content'); ?>
+<div class="container-fluid">
+	<div class="row">
+
+	<div class="col-sm-12">
+
+		<h3>Products <a href="<?php echo e(Helper::adminUrl('product/create')); ?>" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a></h3>
+
+		<form>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>Search</label>
+					<div class="col-sm-12">
+						<input type="text" value="<?php echo e(Input::get('q')); ?>" name="q" class="form-control ">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>From</label>
+					<div class="col-sm-12">
+						<input type="text" value="<?php echo e(Input::get('from')); ?>" name="from" class="form-control datepicker ">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>To</label>
+					<div class="col-sm-12">
+						<input type="text" value="<?php echo e(Input::get('to')); ?>" name="to"  class="form-control datepicker ">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>Vendor</label>
+					<div class="col-sm-12">
+						<select class="form-control" name="vendor">
+
+						<option value="">All</option>
+						
+						<?php
+							$s = \App\Models\Store::all();
+
+							if (!empty($s)) {
+
+						 ?>
+						 <?php foreach($s as $i): ?>
+						 <option value="<?php echo e($i->vendorId); ?>"><?php echo e($i->storeName); ?></option>
+						 <?php endforeach; ?>
+						 <?php } ?>
+
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-gorup">
+					<label>&nbsp;</label>
+					<div class="col-sm-12">
+					<button class="btn btn-primary">Filter</button>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+		<div class="col-sm-12">
+			
+
+			<?php echo Helper::alert(); ?>
+
+
+			<div class="table-responsive">
+
+			<?php if(!empty($products->all())): ?>
+				<table class="table table-hover">
+					<thead>
+						<tr class="headings">
+							<th>#</th>
+							<th>Name</th>
+							<th>Vendor</th>
+							<th>Categories</th>
+							<th>Thumbnail</th>
+							<th>Price</th>
+							<th>Offer</th>
+							<th>Created</th>
+							<th>Updated</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($products as $product): ?>
+						<tr>
+							<th scope="row"><?php echo e($product->productId); ?></th>
+							<td class="has-options">
+							<?php echo e($product->productName); ?>
+
+							<span>
+							<?php if(Auth::user()->role == 'admin'): ?>
+							<?php if($product->visible == 'no'): ?>
+								<a href="<?php echo e(Helper::adminUrl('product/visibility/visible', [$product->productId])); ?>">Approve</a> | 
+							<?php else: ?>
+								<a href="<?php echo e(Helper::adminUrl('product/visibility/hidden', [$product->productId])); ?>">Disapprove</a> | 
+							<?php endif; ?>
+							<?php endif; ?>
+							<a href="<?php echo e(Helper::adminUrl('product/edit', [$product->productId])); ?>">Edit</a> | <a class="delete" href="<?php echo e(Helper::adminUrl('product/delete', [$product->productId])); ?>">Delete</a></span>
+							</td>
+							<td><?php echo e(@$product->store->storeName); ?></td>
+							<td><?php echo e(\App\Models\Product::categoryNames($product)); ?></td>
+							<td><img src="<?php echo e($product->thumbnail); ?>" width="100" alt="<?php echo e($product->productName); ?>"></td>
+							<td><?php echo e($product->productPrice); ?></td>
+							<td><?php echo e($product->hasOffer); ?></td>
+							<td><?php echo e($product->created_at); ?></td>
+							<td><?php echo e($product->updated_at); ?></td>
+						</tr>
+						<?php endforeach; ?>
+
+					</tbody>
+				</table>
+
+				<?php echo $products->render(); ?>
+
+			<?php else: ?>
+			<p>No records to display!</p>
+			<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('after_footer'); ?>
+
+<script src="<?php echo e(url('assets/jquery-ui/jquery-ui.min.js')); ?>"></script>
+
+<?php $__env->stopSection(); ?>
