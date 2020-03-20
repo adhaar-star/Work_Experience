@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gist</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', '#toggle_menu', function() {
+            $('body').addClass('menu_visible');
+            var me = $(this);
+            me.addClass('animate_menu');
+
+            if (me.hasClass('open_menu')) {
+                me.removeClass('open_menu').addClass('close_menu');
+                $('body').removeClass('menu_visible');
+            } else {
+                me.removeClass('close_menu').addClass('open_menu');
+            }
+
+            setTimeout(function() {
+                me.removeClass('animate_menu');
+            }, 1000);
+        });
+
+        $(document).on('click', '#toggle_menu1', function() {
+            $('body').removeClass('menu_visible');
+        });
+    </script>
+
+</head>
+
+<body class="grey_bg">
+
+    <div class="header_outer">
+        <div class="header_inner">
+            <div class="logo">
+                <div class="back_icon">
+                    <h1><a href="#" title="Gist">Gist</a></h1><span class="account_setting">Browsing 150+ candidates<a class="filter_btn" id="modal-821375" href="#modal-container-821375" role="button" class="btn" data-toggle="modal" title="Filter"><img src="images/fillter_plus.png" alt=""><span>Filter</span></a></span>
+                </div>
+            </div>
+
+            <div class="menu_links">
+                <ul>
+                    <li> <a href="#" id="toggle_menu" title="Menu">
+                            <span id="menu-lines-container">
+                                <span id="menu-line-top"></span>
+                                <span id="menu-line-bottom"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu_list">
+        <ul>
+            <li><a href="#" title="Sign Up">Sign Up</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Support">Support</a></li>
+            <li><a href="#" title="Colleges">Colleges</a></li>
+            <li><a href="#" title="Employers">Employers</a></li>
+            <li class="menu_term_link"><span>© I Think Therefore I am Ventures — <a href="#" title="Terms &amp; Privacy">Terms &amp; Privacy</a></span></li>
+        </ul>
+    </div>
+
+
+    <div class="page_outer_section">
+        <div class="coman_outer employer_dash">
+            <div class="coman_inner">
+
+                <div class="candidate_list">
+                    <div class="candidate_video">
+                        <video width="550" height="750" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                        </video>
+                        <div class="progres_outer">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="candidate_dec">
+                        <div class="candidate_inner">
+                            <h3><span class="position">Senior Software Engineer</span><span class="hide_icon"><a href="#"><img src="images/hide.png" alt="hide"></a></span></h3>
+                            <h4>University of Southern California<br> Los Angeles, CA</h4>
+
+                            <p>Hello, I’m Jason, a Senior Software <br>
+                                Engineer in Los Angeles with 5+ years <br>
+                                experience. I have a Bachelor’s Degree<br>
+                                in Computer Science from the <br>
+                                University of Southern California.<br>
+                                My core skills include JavaScript, Java, <br>
+                                Python, PHP, and Ruby.</p>
+                        </div>
+                        <div class="action_list">
+
+                            <ul>
+                                <li><a class="contact_btn"id="modal-215935" href="#modal-container-215935" role="button" class="btn" data-toggle="modal" title="Contact">Contact</a></li>
+                                <li><a class="action_btn" href="#" title="Resume"><img src="images/resume_icon.png" alt="Resume"></a></li>
+                                <li><a class="action_btn" title="Save"><img src="images/save_icon.png" alt="Save"></a></li>
+                                <li><a class="action_btn" id="modal-215934" href="#modal-container-215934" role="button" class="btn" data-toggle="modal" title="Share"><img src="images/share.png" alt="Share"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="candidate_list">
+                    <div class="candidate_video">
+                        <video width="550" height="750" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                        </video>
+                        <div class="progres_outer">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="candidate_dec">
+                        <div class="candidate_inner">
+                            <h3><span class="position">Senior Software Engineer</span><span class="hide_icon"><a href="#"><img src="images/hide.png" alt="hide"></a></span></h3>
+                            <h4>University of Southern California<br> Los Angeles, CA</h4>
+
+                            <p>Hello, I’m Jason, a Senior Software <br>
+                                Engineer in Los Angeles with 5+ years <br>
+                                experience. I have a Bachelor’s Degree<br>
+                                in Computer Science from the <br>
+                                University of Southern California.<br>
+                                My core skills include JavaScript, Java, <br>
+                                Python, PHP, and Ruby.</p>
+                        </div>
+                        <div class="action_list">
+
+                            <ul>
+                                <li><a class="contact_btn" href="#" title="Contact">Contact</a></li>
+                                <li><a class="action_btn" href="#" title="Resume"><img src="images/resume_icon.png" alt="Resume"></a></li>
+                                <li><a class="action_btn" href="#" title="Save"><img src="images/save_icon.png" alt="Save"></a></li>
+                                <li><a class="action_btn" href="#" title="Share"><img src="images/share.png" alt="Share"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Share via Email code start here-->
+    <div class="modal fade popup_outer complete_popup" id="modal-container-215935" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Email Jason</h3> <button type="button" class="close" title="close" data-dismiss="modal" aria-hidden="true"><img src="images/pop_close.png" title="Close iocn" class="img-responsive" alt="close iocn"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="cancel_btn email"><a href="#" title="Share via Email"><span class="icon_type"><img src="images/email_icon.png" alt="Share via Email"></span> <span>jason.d.terry@gmail.com</span></a></h4>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Share via Email code end here-->
+
+
+    <!--Share via Email code start here-->
+    <div class="modal fade popup_outer complete_popup" id="modal-container-215934" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Share Candidate</h3> <button type="button" class="close" title="close" data-dismiss="modal" aria-hidden="true"><img src="images/pop_close.png" title="Close iocn" class="img-responsive" alt="close iocn"></button>
+                </div>
+                <div class="modal-body">
+                    <h4><a href="#" title="Share via Email"><span class="icon_type"><img src="images/email.png" alt="Share via Email"></span> <span>Share via Email</span></a></h4>
+                    <h4><a href="#" title="Copy Link"><span class="icon_type"><img src="images/copy_link.png" alt="Copy Link"></span> <span>Copy Link</span></a></h4>
+                    <h4 class="cancel_btn"><a href="#" title="Cancel"><span class="icon_type">&nbsp;</span> <span>Cancel</span></a></h4>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Share via Email code end here-->
+
+    <!-- LogIn HTML Start here -->
+    <div class="modal fade filter_popup" id="modal-container-821375" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"> <button type="button" class="close_btn btn" data-dismiss="modal"><span aria-hidden="true"><img src="images/close_popup.png" title="Close" alt="Close"></span></button> <span class="talent_filters">Talent Filters</span> </h2>
+
+                </div>
+                <div class="modal-body">
+                    <div class="filter_list_outer">
+
+                        <div class="filter_list">
+                            <h2>Saved Candidates</h2>
+                            <div class="filter_switch">
+                                <div class="saved_candidates">
+                                    <p>Show only saved candidates</p>
+                                </div>
+                                <div class="on_off_switch">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="filter_list">
+
+                            <div class="fild_outer specialties_check">
+                                <h2>Saved Candidates</h2>
+                                <div class="specialties_check_outer">
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">New York, NY</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Boston, MA</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Chicago, IL</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Detroit, MI</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Los Angeles, CA</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">San Francisco, CA</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="show_all"><a href="#" title="Show all Locations">Show all Locations<img alt="Drop Arrow" src="images/arrow_icon.png" /></a></div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="filter_list">
+
+                            <div class="fild_outer specialties_check">
+                                <h2>Saved Candidates</h2>
+                                <div class="specialties_check_outer">
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">New York, NY</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Boston, MA</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Chicago, IL</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Detroit, MI</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="specialties_check_list">
+                                        <div class="left_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Los Angeles, CA</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="right_side">
+                                            <div class="experience_type">
+                                                <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">San Francisco, CA</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="show_all"><a href="#" title="Show all Locations">Show all Locations<img alt="Drop Arrow" src="images/arrow_icon.png" /></a></div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="filter_list">
+
+                            <div class="fild_outer specialties_check">
+                                <h2>Skill Tags</h2>
+                                <div class="fild_outer">
+                                    <div class="fild_inner">
+                                        <textarea class="form-control" placeholder="Enter skill tags seperated by commas (ex: JavaScript, Java, Python, PHP, Ruby)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="filter_strip"><a href="#" title="Clear">Clear</a><button type="button" class="btn">Show <span class="count_num">56</span> Candidates</button></div>
+    </div>
+    <!-- LogIn HTML End here -->
+
+    
+<div class="loader_outer" id="loader">
+    <div class="spinner">
+        <h2>Gist</h2>
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+
+    <script>
+        window.scrollTo(0, 0);
+        window.addEventListener('scroll', function(e) {
+            // console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                document.getElementsByClassName('header_outer')[0].classList.add("sticky");
+            } else {
+                document.getElementsByClassName('header_outer')[0].classList.remove("sticky");
+            }
+        })
+
+
+        $('.custom_textarea').on("keyup", function(e) {
+            var maxlength = 10000;
+
+            this.style.height = "1px";
+            if (parseInt(this.scrollHeight) <= 50) {
+                console.log(this.scrollHeight);
+                this.style.height = "50px";
+            } else {
+                this.style.height = (this.scrollHeight) + "px";
+            }
+
+        });
+
+
+
+
+        $(document).ready(function() {
+            if (parseInt($(window).width()) <= 767) {
+                $(".edit_side").slideUp();
+            }
+
+            $(".slide_down").click(function() {
+                $(".edit_side").slideToggle();
+            });
+        });
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /gist2/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
