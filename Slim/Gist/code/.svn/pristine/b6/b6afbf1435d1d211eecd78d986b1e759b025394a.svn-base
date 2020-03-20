@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gist</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', '#toggle_menu', function() {
+            $('body').addClass('menu_visible');
+            var me = $(this);
+            me.addClass('animate_menu');
+
+            if (me.hasClass('open_menu')) {
+                me.removeClass('open_menu').addClass('close_menu');
+                $('body').removeClass('menu_visible');
+            } else {
+                me.removeClass('close_menu').addClass('open_menu');
+            }
+
+            setTimeout(function() {
+                me.removeClass('animate_menu');
+            }, 1000);
+        });
+
+        $(document).on('click', '#toggle_menu1', function() {
+            $('body').removeClass('menu_visible');
+        });
+    </script>
+
+</head>
+
+<body class="grey_bg">
+
+    <div class="header_outer">
+        <div class="header_inner">
+            <div class="logo">
+                <div class="back_icon">
+                    <h1><a href="#" title="Gist">Gist</a></h1><span class="account_setting"><a href="#" title="Account Settings">Account Settings</a></span>
+                </div>
+            </div>
+
+            <div class="menu_links">
+                <ul>
+                    <li> <a title="Help" class="btns" href="#">Back to Recruiting</a> </li>
+                    <li> <a href="#" id="toggle_menu" title="Menu">
+                            <span id="menu-lines-container">
+                                <span id="menu-line-top"></span>
+                                <span id="menu-line-bottom"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu_list">
+        <ul>
+            <li><a href="#" title="Sign Up">Sign Up</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Support">Support</a></li>
+            <li><a href="#" title="Colleges">Colleges</a></li>
+            <li><a href="#" title="Employers">Employers</a></li>
+            <li class="menu_term_link"><span>© I Think Therefore I am Ventures — <a href="#" title="Terms &amp; Privacy">Terms &amp; Privacy</a></span></li>
+        </ul>
+    </div>
+
+
+    <div class="page_outer_section">
+
+        <div class="account_outer">
+            <div class="account_inner">
+                <button type="button" class="slide_down btn"><img src="images/next.png" title="Slide To See Account Setting"></button>
+                <div class="edit_side">
+
+                    <ul>
+                        <li class="active">
+                            <a href="#" title="Edit Profile">Edit Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Password">Password</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Billing">Billing</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Help">Help</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page_edit_here">
+
+
+                    <div class="user_form">
+                        <form>
+
+                            <!-- Edit Profile HTML Start here
+
+                            <div class="page_edit_inner">
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Your Name *</label>
+                                    <div class="fild_inner">
+                                        <input autofocus="" class="form-control" placeholder="Enter your name" type="text">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Work Email *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Phone *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="number">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Job Title *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="text">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Company Name *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="apply_now save_edit"><button class="submit_btn btn" title="Complete">Save</button></div>
+
+
+                            </div> 
+
+                             Edit Profile HTML Start here -->
+
+                            <!-- Change password HTML start here
+
+                             <div class="page_edit_inner">
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Current Password *</label>
+                                    <div class="fild_inner">
+                                        <input autofocus="" class="form-control" placeholder="Enter your name" type="text">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">New Password *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Confirm New Password *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="number">
+                                    </div>
+                                </div>
+
+
+                                <div class="apply_now save_edit"><button class="submit_btn btn" title="Complete">Save</button></div>
+
+                            </div> 
+
+                             Change password HTML end here -->
+
+                            <!--  Help html start here
+
+                          <div class="page_edit_inner">
+                                <div class="fild_outer">
+                                 <p>Talking is good. Get in touch below, or <br>email us anytime at support@trygist.com</p>
+                               </div>
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Your Name *</label>
+                                    <div class="fild_inner">
+                                        <input autofocus="" class="form-control" placeholder="Enter your name" type="text">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Work Email *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Phone *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="Your personal email" type="number">
+                                    </div>
+                                </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Message *</label>
+                                    <div class="fild_inner">
+                                        <textarea class="custom_textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="apply_now save_edit"><button class="submit_btn btn" title="Complete">Get Help</button></div>
+                            </div> 
+
+                             Help html end here-->
+
+                            <!-- Billing Summary html start here     
+                            
+                         <div class="page_edit_inner">
+                               <div class="fild_outer">
+                                    <label class="tittle_heading">Billing Summary</label>
+                                   <div class="billing_summary">
+                                       <ul>
+                                           <li><span class="date_format">Dec 1, 2018</span> <span class="charged">Charged $99.00</span></li>
+                                            <li><span class="date_format">Jan 1, 2018</span> <span class="charged">Charged $99.00</span></li>
+                                            <li><span class="date_format">Feb 1, 2018</span> <span class="charged">Charged $99.00</span></li>
+                                            <li><span class="date_format">Mar 1, 2018</span> <span class="charged">$0.00</span></li>
+                                       </ul>
+                                   </div>
+                               </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Credit Card *</label>
+                                    <div class="fild_inner">
+                                        <input autofocus="" class="form-control" placeholder="**** **** **** 5939" type="text">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Billing Zip *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="10010" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Expiration Date *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="02 / 2024" type="number">
+                                    </div>
+                                </div>
+
+
+                                <div class="fild_outer">
+                                    <label class="tittle_heading">Securtiy Code *</label>
+                                    <div class="fild_inner">
+                                        <input class="form-control" placeholder="672" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="apply_now save_edit"><button class="submit_btn btn" title="Complete">Save</button></div>
+
+
+                            </div> 
+                            
+                          Billing Summary html start here  -->
+
+                            <!-- Edit Gist html start here  -->
+
+                            <div class="page_edit_inner">
+                                <div class="talent_dash">
+                                    <p class="tittle_heading">Edit your Gist <a href="#" title="">[?]</a></p>
+                                    <div class="change_ques">
+                                        <p>If you could have one superpower, what would it be and why? — <a title="Edit" href="#">Edit</a></p>
+                                    </div>
+
+
+                                    <div class="upload_side">
+                                        <div class="upload_video">
+                                            <img alt="Upload" src="images/upload.png">
+                                            <h3>Upload Your Video</h3>
+                                            <p>Your video should be vertical<br> and must be 30 seconds or less.</p>
+                                            <div class="upload_btn">
+                                                <input name="poop" id="poop" class="upload" type="file">
+                                                <label class="upload_text" for="poop">Choose File</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  Edit Gist html start here  -->
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        window.scrollTo(0, 0);
+        window.addEventListener('scroll', function(e) {
+            // console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                document.getElementsByClassName('header_outer')[0].classList.add("sticky");
+            } else {
+                document.getElementsByClassName('header_outer')[0].classList.remove("sticky");
+            }
+        })
+
+
+        $('.custom_textarea').on("keyup", function(e) {
+            var maxlength = 10000;
+
+            this.style.height = "1px";
+            if (parseInt(this.scrollHeight) <= 50) {
+                console.log(this.scrollHeight);
+                this.style.height = "50px";
+            } else {
+                this.style.height = (this.scrollHeight) + "px";
+            }
+
+        });
+
+
+
+      
+  $(document).ready(function(){
+     if (parseInt($(window).width()) <= 767) {
+         $(".edit_side").slideUp();
+     }
+
+       $(".slide_down").click(function(){
+           $(".edit_side").slideToggle();
+       });
+   });
+        
+     
+    
+    </script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Models;
+
+use Quill\Database as Database;
+
+class VideoStats extends Database {
+
+    protected $tableName = ' video_stats';
+    protected $primarykey = 'video_id';
+
+    /*
+     *  Save user detail
+     */
+
+    public function save($user) {
+
+        $user['modified_at'] = date('Y-m-d H:i:s');
+        $checkStat = $this->checkStat($user);
+		
+		if($checkStat!=""){
+		$user['video_id'] = $checkStat['video_id'];
+		}
+		
+        if (!empty($user['video_id'])) {
+                    //    print_r($user);die;
+            $response = $this->table()->where(array('video_id' => $user['video_id']))->update($user, true);
+            return $response;
+            //print_r($response);die;
+        } else {
+            $user['created_at'] = date('Y-m-d H:i:s');
+            return $this->table()->insert($user, true);
+        
+    }
+	}
+	
+	public function checkStat($user){
+	
+    return $this->table()->select()->where(array('user_id'=>$user['user_id'],'employer_id'=>$user['employer_id']))->one();	
+	}
+
+       
+}

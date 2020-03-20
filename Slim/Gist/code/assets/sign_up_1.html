@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gist</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', '#toggle_menu', function() {
+            $('body').addClass('menu_visible');
+            var me = $(this);
+            me.addClass('animate_menu');
+           
+            if (me.hasClass('open_menu')) {
+                me.removeClass('open_menu').addClass('close_menu');
+                $('body').removeClass('menu_visible');
+            } else {
+                me.removeClass('close_menu').addClass('open_menu');
+            }
+            
+            setTimeout(function(){
+                 me.removeClass('animate_menu');
+            }, 1000);
+        });
+
+        $(document).on('click', '#toggle_menu1', function() {
+            $('body').removeClass('menu_visible');
+        });
+    </script>
+
+</head>
+
+<body class="grey_bg">
+
+<div class="header_outer sign_up">
+    <div class="header_inner">
+        <div class="logo">
+            <div class="back_icon"><a href="#" title="Gist"><img src="images/back_icon.png" alt="Back icon"></a></div>
+        </div>
+        <div class="page_heading">
+            <h1><a href="#" title="Sign Up">Sign Up</a></h1>
+        </div>
+        <div class="menu_links">
+            <ul>
+                <li> <a title="Help" class="btns" href="#">Help</a> </li>
+                <li> <a href="#" id="toggle_menu" title="Menu">
+                        <span id="menu-lines-container">
+                            <span id="menu-line-top"></span>
+                            <span id="menu-line-bottom"></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu_list">
+        <ul>
+            <li><a href="#" title="Sign Up">Sign Up</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Login">Login</a></li>
+            <li><a href="#" title="Support">Support</a></li>
+            <li><a href="#" title="Colleges">Colleges</a></li>
+            <li><a href="#" title="Employers">Employers</a></li>
+            <li class="menu_term_link"><span>© I Think Therefore I am Ventures — <a href="#" title="Terms &amp; Privacy">Terms &amp; Privacy</a></span></li>
+        </ul>
+    </div>
+</div>
+    
+<div class="sign_up_steps coman_outer">
+  <div class="steps_inner">
+        <ul>
+            <li class="active">
+                <span class="step_num">1</span>
+                <span class="step_type">Choose</span>
+            </li>
+            <li>
+                <span class="step_num">2</span>
+                <span class="step_type">Upload</span>
+            </li>
+            <li>
+                <span class="step_num">3</span>
+                <span class="step_type">Profile</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="choose_ques coman_outer">
+    <div class="choose_ques_inner">
+        <h2 class="coman_heading">Choose a question</h2>
+        
+             <div class="ques_list_outer">
+                 
+                 <div class="ques_list">
+                     <div class="question_tab">
+                        <p>If you could have one<br>
+                        superpower what would <br>
+                        it be and why?</p>
+                         <div class="question_check"><a href="#"></a></div>
+                     </div>
+                 </div>
+                 
+                    <div class="ques_list">
+                     <div class="question_tab">
+                          <p>You are in charge of 20 people, describe how you<br> would organize them to <br>figure out how many <br>bicycles were sold in NYC<br>last year.</p>
+                         <div class="question_check"><a href="#"></a></div>
+                     </div>
+                 </div>
+                 
+                  <div class="ques_list">
+                     <div class="question_tab">
+                        <p>If you could have one<br>
+                        superpower what would <br>
+                        it be and why?</p>
+                         <div class="question_check"><a href="#"></a></div>
+                     </div>
+                 </div>
+                 
+                 
+                  <div class="ques_list">
+                     <div class="question_tab">
+                        <p>If you could have one<br>
+                        superpower what would <br>
+                        it be and why?</p>
+                         <div class="question_check"><a href="#"></a></div>
+                     </div>
+                 </div>
+                
+            </div>
+    </div>
+</div>   
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

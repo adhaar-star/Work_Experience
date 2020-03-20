@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gist</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(document).on('click', '#toggle_menu', function() {
+            $('body').addClass('menu_visible');
+            var me = $(this);
+            me.addClass('animate_menu');
+           
+            if (me.hasClass('open_menu')) {
+                me.removeClass('open_menu').addClass('close_menu');
+                $('body').removeClass('menu_visible');
+            } else {
+                me.removeClass('close_menu').addClass('open_menu');
+            }
+            
+            setTimeout(function(){
+                 me.removeClass('animate_menu');
+            }, 1000);
+        });
+
+        $(document).on('click', '#toggle_menu1', function() {
+            $('body').removeClass('menu_visible');
+        });
+    </script>
+
+</head>
+
+<body class="grey_bg">
+
+    <div class="header_outer sign_up">
+        <div class="header_inner">
+            <div class="logo">
+                <div class="back_icon"><a href="#" title="Gist"><img src="images/back_icon.png" alt="Back icon"></a></div>
+            </div>
+            <div class="page_heading">
+                <h1><a href="#" title="Sign Up">Sign Up</a></h1>
+            </div>
+            <div class="menu_links">
+                <ul>
+                    <li> <a title="Help" class="btns" href="#">Help</a> </li>
+                    <li> <a href="#" id="toggle_menu" title="Menu">
+                            <span id="menu-lines-container">
+                                <span id="menu-line-top"></span>
+                                <span id="menu-line-bottom"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <div class="menu_list">
+            <ul>
+                <li><a href="#" title="Sign Up">Sign Up</a></li>
+                <li><a href="#" title="Login">Login</a></li>
+                <li><a href="#" title="Support">Support</a></li>
+                <li><a href="#" title="Colleges">Colleges</a></li>
+                <li><a href="#" title="Employers">Employers</a></li>
+                <li class="menu_term_link"><span>© I Think Therefore I am Ventures — <a href="#" title="Terms &amp; Privacy">Terms &amp; Privacy</a></span></li>
+            </ul>
+        </div>
+    
+    
+    <div class="page_outer_section">
+    <div class="sign_up_steps coman_outer">
+        <div class="steps_inner">
+            <ul>
+                <li class="active">
+                    <span class="step_num">1<img class="tick" alt="" src="images/check_icon.png"></span>
+                    <span class="step_type">Choose</span>
+                </li>
+                <li>
+                    <span class="step_num">2<img class="tick" alt="" src="images/check_icon.png"></span>
+                    <span class="step_type">Upload</span>
+                </li>
+                <li>
+                    <span class="step_num">3<img class="tick" alt="" src="images/check_icon.png"></span>
+                    <span class="step_type">Profile</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="choose_ques coman_outer">
+        <div class="choose_ques_inner">
+
+<!--<div class="step_one_outer">
+    <h2 class="coman_heading">Choose a question</h2>
+
+    <div class="ques_list_outer">
+
+        <div class="ques_list">
+            <div class="question_tab">
+                <p>If you could have one<br>
+                    superpower what would <br>
+                    it be and why?</p>
+                <div class="question_check"><a href="#"></a></div>
+            </div>
+        </div>
+
+        <div class="ques_list">
+            <div class="question_tab">
+                <p>You are in charge of 20 people, describe how you<br> would organize them to <br>figure out how many <br>bicycles were sold in NYC<br>last year.</p>
+                <div class="question_check"><a href="#"></a></div>
+            </div>
+        </div>
+
+        <div class="ques_list">
+            <div class="question_tab">
+                <p>If you could have one<br>
+                    superpower what would <br>
+                    it be and why?</p>
+                <div class="question_check"><a href="#"></a></div>
+            </div>
+        </div>
+
+
+        <div class="ques_list">
+            <div class="question_tab">
+                <p>If you could have one<br>
+                    superpower what would <br>
+                    it be and why?</p>
+                <div class="question_check"><a href="#"></a></div>
+            </div>
+        </div>
+
+    </div>
+</div>-->
+
+<!--<div class="step_two_outer">
+    <div class="upload_inner">
+
+        <div class="upload_side">
+            <div class="upload_video">
+                <img alt="Upload" src="images/upload.png">
+                <h3>Upload Your Video</h3>
+                <p>Your video should be vertical<br> and must be 30 seconds or less.</p>
+                <div class="upload_btn">
+                    <input name="poop" id="poop" class="upload" type="file" />
+                    <label class="upload_text" for="poop">Choose File</label>
+                </div>
+
+            </div>
+            <div class="uploaded_video">
+                <div class="progres_outer">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        </div>
+                    </div>
+                    <span class="value">100%</span>
+                </div>
+
+                <div class="video_come_here">
+                    <video width="348" height="542" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit_ques">
+            <div class="edit_question">
+                <h2 class="coman_heading">Upload your Gist</h2>
+                <div class="change_ques_inner">
+                    <h3>Question</h3>
+                    <div class="change_ques">
+                        <p>If you could have one superpower, what would it be and why? — <a title="Edit" href="#">Edit</a></p>
+                    </div>
+                    <h4>Tips</h4>
+                    <p>Go with what's comfortable to you. For a simple video
+                        use your phone's standard recorder. If you want to get
+                        creative, apps like Instagram and Clips offer more
+                        expressive features.</p>
+
+                    <p>Your first impulse may be to get in front of the camera
+                        and start talking, but it’s usually better to practice a few
+                        times first.</p>
+
+                    <p>Authentic content is honest and imperfect. Imperfect
+                        feels real. And employers trust real and reward it with
+                        engagement and interview requests.</p>
+                    <div class="continue_btn">
+                    
+                    <button class="conti_btn btn" title="Continue">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>-->
+
+            
+            
+            
+<div class="step_three_outer">
+    <div class="almost_outer">
+        <h2 class="coman_heading">You’re almost done</h2>
+        <p>Complete your profile so companies can find you on Gist</p>
+    </div>
+    <div class="register_form_inner">
+        <div class="user_form">
+            <form>
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">Your Name *</label>
+                    <div class="fild_inner">
+                        <input autofocus="" class="form-control" placeholder="Enter your name" type="text">
+                    </div>
+                </div>
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">Email *</label>
+                    <div class="fild_inner">
+                        <input class="form-control" placeholder="Your personal email" type="text">
+                    </div>
+                </div>
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">Experience *</label>
+                    <div class="fild_inner">
+                        <select class="selectpicker form-control">
+                            <option>Your experience level</option>
+                            <option>Your experience level1</option>
+                            <option>Your experience level2</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">Primary Field *</label>
+                    <div class="fild_inner">
+                        <select class="selectpicker form-control">
+                            <option>Your area of expertise</option>
+                            <option>Your experience level1</option>
+                            <option>Your experience level2</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">URL *</label>
+                    <div class="fild_inner">
+                        <textarea class="form-control" placeholder="Paste your LinkedIn, GitHub, Stack Overflow or personal website URL"></textarea>
+                    </div>
+                </div>
+                
+
+      
+                <div class="fild_outer work_exper_outer">
+                    <label class="tittle_heading">Education * </label>
+                    <div class="experi_list_outer">
+                        <div class="experience_list_outer">
+                            <div class="left_filds latest_degree">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Latest degree</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right_filds fild_of_study">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="Field of study" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience_list_outer">
+                            <div class="left_filds college">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="College" type="text">
+                                </div>
+                            </div>
+                            <div class="right_filds grand_year">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Grad year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_remove_outer">
+                            <div class="add_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/plus-icon.png" alt="Add another"></span><span class="btn_name">Add another</span></a></div>
+                        </div>
+                    </div>
+
+
+                    <div class="experi_list_outer rapeat_section">
+
+                        <div class="experience_list_outer">
+                            <div class="left_filds latest_degree">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Latest degree</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right_filds fild_of_study">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="Field of study" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience_list_outer">
+                            <div class="left_filds college">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="College" type="text">
+                                </div>
+                            </div>
+                            <div class="right_filds grand_year">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Grad year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_remove_outer">
+                            <div class="remove_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/remove.png" alt="Remove"></span><span class="btn_name">Remove</span></a></div>
+                            <div class="add_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/plus-icon.png" alt="Add another"></span><span class="btn_name">Add another</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                  
+                
+                
+                
+
+           
+                <div class="fild_outer work_exc_form work_exper_outer">
+                    <label class="tittle_heading">Work Experience * </label>
+                    <div class="experi_list_outer">
+                        <div class="experience_list_outer">
+                            <div class="left_filds">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Company</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right_filds">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="Your title at this company" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience_list_outer">
+                            <div class="left_filds ">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="Started" type="text">
+                                </div>
+                            </div>
+                            <div class="right_filds ">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add_remove_outer">
+                            <div class="add_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/plus-icon.png" alt="Add another"></span><span class="btn_name">Add another</span></a></div>
+                        </div>
+                    </div>
+
+
+                    <div class="experi_list_outer rapeat_section">
+                        <div class="experience_list_outer">
+                            <div class="left_filds">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Latest degree</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right_filds">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="Field of study" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience_list_outer">
+                            <div class="left_filds">
+                                <div class="fild_inner">
+                                    <input class="form-control" placeholder="College" type="text">
+                                </div>
+                            </div>
+                            <div class="right_filds">
+                                <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Grad year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                             <div class="experience_list_outer start_end_yr">
+                                <div class="left_filds">
+                                  <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                      <option>Started</option>
+                                    </select>
+                                  </div>
+                                  <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                      <option>Ended</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              <div class="right_filds">
+                                  <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                      <option>Ended</option>
+                                    </select>
+                                  </div>
+                                  <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                      <option>Ended</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                 
+                                <div class="currently_working">
+                                    <p><label class="check_boxes"><input type="checkbox" name="is_currently_working">
+                                    <span class="checkmark"></span></label><span class="label_name">I currently work here</span></p>
+                                 </div>
+                            </div>
+                        
+                        
+                        <div class="add_remove_outer">
+                            <div class="remove_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/remove.png" alt="Remove"></span><span class="btn_name">Remove</span></a></div>
+                            <div class="add_btn"><a href="#" title="Remove"><span class="check_btn"><img src="images/plus-icon.png" alt="Add another"></span><span class="btn_name">Add another</span></a></div>
+                        </div>
+                    </div>
+                    
+                    
+                      
+                </div>
+               
+                
+                
+                <div class="fild_outer">
+                    <label class="tittle_heading">Blocked List</label>
+                    <div class="fild_inner">
+                        <textarea class="form-control" placeholder="List any companies you want to block from seeing your information"></textarea>
+                    </div>
+                </div>
+                
+                
+                      
+                  <div class="fild_outer specialties_check">
+                    <div class="type_head">
+                        <label class="tittle_heading">Location *</label>
+                        <p><span>Where are you open to working? Select up to three locations</span></p>
+                    </div>
+                    <div class="specialties_check_outer">
+                        <div class="specialties_check_list">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">New York, NY</span></p>
+                                </div>
+                            </div>
+
+                            <div class="right_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Boston, MA</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="specialties_check_list">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Chicago, IL</span></p>
+                                </div>
+                            </div>
+
+                            <div class="right_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Detroit, MI</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="specialties_check_list">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Los Angeles, CA</span></p>
+                                </div>
+                            </div>
+
+                            <div class="right_side">
+                                <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">San Francisco, CA</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <div class="experience_type">
+                                    <p><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label><span class="label_name">Los Angeles, CA</span></p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="right_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner">
+                                        <input  class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner">
+                                        <input  class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                         
+                  <div class="fild_outer skill_outer specialties_check">
+                    <div class="type_head">
+                        <label class="tittle_heading">Skill Tags *</label>
+                        <p><span>List five of your core skills that are relevant to the job you’re pursuing. A skill<br>
+                        is an ability to do something that requires training and experience like HTML, <br>
+                        Copywriting, Statistical Analysis, Enterprise Sales, Big Data, etc. Do not list <br>
+                        personality traits like hardworking, sociable, motivated, etc.</span></p>
+                    </div>
+                    <div class="specialties_check_outer">
+                        <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner inner_input">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_experience">
+                               <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner inner_input">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_experience">
+                               <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                          <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner inner_input">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_experience">
+                               <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner inner_input">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_experience">
+                               <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                           <div class="specialties_check_list search_box">
+                            <div class="left_side">
+                                <div class="experience_type">
+                                    <p class="check_box_here"><label class="check_boxes"><input type="checkbox"><span class="checkmark"></span></label></p>
+                                    <div class="fild_inner inner_input">
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select_experience">
+                               <div class="fild_inner">
+                                    <select class="selectpicker form-control">
+                                        <option>Ended</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+                
+            <div class="fild_outer">
+                <label class="tittle_heading">Password *</label>
+                <div class="fild_inner">
+                    <input class="form-control" placeholder="Create a password " type="text">
+                </div>
+            </div>
+          <div class="apply_now submit_employers"><button class="submit_btn btn" title="Complete">Complete</button></div>
+         <div class="click_complete"><p>By clicking “Complete” you’re indicating that you have read and agree to our Terms of Service</p></div>
+       </form>
+      </div>
+   </div>
+</div>
+
+
+
+        </div>
+    </div>
+ 
+        </div>
+    
+    
+<script>
+    window.scrollTo(0, 0);
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY > 100) {
+            document.getElementsByClassName('header_outer')[0].classList.add("sticky");
+        } else {
+            document.getElementsByClassName('header_outer')[0].classList.remove("sticky");
+        }
+    })
+</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+</body>
+
+</html>
