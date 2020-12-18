@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+       <!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" />
+        <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT" />-->
+        <title>
+           Gist
+        </title>
+        {% load static %}
+        <link rel="icon" href="{%static 'favicon.png' %}" />
+        <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/bootstrap-select.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/style.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/responsive.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/font-awesome.min.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/animate.min.css' %}" />
+        <link rel="stylesheet" href="{%static 'css/toastr.min.css' %}" />
+        <link rel="stylesheet" href="{%static 'fonts/fonts.css' %}" />
+        <link rel="icon" type="image/png" href="{%static 'favicon.png' %}" />
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+        <script src="{%static 'js/bootstrap.min.js' %}"></script>
+        <script src="{%static 'toastr-master/build/toastr.min.js' %}"></script>
+        <script src="{%static 'js/jquery.validate.min.js' %}"></script>
+        <script src="{%static 'js/routes.js' %}"></script>
+        <script src="{%static 'js/helpers.js' %}"></script>
+        
+        <script type="text/javascript">
+            toastr.options = {
+                "closeButton": true,
+                "preventDuplicates": true,
+                "extendedTimeOut": false,
+                "showDuration": "300",
+                "positionClass": "toast-top-center"
+            }
+
+        </script>
+
+
+
+        <script src="{%static 'js/scripts.js' %}"></script>
+        <script src="{%static 'js/velocity.min.js' %}"></script>
+        <script src="{%static 'js/velocity.ui.min.js' %}"></script>
+
+
+<div class="header_outer ">
+    <div class="header_inner">
+        <div class="logo">
+            <div class="back_icon">
+                <h1><a href="/" title="Gist Logo">Gist</a></h1>
+            </div>
+        </div>
+        <div class="menu_links">
+            <ul>
+                                        <li> <a title="Help" class="btns" href="/help">Help</a> </li>
+                                    <li> 
+                    <a href="javascript:void(0);" id="toggle_menu" title="Menu">
+                        <span id="menu-lines-container">
+                            <span id="menu-line-top"></span>
+                            <span id="menu-line-bottom"></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu_list">
+    <ul>
+                    <li><a href="/candidate/signup" title="Sign Up">Sign Up</a></li>
+                    {% if user.is_authenticated %}
+            <li><a href="/candidate/logout" title="Logout">Logout</a></li>
+            {% else %}
+            <li><a href="/candidate/login" title="Login">Login</a></li>
+            {% endif %}
+            <li><a href="/help" title="Help">Support</a></li>
+            <li><a href="/colleges" title="Colleges">Colleges</a></li>
+            <li><a href="/employers" title="Employers">Employers</a></li>
+            </ul>
+</div>
+
+    </div>
+</div><body>
+<div class="page_outer_section">
+    <div class="collage_outer coman_outer">
+        <div class="collage_inner banner_dec employ_splash_inner">
+            <h2 class="main_heading">Talking is good. Get in touch<br>
+                below, or email us anytime at<br>
+                questions@yourgist.com</h2>
+        </div>
+    </div>
+    
+    <div class="user_register_form cantainer_form ">
+        <div class="register_form_inner">
+            <div class="user_form">
+                <form method="POST" name="help_form" id="help_form">
+                    {% csrf_token %}
+                    <div class="fild_outer">
+                        <label class="tittle_heading">Your Name *</label>
+                        <div class="fild_inner">
+                            <input autofocus="" class="form-control" placeholder="Enter your name" name="Name" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="fild_outer">
+                        <label class="tittle_heading">Email *</label>
+                        <div class="fild_inner">
+                            <input class="form-control" placeholder="Your personal email" type="text" name="email" />
+                        </div>
+                    </div>
+
+                    <div class="fild_outer">
+                        <label class="tittle_heading">Message *</label>
+                        <div class="fild_inner">
+                            <input class="form-control" placeholder="Enter your message" type="text" name="message" />
+                        </div>
+                    </div>
+
+                    <!--Apply Now  HTML end here-->
+                    <div class="apply_now"><button class="submit_btn btn" id="submit_btn" type="submit" title="Submit">Submit</button></div>
+                </form>
+
+            </div>
+            
+            
+        </div>
+        
+<div class="help_faq_outer">
+    <div class="help_faq_inner">
+        <div class="faq_heading_outer">
+            <h2>FAQs</h2>
+        </div>
+
+        <div class="help_faq_list">
+
+            <div class="help_faq_text">
+                <h3>What is Gist?</h3>
+                <p>Gist is a new medium to express yourself, demonstrate your skillsets and
+                    show-off your creativity. On Gist you can create a short, no-pressure video
+                    response to a thought provoking question. The world's leading companies
+                    are discovering and hiring people on Gist every day.</p>
+            </div>
+
+
+            <div class="help_faq_text">
+                <h3>Why is Gist better than a resume?</h3>
+                <p>Resumes are boring. We just fell asleep thinking about reading one. Do you.
+                    And don’t do a resume. Have a Gist instead.</p>
+            </div>
+
+
+
+
+            <div class="help_faq_text">
+                <h3>How do I get started?</h3>
+                <p>Gist is available for iOS and you can download it free on the Apple App Store.
+                    Signing up takes less than five minutes.</p>
+            </div>
+
+
+
+            <div class="help_faq_text">
+                <h3>I'm not currently looking for a job, is Gist for me?</h3>
+                <p>Most of the people on Gist are not actively looking for a job. We like to think of
+                    Gist as being like that box of pizza rolls buried in your freezer. You may not eat
+                    them today, but there will come a time late at night when that frozen dough will
+                    be salvation.</p>
+            </div>
+
+
+
+            <div class="help_faq_text">
+                <h3>We’re hiring, how can we use Gist?</h3>
+                <p>We are super picky about the companies we work with. To learn more about
+                    hiring through the platform, click here: www.gistapp.com/hiring</p>
+            </div>
+
+
+
+            <div class="help_faq_text">
+                <h3>What about my privacy?</h3>
+                <p>Privacy is extremely important to us here at Jerry, so your information is
+                    automatically hidden from your current or most recent employer, and is never
+                    visible to anyone off platform.</p>
+            </div>
+
+
+
+            <div class="help_faq_text">
+                <h3>I have more questions, who can I contact?</h3>
+                <p>Talking is good. Get in touch anytime by emailing <a href="mailto:support@trygist.com">support@trygist.com</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!--Loader section start here-->
+<div class="loader_outer" id="loader" style="display:none">
+    <div class="spinner">
+        <h2>Gist</h2>
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!--Loader section end here-->
+
+<!-- <script src="https://www.yourgist.com/assets/js/bootstrap.min.js"></script>-->
+<script src="https://www.yourgist.com/assets/js/bootstrap-select.js"></script>
+<script src="https://www.yourgist.com/assets/js/custom.js"></script>
+<script>
+   
+    window.addEventListener('scroll', function (e) {
+        // console.log(window.scrollY);
+        if (window.scrollY > 100) {
+            document.getElementsByClassName('header_outer')[0].classList.add("sticky");
+        } else {
+            document.getElementsByClassName('header_outer')[0].classList.remove("sticky");
+        }
+    })
+    
+    $(document).ready(function () {
+        window.scrollTo(0, 0);
+        if (parseInt($(window).width()) <= 767) {
+            $(".edit_side").slideUp();
+        }
+
+        $(".slide_down").click(function () {
+            $(".edit_side").slideToggle();
+        });
+    });
+
+    $('.custom_textarea').on("keyup", function (e) {
+        var maxlength = 10000;
+
+        this.style.height = "1px";
+        if (parseInt(this.scrollHeight) <= 50) {
+            console.log(this.scrollHeight);
+            this.style.height = "50px";
+        } else {
+            this.style.height = (this.scrollHeight) + "px";
+        }
+
+    });
+
+    $('.slide_toggle').click(function () {
+        var check = $('.edit_side').hasClass("toggle")
+        if (check) {
+            /* console.log("a")*/
+            $('.edit_side').removeClass("toggle")
+        } else {
+            $('.edit_side').addClass("toggle")
+        }
+    })
+</script>
+
+
+    <script>
+        $(document).ready(function () {
+        $(".modal").each(function(l) {
+            $(this).on("show.bs.modal", function(l) {
+                var o = $(this).attr("data-easein");
+                "shake" == o ? $(".modal-dialog").velocity("callout." + o) : "pulse" == o ? $(".modal-dialog").velocity("callout." + o) : "tada" == o ? $(".modal-dialog").velocity("callout." + o) : "flash" == o ? $(".modal-dialog").velocity("callout." + o) : "bounce" == o ? $(".modal-dialog").velocity("callout." + o) : "swing" == o ? $(".modal-dialog").velocity("callout." + o) : $(".modal-dialog").velocity("transition." + o)
+            })
+        });
+     });
+  window.onload = function () {
+ //$(window).ready(function() {
+ setTimeout(function(){ 
+  window.scrollTo(0, 0);
+  }, 200);
+  }
+    </script>
+<script type="text/javascript">
+    $('#help_form').validate({
+        rules: {
+            Name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            },
+        },
+        messages: {
+            Name: {
+                required: "Please enter name"
+            },
+            email: {
+                required: 'Please enter email',
+                email: 'Please enter valid email'
+            },
+            message: {
+                required: 'Please enter message'
+            }
+        },/*
+        submitHandler: function () {
+
+            $('#submit_btn').attr('disabled', true);
+
+            var data = {};
+            data.body = $('#help_form').serializeObject();
+
+            //show_loader(); // show loader
+
+            $.when(helpEmail(data)).then(function (data) {
+               // window.scroll(0, 0);
+                if (data.meta.success) { // if success
+                   
+                  //  $('#help_form')[0].reset();
+                }
+
+                //hide_loader(); // hide loader
+               // $('#submit_btn').attr('disabled', false);
+            });
+             sessionStorage.setItem("success", "true");
+             window.location.href = 'https://www.yourgist.com/'
+        }*/
+    });
+</script>
+
+</body>
+</html>
