@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "splash/header.html" %}
+<body class="grey_bg">
+
+     <div class="header_outer">
+        <div class="header_inner">
+            <div class="logo">
+                <div class="back_icon">
+                    <h1><a href="#" title="Gist">Gist</a></h1><span class="account_setting"><a href="#" title="Account Settings">Account Settings</a></span>
+                </div>
+            </div>
+
+            <div class="menu_links">
+                <ul>
+                    <li> <a title="Help" class="btns" href="<?= $app['base_url']; ?>candidate/dashboard">Back to Recruiting</a> </li>
+                    <li> <a href="#" id="toggle_menu" title="Menu">
+                            <span id="menu-lines-container">
+                                <span id="menu-line-top"></span>
+                                <span id="menu-line-bottom"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu_list">
+        <ul>
+            <li><a href="/candidate/dashboard/{{user.email}}" title="Candidate Dashboard">Dashboard</a></li>
+           <li><a href="#" title="Profile">Profile</a></li>
+          <li><a href="/candidate/logout" title="Logout">Logout</a></li>
+            <li><a href="/help" title="Support">Support</a></li>
+            <li><a href="/colleges" title="Colleges">Colleges</a></li>
+            <li class="menu_term_link"><span>© I Think Therefore I am Ventures — <a href="#" title="Terms &amp; Privacy">Terms &amp; Privacy</a></span></li>
+        </ul>
+    </div>
+
+    <div class="page_outer_section">
+   
+<div class="account_outer">
+            <div class="account_inner">
+   <button type="button" class="slide_toggle btn">Slide Toggle</button>
+   
+<div class="step_three_outer edit">
+     <div class="edit_side">
+
+                    <ul>
+                        <li class="active">
+                            <a href="#" title="Edit Profile">Edit Profile</a>
+                        </li>
+    
+                        <li>
+                            <a href="#" title="Help">Help</a>
+                        </li>
+                    </ul>
+                </div>
+
+    <div class="register_form_inner">
+        <div class="user_form">
+            <form method="POST" id="candidateedit_form" action="/candidate/edit/{{user.email}}">
+                {% csrf_token %}
+                <div class="fild_outer">
+                    <label class="tittle_heading">Your Name *</label>
+                    <div class="fild_inner">
+                        <input autofocus="" class="form-control" value="{{form.Name}}" name="Name" placeholder="Enter your name" type="text">
+                    </div>
+                </div>
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">Email *</label>
+                    <div class="fild_inner">
+                        <input class="form-control" placeholder="Your personal email" type="text" name="candidateemail" id="candidateemail" value="{{form.user_id}}" disabled>
+                    </div>
+                </div>
+
+
+
+                <div class="fild_outer">
+                    <label class="tittle_heading">URL *</label>
+                    <div class="fild_inner">
+                        <textarea class="form-control" placeholder="Paste your LinkedIn, GitHub, Stack Overflow or personal website URL" name="candidateurl">{{form.url}}</textarea>
+                    </div>
+                </div>
+                
+
+            
+          
+             <!--Work Experience  HTML end here-->  
+                
+                
+                <div class="fild_outer">
+                    <label class="tittle_heading">Blocked List</label>
+                    <div class="fild_inner">
+                        <textarea class="form-control" placeholder="List any companies you want to block from seeing your information" name="blocked">{{form.blocked}}</textarea>
+                    </div>
+                </div>
+                
+                
+               <!--Location  HTML start here-->               
+                
+                <!--Location  HTML end here-->
+                
+                
+                  <!--Skill Tags   HTML start here-->               
+                
+                <!--Skill Tags  HTML end here-->
+                
+            <div class="fild_outer">
+                <label class="tittle_heading">Password *</label>
+                <div class="fild_inner">
+                    <input class="form-control" placeholder="Create a password " type="text" name="password" value="{{user.password}}" disabled>
+                </div>
+            </div>
+          <div class="apply_now submit_employers"><button class="submit_btn btn" title="Complete">Complete</button></div>
+         <div class="click_complete"><p>By clicking “Complete” you’re indicating that you have read and agree to our Terms of Service</p></div>
+       </form>
+      </div>
+   </div>
+
+</div>
+ </div>
+    </div>
+ 
+        </div>
+    
+   <!-- <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>-->
+ 
+{% include "splash/footer.html" %}
+<script>
+ window.addEventListener("beforeunload", function(event) {
+       event.returnValue = "All page data will be lost.Are you sure?";
+      });
+</script>
+</body>
+</html>
