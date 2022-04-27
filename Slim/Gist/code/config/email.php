@@ -8,16 +8,16 @@ $config['host'] = "smtp.gmail.com";
 $config['SMTPAuth'] = true;
 $config['port'] = 465;
 $config['SMTPSecure'] = 'ssl';
-$config['username'] = "prosmtp@prologictechnologies.in";
-$config['password'] = "!@#prologictech!@#";
+$config['username'] = "adhaar@gmail.com";
+$config['password'] = "12345;
 
-$config['from_email'] = "prosmtp@prologictechnologies.in";
-$config['default_reply_to_name'] = "Protasker";
-$config['default_reply_to_email'] = "prosmtp@prologictechnologies.in";
+$config['from_email'] = "adhaar@gmail.com";
+$config['default_reply_to_name'] = "12345";
+$config['default_reply_to_email'] = "adhaar@gmail.com";
 $config['from_name'] = "Find Title";
 //$config['bcc'] = array(array(
-//        'email' => 'rajiv@prologictechnologies.in',
-//        'name' => 'Rajiv'
+//        'email' => 'adhaar@gmail.com',
+//        'name' => 'Adhaar'
 //    ),
 //);
 
