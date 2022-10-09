@@ -1,6 +1,6 @@
 <?php
 // PayPal settings
-$paypal_email = 'vijay@netmente.com';
+$paypal_email = 'adh171991@gmail.com';
 $return_url = 'http://localhost/oneplate/payment-successful.php';
 $cancel_url = 'http://localhost/oneplate/payment-cancelled.php';
 $notify_url = 'http://localhost/oneplate/payments.php';
