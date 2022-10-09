@@ -5,7 +5,7 @@ return array(
     'appNameIOS'     => array(
         'environment' =>'development',
         'certificate' => app_path('pushcert_dis.pem'),
-        'passPhrase'  =>'netmente@123#',
+        'passPhrase'  =>'hghcgcgfc',
         'service'     =>'apns'
     ),
     'appNameAndroid' => array(

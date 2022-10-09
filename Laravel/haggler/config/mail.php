@@ -82,8 +82,7 @@ return [
     */
 
   // 'username' => env('MAIL_USERNAME'),
-  'username' => 'testingbytes15@gmail.com',
-	//'username' => 'vivek.netmente@gmail.com',
+  'username' => 'adh171991@gmail.com',
     /*
     |--------------------------------------------------------------------------
     | SMTP Server Password
@@ -96,8 +95,7 @@ return [
     */
 
    // 'password' => env('MAIL_PASSWORD'),
-  'password' => "A147147147#",
-	//'password' => "team@netmente",
+  'password' => "ghjghvh",
     /*
     |--------------------------------------------------------------------------
     | Sendmail System Path
