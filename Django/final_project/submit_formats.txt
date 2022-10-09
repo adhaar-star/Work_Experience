@@ -1,3 +1,0 @@
-ajax format - ('{"csrfmiddlewaretoken":"wvT687rrHzOnS3rkiTvB1U9hjRIJJgKRoxQ5LsbQAxFxLGYZG9ZElqSiwHlYu5hD","Name":"employer1","email":"employer1@gmail.com","phone":"5305917484","job_title":"salesman","company_name":"pepsi","company_industry":"beverage","employer_password":"123456"}', '')
-
-form submit format - ('csrfmiddlewaretoken', '5ZOOYarT7xW6elfLhds0x8nnCVQSXNz6X1LNBvbi0vNg7YMqFtW3RE6oPLt7IC6S')('Name', 'employer1')('email', 'employer1@gmail.com')('phone', '5305917484')('job_title', 'salesman')('company_name', 'pepsi')('company_industry', 'beverage')('employer_password', '123456')
